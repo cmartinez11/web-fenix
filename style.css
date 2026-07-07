@@ -1,0 +1,263 @@
+/* Custom Stylesheet - Plásticos Fénix B2B */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --color-dark: #0F0F11;
+  --color-dark-surface: #18181B;
+  --color-dark-card: #202024;
+  --color-light: #F4F5F7;
+  --color-white: #FFFFFF;
+  --color-green: #10B981;
+  --color-green-dark: #059669;
+  --color-gold: #D4AF37;
+  --color-gold-hover: #B8962E;
+  --font-heading: 'Outfit', 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* Global Reset & Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-light);
+  color: #1F2937;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-green);
+}
+
+/* Glassmorphism Sticky Navigation */
+.glass-nav {
+  background: rgba(15, 15, 17, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-nav-scrolled {
+  background: rgba(15, 15, 17, 0.98);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .glass-nav-scrolled {
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  }
+}
+
+/* Premium Gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F59E0B 0%, #D4AF37 50%, #FBBF24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #F59E0B 0%, #D4AF37 100%);
+}
+
+.border-gold-glow {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.border-gold-glow:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+/* Focus and Active States */
+.active-nav-link {
+  color: var(--color-gold);
+  position: relative;
+}
+
+.active-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-gold);
+  border-radius: 2px;
+}
+
+/* Interactive Hover Animations */
+.hover-gold-glow {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-gold-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px -5px rgba(212, 175, 55, 0.3);
+  filter: brightness(1.05);
+}
+
+.hover-green-glow {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-green-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px -5px rgba(16, 185, 129, 0.3);
+  filter: brightness(1.05);
+}
+
+/* Industrial Hero styling */
+.hero-glow-green {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, rgba(0,0,0,0) 70%);
+  pointer-events: none;
+  filter: blur(60px);
+}
+
+.hero-glow-gold {
+  position: absolute;
+  bottom: 20%;
+  right: 15%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, rgba(0,0,0,0) 70%);
+  pointer-events: none;
+  filter: blur(60px);
+}
+
+/* Lineas de Producto Asymmetric Grid Cards */
+.asymmetric-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.asymmetric-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(24, 24, 27, 0) 50%, rgba(15, 15, 17, 0.95) 100%);
+  z-index: 1;
+}
+
+.asymmetric-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(212, 175, 55, 0.25);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8);
+}
+
+.asymmetric-card img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.asymmetric-card:hover img {
+  transform: scale(1.04);
+}
+
+/* B2B Product Cards in Grid */
+.b2b-product-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(229, 231, 235, 0.7);
+  background-color: var(--color-white);
+}
+
+.b2b-product-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.06);
+}
+
+/* B2B Technical Filters Accordion Styles */
+.accordion-header {
+  user-select: none;
+}
+
+.accordion-icon {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accordion-active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accordion-active .accordion-content {
+  max-height: 500px;
+}
+
+/* Badge pulse animation */
+.badge-tech-active {
+  animation: badge-pulse 2s infinite;
+}
+
+@keyframes badge-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+/* Modal details active transitions */
+.modal-active .modal-overlay {
+  opacity: 1;
+}
+
+.modal-active .modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Responsive Filters Sidebar for Mobile */
+@media (max-width: 1023px) {
+  .sidebar-filter-drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 320px;
+    z-index: 50;
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    background-color: var(--color-white);
+    box-shadow: 15px 0 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sidebar-filter-drawer.active {
+    transform: translateX(0);
+  }
+}
