@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros | Plásticos Fénix</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Outfit', sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            greenCustom: '#10B981',
+            greenDark: '#059669',
+            goldCustom: '#D4AF37',
+            goldHover: '#B8962E',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-[#0F0F11] text-white overflow-x-hidden">
+
+  <!-- 1. CABECERA (NAVBAR) IDÉNTICA A LA HOME -->
+  <header id="main-nav" class="absolute top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 md:h-28">
+
+        <!-- Logo corporativo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="./assets/logo.png" alt="Logo Plásticos Fénix" class="h-12 md:h-16 w-auto object-contain">
+          </a>
+        </div>
+
+        <!-- Menú Central -->
+        <nav class="hidden md:flex items-center gap-8 text-xs font-light tracking-widest uppercase text-gray-300">
+          <a href="index.html" class="hover:text-[#D4AF37] transition-colors">Inicio</a>
+          <a href="./nosotros.html" class="text-[#D4AF37] transition-colors">Nosotros</a>
+          <a href="./productos.html" class="hover:text-[#D4AF37] transition-colors">Productos</a>
+          <a href="./contacto.html" class="hover:text-[#D4AF37] transition-colors">Contacto</a>
+        </nav>
+
+        <!-- Botón CTA Derecha (Fino, en Dorado) -->
+        <div class="hidden md:flex items-center">
+          <a href="https://wa.me/51900000000" target="_blank"
+            class="px-5 py-2.5 text-[11px] font-medium tracking-widest uppercase border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-sm">
+            Contactar a un Asesor
+          </a>
+        </div>
+
+        <!-- Botón Hamburguesa (Móvil) -->
+        <div class="flex md:hidden items-center">
+          <button id="mobile-menu-btn"
+            class="text-white hover:text-[#D4AF37] focus:outline-none p-2 transition-colors duration-200"
+            aria-label="Abrir menú">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. BANNER PRINCIPAL (HERO CON VIDEO DE FONDO) -->
+  <section class="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
+    <!-- Contenedor del Video de Fondo -->
+    <div class="absolute inset-0 w-full h-full z-0">
+      <video class="w-full h-full object-cover opacity-40" autoplay loop muted playsinline>
+        <source src="./video2.mp4" type="video/mp4">
+      </video>
+      <!-- Overlay degradado para asegurar el contraste de las letras del menú y del centro -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F11] via-black/30 to-black/60"></div>
+    </div>
+
+    <!-- Contenido Central Estilizado -->
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center mt-12 animate-fade-in">
+      <p class="text-[10px] font-medium tracking-[0.4em] uppercase text-[#10B981] mb-5">MÁS DE 17 AÑOS DE EXCELENCIA</p>
+      <h1
+        class="text-3xl md:text-5xl lg:text-6xl font-semibold tracking-wide text-white mb-6 leading-[1.2] md:leading-[1.25] lg:leading-[1.3] max-w-5xl mx-auto uppercase">
+        LIDERANDO LA INDUSTRIA DE<br class="hidden md:block">
+        <span class="text-[#D4AF37]">EMPAQUES PLÁSTICOS</span><br>
+        A NIVEL NACIONAL
+      </h1>
+      <p class="text-xs md:text-sm font-light tracking-widest text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+        Conoce nuestra infraestructura, valores corporativos y el compromiso técnico que nos convierte en el socio
+        estratégico de las principales marcas del país.
+      </p>
+      <div>
+        <a href="./contacto.html"
+          class="inline-flex items-center justify-center px-10 py-3.5 bg-white text-black text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-[#D4AF37] hover:scale-105 transition-all duration-300 shadow-lg">
+          Contáctanos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SECCIÓN HISTORIA Y CREADORES -->
+  <section id="historia" class="py-24 max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="space-y-6">
+        <div>
+          <p class="text-[10px] font-semibold tracking-[0.25em] text-[#10B981] uppercase mb-2">Trayectoria y Liderazgo
+          </p>
+          <h2 class="text-2xl md:text-4xl font-semibold tracking-wide text-white uppercase leading-tight">
+            Nuestra <span class="text-[#D4AF37] font-light">Evolución</span>
+          </h2>
+          <div class="w-12 h-[2px] bg-[#10B981] mt-4 rounded-full"></div>
+        </div>
+
+        <p class="text-xs md:text-sm text-gray-400 font-light leading-relaxed tracking-wide">
+          Fundada en el año 2009, Plásticos Fénix es una organización líder especializada en fabricación
+          y comercialización de soluciones plásticas de alta resistencia. Con más de 17 años de evolución en el mercado,
+          nos consolidamos como un aliado estratégico para la industria, respaldados por una cultura orientada a la
+          excelencia y la confianza continua de nuestros clientes.
+        </p>
+        <p class="text-xs md:text-sm text-gray-400 font-light leading-relaxed tracking-wide">
+          Actualmente disponemos de más de 7,500 m² de infraestructura operativa distribuidos estratégicamente en
+          tres plantas de producción. Nuestra principal ventaja competitiva radica en el control total del ciclo de
+          fabricación desde la selección rigurosa de la materia prima hasta el empaque final, lo que nos permite
+          garantizar un catálogo masivo y servicios de abastecimiento bajo los más estrictos estándares de calidad.
+        </p>
+      </div>
+
+      <!-- Grid Asimétrico de Métricas Industriales -->
+      <div class="grid grid-cols-2 gap-4">
+        <div
+          class="bg-[#131316] border border-white/[0.03] p-8 rounded-sm text-center hover:border-[#D4AF37]/30 transition-all duration-300">
+          <div class="text-[#D4AF37] text-3xl md:text-4xl font-semibold tracking-tight mb-2">17+</div>
+          <div class="text-[9px] uppercase tracking-widest text-gray-400 font-light">Años de Trayectoria</div>
+        </div>
+        <div
+          class="bg-[#131316] border border-white/[0.03] p-8 rounded-sm text-center hover:border-[#D4AF37]/30 transition-all duration-300">
+          <div class="text-[#10B981] text-3xl md:text-4xl font-semibold tracking-tight mb-2">3</div>
+          <div class="text-[9px] uppercase tracking-widest text-gray-400 font-light">Plantas de Producción</div>
+        </div>
+        <div
+          class="bg-[#131316] border border-white/[0.03] p-8 rounded-sm text-center hover:border-[#D4AF37]/30 transition-all duration-300">
+          <div class="text-[#10B981] text-3xl md:text-4xl font-semibold tracking-tight mb-2">7500 m²</div>
+          <div class="text-[9px] uppercase tracking-widest text-gray-400 font-light">Infraestructura Operativa</div>
+        </div>
+        <div
+          class="bg-[#131316] border border-white/[0.03] p-8 rounded-sm text-center hover:border-[#D4AF37]/30 transition-all duration-300">
+          <div class="text-[#D4AF37] text-3xl md:text-4xl font-semibold tracking-tight mb-2">100%</div>
+          <div class="text-[9px] uppercase tracking-widest text-gray-400 font-light">Compromiso</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SECCIÓN MISIÓN, VISIÓN Y VALORES -->
+  <section class="bg-[#0A0A0C] py-24 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-2xl md:text-4xl font-semibold tracking-wide text-white uppercase text-center mb-10">
+          PROPÓSITO Y <span class="text-[#D4AF37]">VALOR CORPORATIVO</span>
+        </h2>
+        <div class="w-12 h-[2px] bg-[#10B981] mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Misión -->
+        <div
+          class="bg-[#131316] border border-white/[0.03] p-8 rounded-sm hover:border-[#D4AF37]/30 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="text-[#10B981] text-2xl font-light mb-4">Misión</div>
+            <p class="text-xs text-gray-400 font-light leading-relaxed tracking-wide">
+              Proveer soluciones de empaque plástico de la más alta calidad a través de procesos
+              controlados y tecnología avanzada, asegurando el éxito y protección del producto final de nuestros
+              clientes.
+            </p>
+          </div>
+          <div class="w-8 h-0.5 bg-[#10B981] mt-6"></div>
+        </div>
+
+        <!-- Visión -->
+        <div
+          class="bg-[#131316] border border-white/[0.03] p-8 rounded-sm hover:border-[#D4AF37]/30 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="text-[#D4AF37] text-2xl font-light mb-4">Visión</div>
+            <p class="text-xs text-gray-400 font-light leading-relaxed tracking-wide">
+              Ser la empresa líder a nivel nacional e internacional en la producción y comercialización de bolsas,
+              preformas y productos de termoformado, reconocida por nuestra calidad superior, innovación continua y
+              compromiso con la sostenibilidad.
+            </p>
+          </div>
+          <div class="w-8 h-0.5 bg-[#D4AF37] mt-6"></div>
+        </div>
+
+        <!-- Valores -->
+        <div
+          class="bg-[#131316] border border-white/[0.03] p-8 rounded-sm hover:border-[#D4AF37]/30 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="text-[#10B981] text-2xl font-light mb-4">Valores</div>
+            <ul class="text-xs text-gray-400 font-light leading-relaxed tracking-wide space-y-2">
+              <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#10B981] rounded-full"></span> Calidad
+                técnica inquebrantable</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#10B981] rounded-full"></span> Respeto al
+                medio ambiente</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 bg-[#10B981] rounded-full"></span> Transparencia
+                y honestidad</li>
+            </ul>
+          </div>
+          <div class="w-8 h-0.5 bg-[#10B981] mt-6"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. UBICACIÓN ESTRATÉGICA (Mapa Panorámico Estilo Global Plastic) -->
+  <section id="ubicacion" class="w-full bg-[#0F0F11] pt-20 relative">
+
+    <!-- Cabecera de la Sección -->
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center mb-12">
+      <h2 class="text-2xl md:text-4xl font-semibold tracking-wide text-white uppercase">
+        Nuestra <span class="text-[#D4AF37]">Ubicación</span>
+      </h2>
+      <!-- Línea decorativa minimalista -->
+      <div class="w-12 h-[2px] bg-[#10B981] mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <!-- Contenedor del Mapa Completo (Ancho de pantalla completo sin márgenes) -->
+    <div class="w-full h-[450px] md:h-[550px] relative border-y border-white/5 bg-[#131316] overflow-hidden group">
+
+      <!-- iFrame de Google Maps optimizado -->
+      <!-- NOTA: Para poner tu ubicación real, ve a Google Maps, dale a "Compartir -> Insertar mapa", copia el enlace que sale en 'src="..."' y pégalo aquí abajo -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.025058435383!2d-76.94529492402296!3d-11.903343539248883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c38d6d86a28b%3A0x99f11fe06737c6d3!2sPlasticos%20Fenix%20EIRL!5e0!3m2!1ses!2spe!4v1783450945388!5m2!1ses!2spe"
+        class="w-full h-full border-0 grayscale opacity-90 contrast-115 transition-all duration-700 group-hover:opacity-100 group-hover:grayscale-0"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+      <!-- Indicador flotante sutil de dirección (UX premium) -->
+      <div
+        class="absolute bottom-6 left-6 bg-[#131316]/90 backdrop-blur-md border border-white/10 p-5 rounded-sm max-w-sm shadow-2xl pointer-events-none transition-transform duration-300 group-hover:translate-y-[-4px]">
+        <span class="block text-[9px] font-semibold tracking-[0.2em] text-[#10B981] uppercase mb-1">Sede
+          Principal</span>
+        <h4 class="text-xs font-bold text-white uppercase tracking-wide mb-1">Plásticos Fénix S.A.</h4>
+        <p class="text-[11px] text-zinc-400 font-light leading-relaxed">
+          Jr. Loreto Posesionarios Mypes de Villa Sol. Jicamarca<br>Lima, Huarochirí
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CONTACTO (SECCIÓN CTA PRESTIGE) -->
+  <section id="contacto" class="py-28 relative overflow-hidden bg-[#0A0A0C] border-t border-white/5">
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#10B981]/[0.02] blur-[120px] rounded-full pointer-events-none">
+    </div>
+
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <div
+        class="bg-[#131316] border border-white/[0.03] p-12 md:p-16 rounded-sm shadow-[0_20px_50px_-20px_rgba(0,0,0,0.7)]">
+        <h2 class="text-2xl md:text-4xl font-semibold tracking-wide text-white uppercase leading-[1.25] mb-4">
+          ¿Listo para optimizar tu <br class="sm:hidden">
+          <span class="text-[#D4AF37]">Cadena de Suministro</span>?
+        </h2>
+        <div class="w-10 h-[2px] bg-[#10B981] mx-auto mb-8 rounded-full"></div>
+        <p class="text-xs md:text-sm text-gray-400 font-light max-w-2xl mx-auto leading-relaxed tracking-wide mb-10">
+          Ponte en contacto directo con nuestros ingenieros de empaque para solicitar cotizaciones a medida, muestras
+          técnicas o desarrollo de moldes personalizados.
+        </p>
+        <div class="inline-block">
+          <a href="https://wa.me/51900000000" target="_blank"
+            class="inline-flex items-center gap-3 px-10 py-4 bg-[#10B981] text-black font-bold text-[11px] tracking-[0.2em] uppercase rounded-full hover:bg-[#D4AF37] hover:scale-105 transition-all duration-300 shadow-[0_10px_30px_-10px_rgba(16,185,129,0.3)] hover:shadow-[0_10px_30px_-10px_rgba(212,175,55,0.3)] group">
+            <svg class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-12"
+              viewBox="0 0 24 24">
+              <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.66.986 3.288 1.498 4.76 1.499 5.429 0 9.842-4.388 9.845-9.782.002-2.614-1.012-5.074-2.855-6.918C16.507 2.11 14.056.918 11.515.918c-5.433 0-9.846 4.387-9.849 9.782-.001 1.902.501 3.753 1.456 5.375L2.125 21.92l4.522-1.766z" />
+            </svg>
+            <span>Cotizar por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FOOTER CORPORATIVO PREMIUM -->
+  <footer class="bg-[#0A0A0C] border-t border-white/5 pt-16 pb-8 text-zinc-400">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+      <!-- Bloque Principal: 4 Columnas -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/5">
+        <!-- Columna 1: Identidad Corporativa -->
+        <div class="space-y-4">
+          <img src="./assets/logo.png" alt="Logo Plásticos Fénix" class="h-12 w-auto object-contain brightness-95">
+          <p class="text-xs font-light leading-relaxed tracking-wide text-zinc-500 pt-2">
+            Líderes en el suministro industrial de preformas PET, tapas, asas y empaques termoformados a gran escala a
+            nivel nacional.
+          </p>
+        </div>
+
+        <!-- Columna 2: Navegación Interna -->
+        <div class="space-y-4">
+          <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Secciones</h4>
+          <ul class="space-y-2.5 text-xs font-light">
+            <li><a href="index.html" class="hover:text-[#D4AF37] transition-colors">Inicio</a></li>
+            <li><a href="./productos.html" class="hover:text-[#D4AF37] transition-colors">Productos</a></li>
+            <li><a href="./nosotros.html" class="hover:text-[#D4AF37] transition-colors">Nosotros</a></li>
+            <li><a href="./contacto.html" class="hover:text-[#D4AF37] transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Soporte y Legal -->
+        <div class="space-y-4">
+          <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Legal y Contacto</h4>
+          <ul class="space-y-2.5 text-xs font-light">
+            <li><a href="politica-privacidad.html" class="hover:text-[#D4AF37] transition-colors">Política de
+                Privacidad</a></li>
+            <li><a href="terminos-condiciones.html" class="hover:text-[#D4AF37] transition-colors">Términos y
+                Condiciones</a></li>
+            <li><a href="politica-cookies.html" class="hover:text-[#D4AF37] transition-colors">Política de Cookies</a>
+            </li>
+            <li><a href="#" class="hover:text-[#D4AF37] transition-colors">Trabaja con Nosotros</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Libro de Reclamaciones Virtual -->
+        <div class="space-y-4">
+          <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Atención al Usuario</h4>
+          <p class="text-[11px] font-light text-zinc-500 leading-relaxed">
+            Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, contamos con un libro virtual
+            a su disposición.
+          </p>
+          <a href="libro-reclamaciones.html"
+            class="inline-flex items-center gap-3 px-4 py-2.5 border border-white/10 hover:border-[#D4AF37]/50 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 rounded-sm group">
+            <svg class="w-5 h-5 text-zinc-400 group-hover:text-[#D4AF37] transition-colors" fill="none"
+              stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            </svg>
+            <div class="text-left">
+              <span class="block text-[8px] tracking-widest text-zinc-500 uppercase">Libro de</span>
+              <span
+                class="block text-[10px] font-medium tracking-wide text-white uppercase group-hover:text-[#D4AF37] transition-colors">Reclamaciones</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Barra Inferior: Derechos de Autor y Créditos -->
+      <div
+        class="flex flex-col sm:flex-row items-center justify-between pt-8 text-[11px] font-light text-zinc-600 tracking-wide gap-4">
+        <div class="text-center sm:text-left">
+          <span>© 2026 PLÁSTICOS FÉNIX • GRUPO FÉNIX. Todos los derechos reservados.</span>
+        </div>
+        <div class="flex items-center gap-2 text-zinc-700">
+          <span>Fabricación de Soluciones Industriales de Empaque</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Overlay del Menú Móvil Desplegable -->
+  <div id="mobile-drawer-overlay"
+    class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[90] hidden opacity-0 transition-opacity duration-300"></div>
+
+  <!-- Panel Lateral Desplegable (Mobile Drawer Menu) -->
+  <div id="mobile-drawer"
+    class="fixed top-0 right-0 h-screen w-80 max-w-[85vw] bg-[#0F0F11]/95 backdrop-blur-lg border-l border-white/10 z-[100] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 shadow-2xl">
+    <!-- Botón de Cierre (X) -->
+    <div class="flex justify-end mb-8">
+      <button id="mobile-drawer-close"
+        class="text-white hover:text-[#D4AF37] focus:outline-none p-2 transition-colors duration-200"
+        aria-label="Cerrar menú">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Enlaces del Menú (Inicio, Nosotros, Productos, Contacto) -->
+    <nav class="flex flex-col gap-6 text-sm font-light tracking-[0.2em] uppercase text-gray-300 mb-8">
+      <a href="index.html" class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Inicio</a>
+      <a href="./nosotros.html" class="text-[#D4AF37] transition-colors py-2 border-b border-white/5">Nosotros</a>
+      <a href="./productos.html"
+        class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Productos</a>
+      <a href="./contacto.html" class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Contacto</a>
+    </nav>
+
+    <!-- Botón de llamada a la acción (CTA) adaptado -->
+    <div class="mt-auto pb-8">
+      <a href="https://wa.me/51900000000" target="_blank"
+        class="w-full block text-center px-5 py-3.5 text-[11px] font-medium tracking-widest uppercase border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-sm">
+        Contactar a un Asesor
+      </a>
+    </div>
+  </div>
+
+  <!-- Interactividad Básica (JavaScript) para el menú móvil -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileDrawer = document.getElementById("mobile-drawer");
+      const mobileDrawerClose = document.getElementById("mobile-drawer-close");
+      const mobileDrawerOverlay = document.getElementById("mobile-drawer-overlay");
+      const mobileLinks = mobileDrawer.querySelectorAll("nav a");
+
+      function openMenu() {
+        mobileDrawerOverlay.classList.remove("hidden");
+        void mobileDrawerOverlay.offsetWidth;
+        mobileDrawerOverlay.classList.add("opacity-100");
+        mobileDrawer.classList.remove("translate-x-full");
+        document.body.classList.add("overflow-hidden");
+      }
+
+      function closeMenu() {
+        mobileDrawerOverlay.classList.remove("opacity-100");
+        mobileDrawer.classList.add("translate-x-full");
+        document.body.classList.remove("overflow-hidden");
+        setTimeout(() => {
+          if (mobileDrawer.classList.contains("translate-x-full")) {
+            mobileDrawerOverlay.classList.add("hidden");
+          }
+        }, 300);
+      }
+
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener("click", openMenu);
+      }
+
+      if (mobileDrawerClose) {
+        mobileDrawerClose.addEventListener("click", closeMenu);
+      }
+
+      if (mobileDrawerOverlay) {
+        mobileDrawerOverlay.addEventListener("click", closeMenu);
+      }
+
+      mobileLinks.forEach(link => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      // Sticky Navbar background color transition on scroll
+      window.addEventListener("scroll", () => {
+        const nav = document.getElementById("main-nav");
+        if (window.scrollY > 40) {
+          nav.classList.add("glass-nav-scrolled");
+        } else {
+          nav.classList.remove("glass-nav-scrolled");
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
