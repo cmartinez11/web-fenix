@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Plásticos Fénix</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Outfit', sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            greenCustom: '#10B981',
+            greenDark: '#059669',
+            goldCustom: '#D4AF37',
+            goldHover: '#B8962E',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-[#0F0F11] text-white overflow-x-hidden">
+
+  <!-- 1. CABECERA (NAVBAR) IDÉNTICA A LA HOME / NOSOTROS -->
+  <header id="main-nav" class="absolute top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 md:h-28">
+
+        <!-- Logo corporativo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="./assets/logo.png" alt="Logo Plásticos Fénix" class="h-12 md:h-16 w-auto object-contain">
+          </a>
+        </div>
+
+        <!-- Menú Central -->
+        <nav class="hidden md:flex items-center gap-8 text-xs font-light tracking-widest uppercase text-gray-300">
+          <a href="index.html" class="hover:text-[#D4AF37] transition-colors">Inicio</a>
+          <a href="./nosotros.html" class="hover:text-[#D4AF37] transition-colors">Nosotros</a>
+          <a href="./productos.html" class="hover:text-[#D4AF37] transition-colors">Productos</a>
+          <a href="./contacto.html" class="text-[#D4AF37] transition-colors">Contacto</a>
+        </nav>
+
+        <!-- Botón CTA Derecha (Fino, en Dorado) -->
+        <div class="hidden md:flex items-center">
+          <a href="https://wa.me/51900000000" target="_blank"
+            class="px-5 py-2.5 text-[11px] font-medium tracking-widest uppercase border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-sm">
+            Contactar a un Asesor
+          </a>
+        </div>
+
+        <!-- Botón Hamburguesa (Móvil) -->
+        <div class="flex md:hidden items-center">
+          <button id="mobile-menu-btn"
+            class="text-white hover:text-[#D4AF37] focus:outline-none p-2 transition-colors duration-200"
+            aria-label="Abrir menú">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. BANNER PRINCIPAL (HERO CON VIDEO DE FONDO) -->
+  <section class="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
+    <!-- Contenedor del Video de Fondo -->
+    <div class="absolute inset-0 w-full h-full z-0">
+      <img src="./assets/fenix1.jpg" class="w-full h-full object-cover opacity-40">
+      <!-- Overlay degradado para asegurar el contraste de las letras del menú y del centro -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F11] via-black/30 to-black/60"></div>
+    </div>
+
+    <!-- Contenido Central Estilizado -->
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center mt-12 animate-fade-in">
+      <p class="text-[10px] font-medium tracking-[0.4em] uppercase text-[#10B981] mb-5">CENTRAL DE ATENCIÓN</p>
+      <h1
+        class="text-3xl md:text-5xl lg:text-6xl font-semibold tracking-wide text-white mb-6 leading-[1.2] md:leading-[1.25] lg:leading-[1.3] max-w-5xl mx-auto uppercase">
+        CONTACTA CON NUESTROS<br class="hidden md:block">
+        <span class="text-[#D4AF37]">ESPECIALISTAS DE EMPAQUE</span>
+      </h1>
+      <p class="text-xs md:text-sm font-light tracking-widest text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+        Resuelve consultas técnicas, cotiza a volumen y optimiza tu cadena de suministro industrial.
+      </p>
+      <div>
+        <a href="#contacto-seccion"
+          class="inline-flex items-center justify-center px-10 py-3.5 bg-white text-black text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-[#D4AF37] hover:scale-105 transition-all duration-300 shadow-lg">
+          Iniciar Cotización
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SECCIÓN DE CONTACTO PRINCIPAL (GRID DOS COLUMNAS) -->
+  <section id="contacto-seccion" class="py-24 max-w-7xl mx-auto px-6 lg:px-8 bg-[#0F0F11] relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+      <!-- LADO A: INFORMACIÓN DE CONTACTO (5 Columnas) -->
+      <div class="lg:col-span-5 space-y-8">
+        <div>
+          <p class="text-[10px] font-semibold tracking-[0.25em] text-[#10B981] uppercase mb-2">Canales de Atención
+          </p>
+          <h2 class="text-2xl md:text-4xl font-semibold tracking-wide text-white uppercase leading-tight">
+            Nuestros <span class="text-[#D4AF37] font-light">Datos</span>
+          </h2>
+          <div class="w-12 h-[2px] bg-[#10B981] mt-4 rounded-full"></div>
+        </div>
+
+        <p class="text-xs md:text-sm text-gray-400 font-light leading-relaxed tracking-wide mb-8">
+          Comunícate directamente con nuestras oficinas o visita nuestras plantas para programar entregas y coordinar
+          cotizaciones técnicas a gran escala.
+        </p>
+
+        <!-- Bloques Estilizados Individuales -->
+        <div class="space-y-6">
+
+          <!-- Dirección de Planta -->
+          <div
+            class="bg-[#131316] border border-white/[0.03] p-6 rounded-sm flex items-start gap-5 hover:border-[#D4AF37]/20 transition-all duration-300">
+            <div class="text-[#10B981] p-3 bg-[#0F0F11] rounded-sm border border-white/5 flex-shrink-0">
+              <!-- SVG minimalista de Pin de Mapa -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25s-7.5-4.108-7.5-11.25a7.5 7.5 0 1115 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold tracking-[0.15em] text-white uppercase mb-1">Dirección de Planta</h4>
+              <p class="text-xs text-zinc-400 font-light leading-relaxed">
+                Jr. Loreto Posesionarios Mypes de Villa Sol, Jicamarca, Lima, Huarochirí, Perú
+              </p>
+            </div>
+          </div>
+
+          <!-- Central Telefónica -->
+          <div
+            class="bg-[#131316] border border-white/[0.03] p-6 rounded-sm flex items-start gap-5 hover:border-[#D4AF37]/20 transition-all duration-300">
+            <div class="text-[#10B981] p-3 bg-[#0F0F11] rounded-sm border border-white/5 flex-shrink-0">
+              <!-- SVG de Teléfono -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.824-1.802-5.122-4.1-6.924-6.924l1.293-.97a1.242 1.242 0 00.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold tracking-[0.15em] text-white uppercase mb-1">Central Telefónica</h4>
+              <p class="text-xs text-zinc-400 font-light leading-relaxed">
+                +51 900 000 000
+              </p>
+            </div>
+          </div>
+
+          <!-- Correos Corporativos -->
+          <div
+            class="bg-[#131316] border border-white/[0.03] p-6 rounded-sm flex items-start gap-5 hover:border-[#D4AF37]/20 transition-all duration-300">
+            <div class="text-[#10B981] p-3 bg-[#0F0F11] rounded-sm border border-white/5 flex-shrink-0">
+              <!-- SVG de Correo -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold tracking-[0.15em] text-white uppercase mb-1">Correos Corporativos</h4>
+              <p class="text-xs text-zinc-400 font-light leading-relaxed">
+                <span class="block">Ventas: <a href="mailto:ventas@plasticosfenix.com"
+                    class="hover:text-[#D4AF37] transition-colors">ventas@plasticosfenix.com</a></span>
+                <span class="block">Logística: <a href="mailto:logistica@plasticosfenix.com"
+                    class="hover:text-[#D4AF37] transition-colors">logistica@plasticosfenix.com</a></span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- LADO B: FORMULARIO DE COTIZACIÓN TÉCNICA (7 Columnas) -->
+      <div class="lg:col-span-7">
+        <div
+          class="bg-[#131316] border border-white/[0.03] p-8 md:p-10 rounded-sm shadow-[0_20px_50px_-20px_rgba(0,0,0,0.7)] hover:border-white/10 transition-colors duration-300">
+          <div>
+            <p class="text-[10px] font-semibold tracking-[0.25em] text-[#10B981] uppercase mb-2">Desarrollo de Proyectos
+            </p>
+            <h2 class="text-xl md:text-2xl font-semibold tracking-wide text-white uppercase leading-tight mb-6">
+              Solicitar Cotización <span class="text-[#D4AF37] font-light">Técnica</span>
+            </h2>
+            <div class="w-12 h-[2px] bg-[#10B981] mb-8 rounded-full"></div>
+          </div>
+
+          <!-- Formulario -->
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Nombre / Empresa -->
+              <div class="space-y-2">
+                <label for="nombre"
+                  class="block text-[10px] font-semibold tracking-[0.15em] text-zinc-400 uppercase">Nombre /
+                  Empresa</label>
+                <input type="text" id="nombre" name="nombre" required
+                  class="w-full bg-[#131316] border border-white/5 rounded-sm px-4 py-3.5 text-xs text-white placeholder-zinc-600 focus:border-[#D4AF37] focus:outline-none transition-all duration-300">
+              </div>
+
+              <!-- Teléfono -->
+              <div class="space-y-2">
+                <label for="telefono"
+                  class="block text-[10px] font-semibold tracking-[0.15em] text-zinc-400 uppercase">Teléfono de
+                  Contacto</label>
+                <input type="tel" id="telefono" name="telefono" required
+                  class="w-full bg-[#131316] border border-white/5 rounded-sm px-4 py-3.5 text-xs text-white placeholder-zinc-600 focus:border-[#D4AF37] focus:outline-none transition-all duration-300">
+              </div>
+            </div>
+
+            <!-- Correo Electrónico -->
+            <div class="space-y-2">
+              <label for="email"
+                class="block text-[10px] font-semibold tracking-[0.15em] text-zinc-400 uppercase">Correo
+                Electrónico</label>
+              <input type="email" id="email" name="email" required
+                class="w-full bg-[#131316] border border-white/5 rounded-sm px-4 py-3.5 text-xs text-white placeholder-zinc-600 focus:border-[#D4AF37] focus:outline-none transition-all duration-300">
+            </div>
+
+            <!-- Tipo de Producto Selector -->
+            <div class="space-y-2">
+              <label for="producto"
+                class="block text-[10px] font-semibold tracking-[0.15em] text-zinc-400 uppercase">Tipo de
+                Producto</label>
+              <div class="relative">
+                <select id="producto" name="producto" required
+                  class="w-full bg-[#131316] border border-white/5 rounded-sm px-4 py-3.5 text-xs text-white focus:border-[#D4AF37] focus:outline-none transition-all duration-300 appearance-none">
+                  <option value="" disabled selected class="text-zinc-600">Seleccione un producto</option>
+                  <option value="preformas" class="text-white bg-[#131316]">Preformas</option>
+                  <option value="tapas" class="text-white bg-[#131316]">Tapas</option>
+                  <option value="termoformados" class="text-white bg-[#131316]">Termoformados</option>
+                  <option value="bolsas" class="text-white bg-[#131316]">Bolsas</option>
+                </select>
+                <!-- Icono de Flecha personalizada para select -->
+                <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-zinc-500">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mensaje -->
+            <div class="space-y-2">
+              <label for="mensaje"
+                class="block text-[10px] font-semibold tracking-[0.15em] text-zinc-400 uppercase">Especificaciones del
+                Requerimiento</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required
+                placeholder="Escriba detalles como gramaje, medidas, volumen de pedido, etc..."
+                class="w-full bg-[#131316] border border-white/5 rounded-sm px-4 py-3.5 text-xs text-white placeholder-zinc-600 focus:border-[#D4AF37] focus:outline-none transition-all duration-300 resize-none"></textarea>
+            </div>
+
+            <!-- Botón Píldora Premium de Envío -->
+            <div class="pt-4">
+              <button type="submit"
+                class="w-full py-4 bg-[#10B981] text-black font-bold text-xs tracking-[0.2em] uppercase rounded-full hover:bg-[#D4AF37] hover:-translate-y-0.5 hover:shadow-[0_10px_35px_-5px_rgba(16,185,129,0.4)] transition-all duration-300 flex items-center justify-center gap-2">
+                <span>Enviar Requerimiento</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5">
+                  </path>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. FOOTER CORPORATIVO PREMIUM -->
+  <footer class="bg-[#0A0A0C] border-t border-white/5 pt-16 pb-8 text-zinc-400">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+      <!-- Bloque Principal: 4 Columnas -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/5">
+        <!-- Columna 1: Identidad Corporativa -->
+        <div class="space-y-4">
+          <img src="./assets/logo.png" alt="Logo Plásticos Fénix" class="h-12 w-auto object-contain brightness-95">
+          <p class="text-xs font-light leading-relaxed tracking-wide text-zinc-500 pt-2">
+            Líderes en el suministro industrial de preformas PET, tapas, asas y empaques termoformados a gran escala a
+            nivel nacional.
+          </p>
+        </div>
+
+        <!-- Columna 2: Navegación Interna -->
+        <div class="space-y-4">
+          <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Secciones</h4>
+          <ul class="space-y-2.5 text-xs font-light">
+            <li><a href="index.html" class="hover:text-[#D4AF37] transition-colors">Inicio</a></li>
+            <li><a href="./productos.html" class="hover:text-[#D4AF37] transition-colors">Productos</a></li>
+            <li><a href="./nosotros.html" class="hover:text-[#D4AF37] transition-colors">Nosotros</a></li>
+            <li><a href="./contacto.html" class="hover:text-[#D4AF37] transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Soporte y Legal -->
+        <div class="space-y-4">
+          <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Legal y Contacto</h4>
+          <ul class="space-y-2.5 text-xs font-light">
+            <li><a href="politica-privacidad.html" class="hover:text-[#D4AF37] transition-colors">Política de
+                Privacidad</a></li>
+            <li><a href="terminos-condiciones.html" class="hover:text-[#D4AF37] transition-colors">Términos y
+                Condiciones</a></li>
+            <li><a href="politica-cookies.html" class="hover:text-[#D4AF37] transition-colors">Política de Cookies</a>
+            </li>
+            <li><a href="#" class="hover:text-[#D4AF37] transition-colors">Trabaja con Nosotros</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Libro de Reclamaciones Virtual -->
+        <div class="space-y-4">
+          <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Atención al Usuario</h4>
+          <p class="text-[11px] font-light text-zinc-500 leading-relaxed">
+            Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, contamos con un libro virtual
+            a su disposición.
+          </p>
+          <a href="libro-reclamaciones.html"
+            class="inline-flex items-center gap-3 px-4 py-2.5 border border-white/10 hover:border-[#D4AF37]/50 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 rounded-sm group">
+            <svg class="w-5 h-5 text-zinc-400 group-hover:text-[#D4AF37] transition-colors" fill="none"
+              stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            </svg>
+            <div class="text-left">
+              <span class="block text-[8px] tracking-widest text-zinc-500 uppercase">Libro de</span>
+              <span
+                class="block text-[10px] font-medium tracking-wide text-white uppercase group-hover:text-[#D4AF37] transition-colors">Reclamaciones</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Barra Inferior: Derechos de Autor y Créditos -->
+      <div
+        class="flex flex-col sm:flex-row items-center justify-between pt-8 text-[11px] font-light text-zinc-600 tracking-wide gap-4">
+        <div class="text-center sm:text-left">
+          <span>© 2026 PLÁSTICOS FÉNIX • GRUPO FÉNIX. Todos los derechos reservados.</span>
+        </div>
+        <div class="flex items-center gap-2 text-zinc-700">
+          <span>Fabricación de Soluciones Industriales de Empaque</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Overlay del Menú Móvil Desplegable -->
+  <div id="mobile-drawer-overlay"
+    class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[90] hidden opacity-0 transition-opacity duration-300"></div>
+
+  <!-- Panel Lateral Desplegable (Mobile Drawer Menu) -->
+  <div id="mobile-drawer"
+    class="fixed top-0 right-0 h-screen w-80 max-w-[85vw] bg-[#0F0F11]/95 backdrop-blur-lg border-l border-white/10 z-[100] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 shadow-2xl">
+    <!-- Botón de Cierre (X) -->
+    <div class="flex justify-end mb-8">
+      <button id="mobile-drawer-close"
+        class="text-white hover:text-[#D4AF37] focus:outline-none p-2 transition-colors duration-200"
+        aria-label="Cerrar menú">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Enlaces del Menú (Inicio, Nosotros, Productos, Contacto) -->
+    <nav class="flex flex-col gap-6 text-sm font-light tracking-[0.2em] uppercase text-gray-300 mb-8">
+      <a href="index.html" class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Inicio</a>
+      <a href="./nosotros.html" class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Nosotros</a>
+      <a href="./productos.html"
+        class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Productos</a>
+      <a href="./contacto.html" class="text-[#D4AF37] transition-colors py-2 border-b border-white/5">Contacto</a>
+    </nav>
+
+    <!-- Botón de llamada a la acción (CTA) adaptado -->
+    <div class="mt-auto pb-8">
+      <a href="https://wa.me/51900000000" target="_blank"
+        class="w-full block text-center px-5 py-3.5 text-[11px] font-medium tracking-widest uppercase border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-sm">
+        Contactar a un Asesor
+      </a>
+    </div>
+  </div>
+
+  <!-- Interactividad Básica (JavaScript) para el menú móvil -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileDrawer = document.getElementById("mobile-drawer");
+      const mobileDrawerClose = document.getElementById("mobile-drawer-close");
+      const mobileDrawerOverlay = document.getElementById("mobile-drawer-overlay");
+      const mobileLinks = mobileDrawer.querySelectorAll("nav a");
+
+      function openMenu() {
+        mobileDrawerOverlay.classList.remove("hidden");
+        void mobileDrawerOverlay.offsetWidth;
+        mobileDrawerOverlay.classList.add("opacity-100");
+        mobileDrawer.classList.remove("translate-x-full");
+        document.body.classList.add("overflow-hidden");
+      }
+
+      function closeMenu() {
+        mobileDrawerOverlay.classList.remove("opacity-100");
+        mobileDrawer.classList.add("translate-x-full");
+        document.body.classList.remove("overflow-hidden");
+        setTimeout(() => {
+          if (mobileDrawer.classList.contains("translate-x-full")) {
+            mobileDrawerOverlay.classList.add("hidden");
+          }
+        }, 300);
+      }
+
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener("click", openMenu);
+      }
+
+      if (mobileDrawerClose) {
+        mobileDrawerClose.addEventListener("click", closeMenu);
+      }
+
+      if (mobileDrawerOverlay) {
+        mobileDrawerOverlay.addEventListener("click", closeMenu);
+      }
+
+      mobileLinks.forEach(link => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      // Sticky Navbar background color transition on scroll
+      window.addEventListener("scroll", () => {
+        const nav = document.getElementById("main-nav");
+        if (window.scrollY > 40) {
+          nav.classList.add("glass-nav-scrolled");
+        } else {
+          nav.classList.remove("glass-nav-scrolled");
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
