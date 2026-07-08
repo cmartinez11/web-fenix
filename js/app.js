@@ -171,7 +171,7 @@ function renderProductsList(filteredList) {
   filteredList.forEach(product => {
     // Generación de payload de texto para link directo de WhatsApp comercial
     const waText = `Hola Grupo Fénix, deseo solicitar una cotización del siguiente producto industrial:\n- Producto: *${product.name}*\n- Línea: ${product.category}\n- Gramaje: ${product.gramaje !== 'N/A' ? product.gramaje : 'N/A'}\n- Rosca/Acabado: ${product.acabado !== 'N/A' ? product.acabado : 'N/A'}\n- Capacidad: ${product.capacidad !== 'N/A' ? product.capacidad : 'N/A'}\n- Industria: ${product.industria}\n\nPor favor, envíenme costos de fabricación y plazos de entrega mínimos.`;
-    const waUrl = `https://wa.me/51900000000?text=${encodeURIComponent(waText)}`;
+    const waUrl = `https://wa.me/51970572564?text=${encodeURIComponent(waText)}`;
 
     // Renderizado condicional de tags de marca
     let badgeHtml = "";
