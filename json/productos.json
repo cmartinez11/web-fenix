@@ -1,0 +1,192 @@
+[
+    {
+        "id": 1,
+        "name": "Preforma PET 15g (29/25)",
+        "category": "Preformas PET",
+        "gramaje": "15g",
+        "acabado": "29/25",
+        "diametro": "29mm",
+        "capacidad": "250ml",
+        "industria": "Bebidas",
+        "badge": "Eco-Fénix",
+        "shortDesc": "Preforma de peso optimizado recomendada para botellas de agua mineral sin gas.",
+        "longDesc": "Diseñada específicamente para optimizar el peso en botellas de agua. Su acabado de rosca ligera 29/25 proporciona una excelente estanqueidad y permite un importante ahorro de resina PET virgen en la tapa, contribuyendo directamente a las metas de sostenibilidad de su empresa.",
+        "image": "assets/productos/preforma_pet.png",
+        "thumbnails": [
+            "assets/productos/preforma_pet.png",
+            "assets/productos/tapas_plasticas.png",
+            "assets/productos/hero_industrial.png"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Preforma PET 28g (PCO 1881)",
+        "category": "Preformas PET",
+        "gramaje": "28g",
+        "acabado": "PCO 1881",
+        "diametro": "28mm",
+        "capacidad": "1L",
+        "industria": "Bebidas",
+        "badge": "Estándar",
+        "shortDesc": "Preforma estándar de rosca corta para botellas de refrescos y bebidas gasificadas.",
+        "longDesc": "La preforma de 28 gramos con rosca PCO 1881 es el estándar global para envasar bebidas carbonatadas de 500ml a 1 Litro. Su diseño molecular resiste elevadas presiones internas de CO2 sin sufrir deformaciones y preservando una alta cristalinidad y transparencia visual.",
+        "image": "assets/productos/preforma_pet.png",
+        "thumbnails": [
+            "assets/productos/preforma_pet.png",
+            "assets/productos/tapas_plasticas.png",
+            "assets/productos/hero_industrial.png"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Preforma PET 42g (PCO 1810)",
+        "category": "Preformas PET",
+        "gramaje": "42g",
+        "acabado": "PCO 1810",
+        "diametro": "28mm",
+        "capacidad": "1L",
+        "industria": "Limpieza",
+        "badge": "Premium",
+        "shortDesc": "Preforma de gran espesor recomendada para aceites comestibles, cosméticos y limpiadores.",
+        "longDesc": "Con una resistencia estructural superior ante la compresión vertical, esta preforma es ideal para envasar aceites vegetales, limpiadores industriales y productos de cuidado personal. El acabado de rosca PCO 1810 asegura compatibilidad universal con dispensadores y tapas de seguridad.",
+        "image": "assets/productos/preforma_pet.png",
+        "thumbnails": [
+            "assets/productos/preforma_pet.png",
+            "assets/productos/tapas_plasticas.png",
+            "assets/productos/hero_industrial.png"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Preforma PET 84g (48mm)",
+        "category": "Preformas PET",
+        "gramaje": "84g",
+        "acabado": "48mm",
+        "diametro": "48mm",
+        "capacidad": "5L",
+        "industria": "Alimentos",
+        "badge": "Boca Ancha",
+        "shortDesc": "Preforma robusta de boca ancha para galoneras de agua y aceites de gran volumen.",
+        "longDesc": "Especialmente diseñada para el soplado de bidones y galoneras de 3 a 5 litros. Su boca ancha de 48mm facilita enormemente el llenado a alta velocidad en plantas industriales y permite una dosificación controlada sin derrames en el uso final.",
+        "image": "assets/productos/preforma_pet.png",
+        "thumbnails": [
+            "assets/productos/preforma_pet.png",
+            "assets/productos/tapas_plasticas.png",
+            "assets/productos/hero_industrial.png"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Preforma PET 120g (48mm)",
+        "category": "Preformas PET",
+        "gramaje": "120g",
+        "acabado": "48mm",
+        "diametro": "48mm",
+        "capacidad": "5L",
+        "industria": "Limpieza",
+        "badge": "Industrial Heavy",
+        "shortDesc": "Preforma de máximo espesor para garrafas de productos químicos y agroquímicos.",
+        "longDesc": "Fabricada para soportar las condiciones más hostiles de almacenamiento de sustancias químicas e industriales. Cuenta con una pared súper reforzada que evita el colapso por succión de gases o variaciones extremas de temperatura de almacenamiento.",
+        "image": "assets/productos/preforma_pet.png",
+        "thumbnails": [
+            "assets/productos/preforma_pet.png",
+            "assets/productos/tapas_plasticas.png",
+            "assets/productos/hero_industrial.png"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Tapa Plástica PCO 1881 Monobloque",
+        "category": "Tapas y Asas",
+        "gramaje": "28g",
+        "acabado": "PCO 1881",
+        "diametro": "28mm",
+        "capacidad": "250ml",
+        "industria": "Bebidas",
+        "badge": "Hermeticidad",
+        "shortDesc": "Tapa plástica monobloque de alta hermeticidad con precinto de seguridad.",
+        "longDesc": "Tapa fabricada por moldeo de compresión con polietileno de alta densidad (HDPE). Dispone de un sello hermético interno que bloquea las fugas de gases y líquidos. Su precinto de seguridad asegura la inviolabilidad del producto.",
+        "image": "assets/productos/tapas_plasticas.png",
+        "thumbnails": [
+            "assets/productos/tapas_plasticas.png",
+            "assets/productos/preforma_pet.png",
+            "assets/productos/hero_industrial.png"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Asa Plástica Reforzada 48mm",
+        "category": "Tapas y Asas",
+        "gramaje": "84g",
+        "acabado": "48mm",
+        "diametro": "48mm",
+        "capacidad": "5L",
+        "industria": "Alimentos",
+        "badge": "Carga Pesada",
+        "shortDesc": "Asa ergonómica de PP inyectado de alta tenacidad para cuellos de 48mm.",
+        "longDesc": "Accesorio de agarre ergonómico ideal para botellones de 3L, 4L y 5L. Sometida a rigurosas pruebas de esfuerzo dinámico y tracción vertical, garantizando soportar de manera estable más de 25 kg de peso neto sin romperse.",
+        "image": "assets/productos/tapas_plasticas.png",
+        "thumbnails": [
+            "assets/productos/tapas_plasticas.png",
+            "assets/productos/preforma_pet.png",
+            "assets/productos/hero_industrial.png"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Bandeja Termoformada Farmacéutica",
+        "category": "Termoformados",
+        "gramaje": "15g",
+        "acabado": "N/A",
+        "diametro": "N/A",
+        "capacidad": "250ml",
+        "industria": "Farmacéutica",
+        "badge": "Grado Médico",
+        "shortDesc": "Bandejas organizadoras de alta precisión para transporte seguro de ampollas y viales.",
+        "longDesc": "Producidas bajo condiciones de atmósfera limpia con láminas de PET reciclado de alta claridad. Su diseño ergonómico ofrece cavidades de ajuste a presión perfecto que evitan la fricción de vidrio con vidrio en el embalaje logístico de medicamentos.",
+        "image": "assets/productos/termoformados.png",
+        "thumbnails": [
+            "assets/productos/termoformados.png",
+            "assets/productos/bolsas_industriales.png",
+            "assets/productos/hero_industrial.png"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Empaque Clamshell de Alimentos Frescos",
+        "category": "Termoformados",
+        "gramaje": "15g",
+        "acabado": "N/A",
+        "diametro": "N/A",
+        "capacidad": "500ml",
+        "industria": "Alimentos",
+        "badge": "FDA Compliant",
+        "shortDesc": "Empaque clamshell termoformado transparente con aberturas de ventilación.",
+        "longDesc": "Contenedor plástico con bisagra y cierre a presión audible diseñado para proteger frutas, repostería y alimentos frescos. Aprobado por la FDA para contacto directo con alimentos, garantizando la inocuidad alimentaria.",
+        "image": "assets/productos/termoformados.png",
+        "thumbnails": [
+            "assets/productos/termoformados.png",
+            "assets/productos/bolsas_industriales.png",
+            "assets/productos/hero_industrial.png"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Bolsa Industrial PE de Alta Densidad",
+        "category": "Bolsas",
+        "gramaje": "120g",
+        "acabado": "N/A",
+        "diametro": "N/A",
+        "capacidad": "20L",
+        "industria": "Limpieza",
+        "badge": "Anti-UV",
+        "shortDesc": "Sacos de polietileno grueso con protección UV para acopio de químicos secos.",
+        "longDesc": "Bolsas industriales de gran galga y espesor fabricadas por extrusión de polietileno de baja densidad (LDPE). Formuladas con estabilizadores UV para resistir largos periodos de exposición a la intemperie sin degradación estructural.",
+        "image": "assets/productos/bolsas_industriales.png",
+        "thumbnails": [
+            "assets/productos/bolsas_industriales.png",
+            "assets/productos/termoformados.png",
+            "assets/productos/hero_industrial.png"
+        ]
+    }
+]
