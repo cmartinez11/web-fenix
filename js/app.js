@@ -25,6 +25,7 @@ const mSpecAcabado = document.getElementById("spec-acabado");
 const mSpecDiametro = document.getElementById("spec-diametro");
 const mSpecCapacidad = document.getElementById("spec-capacidad");
 const mSpecIndustria = document.getElementById("spec-industria");
+const mSpecColores = document.getElementById("spec-colores");
 const btnModalWhatsapp = document.getElementById("btn-modal-whatsapp");
 
 // 3. Orquestador de Arranque de la Aplicación (Ciclo de vida corregido)
@@ -170,7 +171,7 @@ function renderProductsList(filteredList) {
   // Bucle de renderizado para las tarjetas activas
   filteredList.forEach(product => {
     // Generación de payload de texto para link directo de WhatsApp comercial
-    const waText = `Hola Grupo Fénix, deseo solicitar una cotización del siguiente producto industrial:\n- Producto: *${product.name}*\n- Línea: ${product.category}\n- Gramaje: ${product.gramaje !== 'N/A' ? product.gramaje : 'N/A'}\n- Rosca/Acabado: ${product.acabado !== 'N/A' ? product.acabado : 'N/A'}\n- Capacidad: ${product.capacidad !== 'N/A' ? product.capacidad : 'N/A'}\n- Industria: ${product.industria}\n\nPor favor, envíenme costos de fabricación y plazos de entrega mínimos.`;
+    const waText = `Hola Grupo Fénix, deseo solicitar una cotización del siguiente producto industrial:\n- Producto: *${product.name}*\n- Línea: ${product.category}\n- Gramaje: ${product.gramaje !== 'N/A' ? product.gramaje : 'N/A'}\n- Acabado: ${product.acabado !== 'N/A' ? product.acabado : 'N/A'}\n- Capacidad: ${product.capacidad !== 'N/A' ? product.capacidad : 'N/A'}\n- Industria: ${product.industria}\n\nPor favor, envíenme costos de fabricación y plazos de entrega mínimos.`;
     const waUrl = `https://wa.me/51970572564?text=${encodeURIComponent(waText)}`;
 
     // Renderizado condicional de tags de marca
@@ -197,9 +198,10 @@ function renderProductsList(filteredList) {
           
           <div class="grid grid-cols-2 gap-x-2 gap-y-1 mt-3 pt-3 border-t border-white/[0.03] text-[10px] text-zinc-400 font-mono">
             <div>Gramaje: <span class="text-white font-medium">${product.gramaje}</span></div>
-            <div>Rosca: <span class="text-white font-medium">${product.acabado}</span></div>
+            <div>Acabado: <span class="text-white font-medium">${product.acabado}</span></div>
             <div>Boca: <span class="text-white font-medium">${product.diametro}</span></div>
             <div>Capac.: <span class="text-white font-medium">${product.capacidad}</span></div>
+            <div class="col-span-2 mt-1 pt-1 border-t border-white/[0.01]">Colores: <span class="text-[#D4AF37] font-semibold">${product.colores || "N/A"}</span></div>
           </div>
         </div>
 
@@ -233,12 +235,19 @@ function openDetailsModal(id) {
   mSpecDiametro.textContent = product.diametro || "N/A";
   mSpecCapacidad.textContent = product.capacidad || "N/A";
   mSpecIndustria.textContent = product.industria || "N/A";
+  mSpecColores.textContent = product.colores || "N/A";
 
   mImage.src = product.image;
   mImage.alt = product.name;
 
+  // Construir miniaturas combinando de forma segura la imagen principal y el array de thumbnails sin duplicar
   mThumbnails.innerHTML = "";
-  product.thumbnails.forEach((thumbUrl, idx) => {
+  
+  // Creamos un set de URLs únicas asegurando que product.image sea la primera
+  const todasLasFotos = [product.image, ...product.thumbnails];
+  const fotosUnicas = [...new Set(todasLasFotos)];
+
+  fotosUnicas.forEach((thumbUrl, idx) => {
     const btn = document.createElement("button");
     btn.className = `aspect-square bg-[#0F0F11] border border-white/10 rounded p-1 opacity-60 hover:opacity-100 transition-all ${idx === 0 ? 'thumbnail-active border-[#D4AF37]' : ''}`;
     btn.innerHTML = `<img src="${thumbUrl}" alt="Thumbnail ${idx}" class="w-full h-full object-contain">`;
