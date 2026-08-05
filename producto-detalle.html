@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Ficha Técnica | Plásticos Fénix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/brand/favicon.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#0F0F11] text-white overflow-x-hidden min-h-screen flex flex-col justify-between">
+
+    <!-- 1. CABECERA (NAVBAR IDÉNTICO A INDEX) -->
+    <header id="main-nav" class="relative w-full z-50 bg-[#0F0F11] border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 md:h-28">
+
+                <!-- Logo corporativo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="./assets/brand/logo.png" alt="Logo Plásticos Fénix"
+                            class="h-12 md:h-16 w-auto object-contain">
+                    </a>
+                </div>
+
+                <!-- Menú Central -->
+                <nav
+                    class="hidden md:flex items-center gap-8 text-xs font-light tracking-widest uppercase text-gray-300">
+                    <a href="index.html" class="hover:text-[#D4AF37] transition-colors">Inicio</a>
+                    <a href="./nosotros.html" class="hover:text-[#D4AF37] transition-colors">Nosotros</a>
+                    <a href="./productos.html" class="text-[#D4AF37] transition-colors">Productos</a>
+                    <a href="./contacto.html" class="hover:text-[#D4AF37] transition-colors">Contacto</a>
+                </nav>
+
+                <!-- Botón CTA Derecha -->
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/51970572564" target="_blank"
+                        class="px-5 py-2.5 text-[11px] font-medium tracking-widest uppercase border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-sm">
+                        Contactar a un Asesor
+                    </a>
+                </div>
+
+                <!-- Botón Hamburguesa (Móvil) -->
+                <div class="flex md:hidden items-center">
+                    <button id="mobile-menu-btn"
+                        class="text-white hover:text-[#D4AF37] focus:outline-none p-2 transition-colors duration-200"
+                        aria-label="Abrir menú">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL DE DETALLE DE PRODUCTO -->
+    <main class="max-w-7xl mx-auto px-6 lg:px-8 py-10 md:py-16 w-full flex-grow">
+
+        <!-- Navegación Retorno / Breadcrumb -->
+        <div class="flex items-center justify-between border-b border-white/5 pb-6 mb-8">
+            <nav class="flex items-center gap-2 text-[11px] font-light text-zinc-400 uppercase tracking-widest">
+                <a href="index.html" class="hover:text-white transition-colors">Inicio</a>
+                <span>/</span>
+                <a href="productos.html" class="hover:text-white transition-colors">Productos</a>
+                <span>/</span>
+                <span id="breadcrumb-category" class="text-zinc-500">Categoría</span>
+                <span>/</span>
+                <span id="breadcrumb-title" class="text-[#D4AF37]">Producto</span>
+            </nav>
+
+            <a href="productos.html"
+                class="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-widest text-[#D4AF37] hover:text-white transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <span>Volver al Catálogo</span>
+            </a>
+        </div>
+
+        <!-- Rejilla Principal de Producto (Imagen + Ficha Técnica) -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+            <!-- COLUMNA IZQUIERDA: GALERÍA DE IMÁGENES -->
+            <div class="space-y-4">
+                <div
+                    class="w-full aspect-square bg-[#131316] border border-white/[0.05] rounded-sm flex items-center justify-center p-8 overflow-hidden shadow-2xl relative">
+                    <img id="detail-main-image" src="" alt="Vista principal de producto"
+                        class="max-h-full max-w-full object-contain transition-transform duration-300">
+                </div>
+
+                <!-- Contenedor de Miniaturas (Thumbnails) -->
+                <div id="detail-thumbnails" class="grid grid-cols-4 gap-4">
+                    <!-- Inyectado dinámicamente -->
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: INFORMACIÓN TÉCNICA -->
+            <div class="flex flex-col justify-between h-full space-y-8">
+                <div>
+                    <!-- Badges de Estado / Categoría -->
+                    <div class="flex items-center gap-3 mb-4">
+                        <span id="detail-badge"
+                            class="bg-[#D4AF37]/10 text-[#D4AF37] border border-[#D4AF37]/20 text-[9px] font-semibold uppercase tracking-wider px-3 py-1 rounded-sm">
+                            Categoría
+                        </span>
+                        <span id="detail-category-tag"
+                            class="text-[9px] text-[#10B981] bg-[#10B981]/10 border border-[#10B981]/20 font-semibold uppercase tracking-wider px-3 py-1 rounded-sm">
+                            Ficha Técnica B2B
+                        </span>
+                    </div>
+
+                    <!-- Título del Producto -->
+                    <h1 id="detail-title"
+                        class="text-3xl md:text-4xl font-semibold tracking-wide text-white uppercase mb-4 leading-tight">
+                        Cargando producto...
+                    </h1>
+
+                    <div class="w-12 h-[2px] bg-[#10B981] mb-6 rounded-full"></div>
+
+                    <!-- Descripción Técnica -->
+                    <p id="detail-desc"
+                        class="text-xs md:text-sm text-gray-300 font-light leading-relaxed tracking-wide mb-8">
+                        Cargando especificaciones detalladas del producto...
+                    </p>
+
+                    <!-- TABLA DE ESPECIFICACIONES TÉCNICAS B2B -->
+                    <div class="border border-white/5 rounded-sm overflow-hidden bg-[#131316] mb-8">
+                        <div class="grid grid-cols-2 border-b border-white/5 px-5 py-3 text-xs">
+                            <span class="text-zinc-400 font-light">Gramaje Estándar</span>
+                            <span id="spec-gramaje" class="text-white font-semibold font-mono text-right">--</span>
+                        </div>
+                        <div class="grid grid-cols-2 border-b border-white/5 px-5 py-3 text-xs">
+                            <span class="text-zinc-400 font-light">Rosca / Acabado</span>
+                            <span id="spec-acabado" class="text-white font-semibold font-mono text-right">--</span>
+                        </div>
+                        <div class="grid grid-cols-2 border-b border-white/5 px-5 py-3 text-xs">
+                            <span class="text-zinc-400 font-light">Diámetro de Boca</span>
+                            <span id="spec-diametro" class="text-white font-semibold font-mono text-right">--</span>
+                        </div>
+                        <div class="grid grid-cols-2 border-b border-white/5 px-5 py-3 text-xs">
+                            <span class="text-zinc-400 font-light">Presentación / Capacidad</span>
+                            <span id="spec-capacidad" class="text-white font-semibold font-mono text-right">--</span>
+                        </div>
+                        <div class="grid grid-cols-2 border-b border-white/5 px-5 py-3 text-xs">
+                            <span class="text-zinc-400 font-light">Segmento Industria</span>
+                            <span id="spec-industria" class="text-white font-semibold font-mono text-right">--</span>
+                        </div>
+                        <div class="grid grid-cols-2 px-5 py-3 text-xs">
+                            <span class="text-zinc-400 font-light">Colores Disponibles</span>
+                            <span id="spec-colores" class="text-[#D4AF37] font-semibold font-mono text-right">--</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOTÓN CTA: COTIZACIÓN DIRECTA VÍA WHATSAPP -->
+                <div class="pt-4 border-t border-white/5">
+                    <a id="btn-whatsapp" href="#" target="_blank"
+                        class="w-full flex items-center justify-center gap-3 bg-[#10B981] hover:bg-[#059669] text-black hover:text-white text-xs font-bold py-4 rounded-sm transition-all duration-300 shadow-[0_4px_20px_-5px_rgba(16,185,129,0.4)] uppercase tracking-wider">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.62.962 3.206 1.493 4.81 1.495 5.516 0 10.007-4.486 10.01-10.002.002-2.673-1.037-5.184-2.93-7.077-1.892-1.893-4.405-2.934-7.079-2.936-5.524 0-10.017 4.482-10.02 9.997-.002 2.01.527 3.975 1.53 5.724L1.12 21.07l4.161-1.094c1.724.94 3.006 1.178 3.366 1.178zM17.91 14.9c-.318-.16-.1.884-.2.88-.13.003-2.18-.76-3.79-2.22-1.37-1.24-2.22-2.73-2.49-3.2-.27-.47-.03-.72.21-.96.22-.21.48-.56.72-.84.24-.28.32-.47.48-.79.16-.32.08-.6-.04-.84s-1.08-2.6-1.48-3.56c-.39-.94-.79-.81-1.08-.83-.28-.01-.6-.01-.92-.01-.32 0-.84.12-1.28.6-.44.48-1.68 1.64-1.68 4s1.72 4.64 1.96 4.96c.24.32 3.38 5.16 8.2 7.24 1.15.5 2.04.8 2.74 1.02 1.15.37 2.2.32 3.03.19.93-.14 2.85-1.16 3.25-2.28.4-.1.4-.48.4-.76s-.16-.52-.48-.68z" />
+                        </svg>
+                        Solicitar Cotización Mayorista
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 3. FOOTER CORPORATIVO (IDÉNTICO A INDEX) -->
+    <footer class="bg-[#0A0A0C] border-t border-white/5 pt-16 pb-8 text-zinc-400">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <!-- Bloque Principal: 4 Columnas -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/5">
+
+                <!-- Columna 1: Identidad Corporativa -->
+                <div class="space-y-4">
+                    <img src="./assets/brand/logo.png" alt="Logo Plásticos Fénix"
+                        class="h-12 w-auto object-contain brightness-95">
+                    <p class="text-xs font-light leading-relaxed tracking-wide text-zinc-500 pt-2">
+                        Líderes en el suministro industrial de preformas PET, tapas, asas y empaques termoformados a
+                        gran escala a nivel nacional.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Navegación Interna -->
+                <div class="space-y-4">
+                    <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Secciones</h4>
+                    <ul class="space-y-2.5 text-xs font-light">
+                        <li><a href="index.html" class="hover:text-[#D4AF37] transition-colors">Inicio</a></li>
+                        <li><a href="productos.html" class="hover:text-[#D4AF37] transition-colors">Productos</a></li>
+                        <li><a href="nosotros.html" class="hover:text-[#D4AF37] transition-colors">Nosotros</a></li>
+                        <li><a href="contacto.html" class="hover:text-[#D4AF37] transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Soporte y Legal -->
+                <div class="space-y-4">
+                    <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Legal y Soporte</h4>
+                    <ul class="space-y-2.5 text-xs font-light">
+                        <li><a href="politica-privacidad.html" class="hover:text-[#D4AF37] transition-colors">Política
+                                de Privacidad</a></li>
+                        <li><a href="terminos-condiciones.html" class="hover:text-[#D4AF37] transition-colors">Términos
+                                y Condiciones</a></li>
+                        <li><a href="politica-cookies.html" class="hover:text-[#D4AF37] transition-colors">Política de
+                                Cookies</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37] transition-colors">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Libro de Reclamaciones Virtual -->
+                <div class="space-y-4">
+                    <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Atención al Usuario</h4>
+                    <p class="text-[11px] font-light text-zinc-500 leading-relaxed">
+                        Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, contamos con un
+                        libro virtual a su disposición.
+                    </p>
+                    <a href="libro-reclamaciones.html"
+                        class="inline-flex items-center gap-3 px-4 py-2.5 border border-white/10 hover:border-[#D4AF37]/50 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 rounded-sm group">
+                        <svg class="w-5 h-5 text-zinc-400 group-hover:text-[#D4AF37] transition-colors" fill="none"
+                            stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                        </svg>
+                        <div class="text-left">
+                            <span class="block text-[8px] tracking-widest text-zinc-500 uppercase">Libro de</span>
+                            <span
+                                class="block text-[10px] font-medium tracking-wide text-white uppercase group-hover:text-[#D4AF37] transition-colors">Reclamaciones</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Barra Inferior -->
+            <div
+                class="flex flex-col sm:flex-row items-center justify-between pt-8 text-[11px] font-light text-zinc-600 tracking-wide gap-4">
+                <div class="text-center sm:text-left">
+                    <span>© 2026 PLÁSTICOS FÉNIX • GRUPO FÉNIX. Todos los derechos reservados.</span>
+                </div>
+                <div class="flex items-center gap-2 text-zinc-700">
+                    <span>Fabricación de Soluciones Industriales de Empaque</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- 4. MENÚ MÓVIL DESPLEGABLE -->
+    <div id="mobile-drawer-overlay"
+        class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[90] hidden opacity-0 transition-opacity duration-300">
+    </div>
+
+    <div id="mobile-drawer"
+        class="fixed top-0 right-0 h-screen w-80 max-w-[85vw] bg-[#0F0F11]/95 backdrop-blur-lg border-l border-white/10 z-[100] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 shadow-2xl">
+        <div class="flex justify-end mb-8">
+            <button id="mobile-drawer-close" class="text-white hover:text-[#D4AF37] p-2 transition-colors duration-200"
+                aria-label="Cerrar menú">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-col gap-6 text-sm font-light tracking-[0.2em] uppercase text-gray-300 mb-8">
+            <a href="index.html" class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Inicio</a>
+            <a href="./nosotros.html"
+                class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Nosotros</a>
+            <a href="./productos.html"
+                class="text-[#D4AF37] transition-colors py-2 border-b border-white/5">Productos</a>
+            <a href="./contacto.html"
+                class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Contacto</a>
+        </nav>
+
+        <div class="mt-auto pb-8">
+            <a href="https://wa.me/51970572564" target="_blank"
+                class="w-full block text-center px-5 py-3.5 text-[11px] font-medium tracking-widest uppercase border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-sm">
+                Contactar a un Asesor
+            </a>
+        </div>
+    </div>
+
+    <!-- 5. SCRIPT CÓDIGO DINÁMICO E INTERACTIVIDAD MÓVIL -->
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            // --- A. LÓGICA DEL MENÚ MÓVIL ---
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const mobileDrawer = document.getElementById("mobile-drawer");
+            const mobileDrawerClose = document.getElementById("mobile-drawer-close");
+            const mobileDrawerOverlay = document.getElementById("mobile-drawer-overlay");
+
+            function openMenu() {
+                mobileDrawerOverlay.classList.remove("hidden");
+                void mobileDrawerOverlay.offsetWidth;
+                mobileDrawerOverlay.classList.add("opacity-100");
+                mobileDrawer.classList.remove("translate-x-full");
+                document.body.classList.add("overflow-hidden");
+            }
+
+            function closeMenu() {
+                mobileDrawerOverlay.classList.remove("opacity-100");
+                mobileDrawer.classList.add("translate-x-full");
+                document.body.classList.remove("overflow-hidden");
+                setTimeout(() => {
+                    if (mobileDrawer.classList.contains("translate-x-full")) {
+                        mobileDrawerOverlay.classList.add("hidden");
+                    }
+                }, 300);
+            }
+
+            if (mobileMenuBtn) mobileMenuBtn.addEventListener("click", openMenu);
+            if (mobileDrawerClose) mobileDrawerClose.addEventListener("click", closeMenu);
+            if (mobileDrawerOverlay) mobileDrawerOverlay.addEventListener("click", closeMenu);
+
+            // --- B. LÓGICA CARGA ASÍNCRONA DE PRODUCTO POR URL ---
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = parseInt(urlParams.get('id'));
+
+            if (!productId) {
+                window.location.href = "productos.html";
+                return;
+            }
+
+            try {
+                const response = await fetch('./json/productos.json');
+                const products = await response.json();
+                const product = products.find(p => p.id === productId);
+
+                if (!product) {
+                    window.location.href = "productos.html";
+                    return;
+                }
+
+                // Cargar datos de texto
+                document.title = `${product.name} | Plásticos Fénix`;
+                document.getElementById("detail-title").textContent = product.name;
+                document.getElementById("detail-desc").textContent = product.longDesc || product.shortDesc;
+                document.getElementById("detail-badge").textContent = product.badge || product.category;
+                document.getElementById("detail-category-tag").textContent = product.category;
+                document.getElementById("breadcrumb-category").textContent = product.category;
+                document.getElementById("breadcrumb-title").textContent = product.name;
+
+                // Cargar especificaciones en tabla
+                document.getElementById("spec-gramaje").textContent = product.gramaje || "N/A";
+                document.getElementById("spec-acabado").textContent = product.acabado || "N/A";
+                document.getElementById("spec-diametro").textContent = product.diametro || "N/A";
+                document.getElementById("spec-capacidad").textContent = product.capacidad || "N/A";
+                document.getElementById("spec-industria").textContent = product.industria || "N/A";
+                document.getElementById("spec-colores").textContent = product.colores || "N/A";
+
+                // Cargar Galería de Imágenes (Garantizando la principal como primera opción)
+                const mainImg = document.getElementById("detail-main-image");
+                mainImg.src = product.image;
+
+                const thumbsContainer = document.getElementById("detail-thumbnails");
+                const fotosUnicas = [...new Set([product.image, ...(product.thumbnails || [])])];
+
+                fotosUnicas.forEach((fotoUrl, idx) => {
+                    const btn = document.createElement("button");
+                    btn.className = `aspect-square bg-[#131316] border border-white/10 rounded-sm p-2 opacity-60 hover:opacity-100 transition-all ${idx === 0 ? 'border-[#D4AF37] opacity-100' : ''}`;
+                    btn.innerHTML = `<img src="${fotoUrl}" alt="Thumbnail ${idx}" class="w-full h-full object-contain">`;
+
+                    btn.addEventListener("click", () => {
+                        mainImg.src = fotoUrl;
+                        thumbsContainer.querySelectorAll("button").forEach(b => b.classList.remove("border-[#D4AF37]", "opacity-100"));
+                        btn.classList.add("border-[#D4AF37]", "opacity-100");
+                    });
+                    thumbsContainer.appendChild(btn);
+                });
+
+                // Configurar enlace corporativo a WhatsApp
+                const msg = encodeURIComponent(`Hola, quisiera solicitar una cotización mayorista para el producto: ${product.name}`);
+                document.getElementById("btn-whatsapp").href = `https://wa.me/51970572564?text=${msg}`;
+
+            } catch (err) {
+                console.error("Error al cargar la información del producto:", err);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

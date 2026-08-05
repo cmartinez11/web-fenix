@@ -57,7 +57,9 @@ document.addEventListener("DOMContentLoaded", inicializarCatalogo);
 // 4. Configuración de Escuchadores de Eventos
 function setupEvents() {
   // Búsqueda por texto en tiempo real
-  searchInput.addEventListener("input", filterProducts);
+  if (searchInput) {
+    searchInput.addEventListener("input", filterProducts);
+  }
 
   // Filtros laterales (Checkboxes)
   document.querySelectorAll(".filter-checkbox").forEach(cb => {
@@ -68,7 +70,9 @@ function setupEvents() {
   document.querySelectorAll(".close-modal-trigger").forEach(el => {
     el.addEventListener("click", closeModal);
   });
-  modalOverlay.addEventListener("click", closeModal);
+  if (modalOverlay) {
+    modalOverlay.addEventListener("click", closeModal);
+  }
 
   // Cerrar modal usando la tecla Escape
   document.addEventListener("keydown", (e) => {
@@ -92,6 +96,7 @@ function setupEvents() {
 
 // 5. Lógica de Filtrado Dinámico (AND Inter-categoría, OR Intra-categoría)
 function filterProducts() {
+  if (!searchInput) return;
   const query = searchInput.value.toLowerCase().trim();
 
   // Agrupar los filtros activos según su tipología de atributo
@@ -209,9 +214,9 @@ function renderProductsList(filteredList) {
           <a href="${waUrl}" target="_blank" class="w-full flex items-center justify-center gap-1.5 bg-[#10B981] hover:bg-[#10B981]/90 text-black text-xs font-bold py-3 rounded-full transition-all duration-300 uppercase tracking-wider text-[10px]">
             <span>Cotizar por WhatsApp</span>
           </a>
-          <button onclick="openDetailsModal(${product.id})" class="w-full flex items-center justify-center gap-1.5 border border-white/10 hover:border-[#D4AF37] text-white text-xs font-medium py-2.5 rounded-full transition-all text-[10px] uppercase tracking-wider bg-white/[0.01] hover:bg-white/[0.03]">
-            <span>Ver Ficha Técnica</span>
-          </button>
+          <a href="producto-detalle.html?id=${product.id}" class="w-full flex items-center justify-center gap-1.5 border border-white/10 hover:border-[#D4AF37] text-white text-xs font-medium py-2.5 rounded-full transition-all text-[10px] uppercase tracking-wider bg-white/[0.01] hover:bg-white/[0.03]">
+            <span>Ver Producto</span>
+          </a>
         </div>
       </div>
     `;
@@ -219,48 +224,50 @@ function renderProductsList(filteredList) {
   });
 }
 
-// 7. Control de Modales de Ficha Técnica Expandida
+// 7. Control de Modales de Ficha Técnica Expandida (Mantenido por compatibilidad)
 function openDetailsModal(id) {
   const product = products.find(p => p.id === id);
-  if (!product) return;
+  if (!product || !productModal) return;
 
   activeProduct = product;
 
-  mTitle.textContent = product.name;
-  mDesc.textContent = product.longDesc;
-  mBadge.textContent = product.category;
+  if (mTitle) mTitle.textContent = product.name;
+  if (mDesc) mDesc.textContent = product.longDesc;
+  if (mBadge) mBadge.textContent = product.category;
 
-  mSpecGramaje.textContent = product.gramaje || "N/A";
-  mSpecAcabado.textContent = product.acabado || "N/A";
-  mSpecDiametro.textContent = product.diametro || "N/A";
-  mSpecCapacidad.textContent = product.capacidad || "N/A";
-  mSpecIndustria.textContent = product.industria || "N/A";
-  mSpecColores.textContent = product.colores || "N/A";
+  if (mSpecGramaje) mSpecGramaje.textContent = product.gramaje || "N/A";
+  if (mSpecAcabado) mSpecAcabado.textContent = product.acabado || "N/A";
+  if (mSpecDiametro) mSpecDiametro.textContent = product.diametro || "N/A";
+  if (mSpecCapacidad) mSpecCapacidad.textContent = product.capacidad || "N/A";
+  if (mSpecIndustria) mSpecIndustria.textContent = product.industria || "N/A";
+  if (mSpecColores) mSpecColores.textContent = product.colores || "N/A";
 
-  mImage.src = product.image;
-  mImage.alt = product.name;
+  if (mImage) {
+    mImage.src = product.image;
+    mImage.alt = product.name;
+  }
 
   // Construir miniaturas combinando de forma segura la imagen principal y el array de thumbnails sin duplicar
-  mThumbnails.innerHTML = "";
-  
-  // Creamos un set de URLs únicas asegurando que product.image sea la primera
-  const todasLasFotos = [product.image, ...product.thumbnails];
-  const fotosUnicas = [...new Set(todasLasFotos)];
+  if (mThumbnails) {
+    mThumbnails.innerHTML = "";
+    const todasLasFotos = [product.image, ...(product.thumbnails || [])];
+    const fotosUnicas = [...new Set(todasLasFotos)];
 
-  fotosUnicas.forEach((thumbUrl, idx) => {
-    const btn = document.createElement("button");
-    btn.className = `aspect-square bg-[#0F0F11] border border-white/10 rounded p-1 opacity-60 hover:opacity-100 transition-all ${idx === 0 ? 'thumbnail-active border-[#D4AF37]' : ''}`;
-    btn.innerHTML = `<img src="${thumbUrl}" alt="Thumbnail ${idx}" class="w-full h-full object-contain">`;
-    btn.addEventListener("click", () => {
-      mImage.src = thumbUrl;
-      document.querySelectorAll("#modal-thumbnails button").forEach(b => b.classList.remove("thumbnail-active", "border-[#D4AF37]"));
-      btn.classList.add("thumbnail-active", "border-[#D4AF37]");
+    fotosUnicas.forEach((thumbUrl, idx) => {
+      const btn = document.createElement("button");
+      btn.className = `aspect-square bg-[#0F0F11] border border-white/10 rounded p-1 opacity-60 hover:opacity-100 transition-all ${idx === 0 ? 'thumbnail-active border-[#D4AF37]' : ''}`;
+      btn.innerHTML = `<img src="${thumbUrl}" alt="Thumbnail ${idx}" class="w-full h-full object-contain">`;
+      btn.addEventListener("click", () => {
+        if (mImage) mImage.src = thumbUrl;
+        document.querySelectorAll("#modal-thumbnails button").forEach(b => b.classList.remove("thumbnail-active", "border-[#D4AF37]"));
+        btn.classList.add("thumbnail-active", "border-[#D4AF37]");
+      });
+      mThumbnails.appendChild(btn);
     });
-    mThumbnails.appendChild(btn);
-  });
+  }
 
   const waMsgText = `Hola Grupo Fénix, deseo recibir información adicional de la Ficha Técnica de:\n- Producto: *${product.name}*\n- Gramaje: ${product.gramaje}\n- Acabado: ${product.acabado}\n- Capacidad: ${product.capacidad}\n\nPor favor, contactar a un asesor comercial.`;
-  btnModalWhatsapp.href = `https://wa.me/51900000000?text=${encodeURIComponent(waMsgText)}`;
+  if (btnModalWhatsapp) btnModalWhatsapp.href = `https://wa.me/51970572564?text=${encodeURIComponent(waMsgText)}`;
 
   productModal.classList.remove("hidden");
   document.body.classList.add("overflow-hidden");
@@ -270,6 +277,7 @@ function openDetailsModal(id) {
 }
 
 function closeModal() {
+  if (!productModal) return;
   productModal.classList.remove("modal-active");
   document.body.classList.remove("overflow-hidden");
   setTimeout(() => {
@@ -279,7 +287,9 @@ function closeModal() {
 
 // 8. Control del Sidebar Móvil
 function toggleMobileSidebar() {
-  sidebarFilter.classList.toggle("active");
+  if (sidebarFilter) {
+    sidebarFilter.classList.toggle("active");
+  }
 }
 
 // 9. Restablecimiento Total de Filtros
@@ -287,7 +297,7 @@ function resetAllFilters() {
   document.querySelectorAll(".filter-checkbox").forEach(cb => {
     cb.checked = false;
   });
-  searchInput.value = "";
+  if (searchInput) searchInput.value = "";
   filterProducts();
 }
 
@@ -308,7 +318,7 @@ function filterByCategory(catName) {
     catalogSec.scrollIntoView({ behavior: "smooth" });
   }
 
-  if (sidebarFilter.classList.contains("active")) {
+  if (sidebarFilter && sidebarFilter.classList.contains("active")) {
     sidebarFilter.classList.remove("active");
   }
 }
