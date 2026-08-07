@@ -1422,20 +1422,272 @@
     },
     {
         "id": 78,
-        "name": "Bolsas de polipropileno 20 x 30",
+        "name": "Bolsas en rollo 3 x 6",
         "category": "Bolsas",
         "gramaje": "N/A",
-        "acabado": "Bolsa de Polipropileno",
+        "acabado": "Bolsa en Rollo",
         "diametro": "N/A",
-        "capacidad": "Pqte 100 und",
+        "capacidad": "N/A",
         "colores": "Transparente",
         "industria": "Comercio / Supermercados",
-        "badge": "BOLSAS DE POLIPROPILENO",
-        "shortDesc": "Bolsa de polipropileno transparente en medida 20 x 30, ideal para el empaque, almacenamiento y exhibición de productos.",
-        "longDesc": "Nuestra Bolsa de Polipropileno en medida 20 x 30 ofrece alta transparencia y excelente brillo para resaltar la presentación visual de tus mercancías. Fabricada con material resistente de alta calidad y sellado reforzado, es idónea para proteger, conservar y despachar mercancía garantizando óptimas condiciones de higiene. Presentación en paquete de 100 unidades.",
-        "image": "assets/productos/bolsas/bolsas-polipropileno/20X30.webp",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 3 x 6, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 3 x 6 ofrece practicidad y rapidez de uso gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo de aproximadamente 1/2 kilo, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/3X6 VERDE.webp",
         "thumbnails": [
-            "assets/productos/bolsas/bolsas-polipropileno/fotos-und/20x30.webp"
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/3X6 VERDE.webp"
+        ]
+    },
+    {
+        "id": 79,
+        "name": "Bolsas en rollo 4 x 6",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 4 x 6, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 4 x 6 ofrece practicidad y rapidez de uso gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo de aproximadamente 1/2 kilo, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/4X6 VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/4X6 VERDE.webp"
+        ]
+    },
+    {
+        "id": 80,
+        "name": "Bolsas en rollo 4 x 8",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 4 x 8, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 4 x 8 ofrece practicidad y rapidez de uso gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo de aproximadamente 1 kilo, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/4X8 VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/4X8 VERDE.webp"
+        ]
+    },
+    {
+        "id": 81,
+        "name": "Bolsas en rollo 5 x 10",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 5 x 10, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 5 x 10 (127 mm x 254 mm) ofrece gran practicidad y rendimiento gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo línea dorado, es perfecta para organizar, almacenar y despachar mercancía de manera rápida y conservando óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/5X10 VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/5X10 VERDE.webp"
+        ]
+    },
+    {
+        "id": 82,
+        "name": "Bolsas en rollo 5 x 10 Dorado",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 5 x 10, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 5 x 10 (127 mm x 254 mm) ofrece gran practicidad y rendimiento gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo línea dorado, es perfecta para organizar, almacenar y despachar mercancía de manera rápida y conservando óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/5X10 DORADO.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/5X10 DORADO.webp"
+        ]
+    },
+    {
+        "id": 83,
+        "name": "Bolsas en rollo 6 x 12",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 6 x 12, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 6 x 12 (152 mm x 305 mm) ofrece practicidad y rendimiento gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo línea verde, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/6X12 VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/6X12 VERDE.webp"
+        ]
+    },
+    {
+        "id": 84,
+        "name": "Bolsas en rollo 7 x 10",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 7 x 10, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 7 x 10 (178 mm x 254 mm) ofrece practicidad y rendimiento gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo línea verde, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/7X10 VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/7X10 VERDE.webp"
+        ]
+    },
+    {
+        "id": 85,
+        "name": "Bolsas en rollo 7 x 10 - DORADO",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 7 x 10, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 7 x 10 (178 mm x 254 mm) ofrece practicidad y rendimiento gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo línea dorado, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/7X10 DORADO.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/7X10 DORADO.webp"
+        ]
+    },
+    {
+        "id": 86,
+        "name": "Bolsas en rollo 8 x 12",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 8 x 12, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 8 x 12 (203 mm x 305 mm) ofrece practicidad y alto rendimiento gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo línea verde, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/8X12 VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/8X12 VERDE.webp"
+        ]
+    },
+    {
+        "id": 87,
+        "name": "Bolsas en rollo 8 x 12 - DORADO",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 8 x 12, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 8 x 12 (203 mm x 305 mm) ofrece practicidad y alto rendimiento gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo línea dorado, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/8X12 DORADO.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/8X12 DORADO.webp"
+        ]
+    },
+    {
+        "id": 88,
+        "name": "Bolsas en rollo 10 x 15",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 10 x 15, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 10 x 15 (254 mm x 381 mm) ofrece practicidad y alto rendimiento gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo línea verde, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/10X15 VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/10X15 VERDE.webp"
+        ]
+    },
+    {
+        "id": 89,
+        "name": "Bolsas en rollo 10 x 15 - DORADO",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 10 x 15, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 10 x 15 (254 mm x 381 mm) ofrece practicidad y alto rendimiento gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo línea dorado, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/10X15 DORADO.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/10X15 DORADO.webp"
+        ]
+    },
+    {
+        "id": 90,
+        "name": "Bolsas en rollo 12 x 17",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 12 x 17, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 12 x 17 (305 mm x 432 mm) ofrece gran practicidad y rendimiento gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo línea verde, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/12X17 VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/12X17 VERDE.webp"
+        ]
+    },
+    {
+        "id": 91,
+        "name": "Bolsas en rollo 12 x 17 - DORADO",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 12 x 17, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 12 x 17 (305 mm x 432 mm) ofrece gran practicidad y rendimiento gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo línea dorado, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/12X17 DORADO.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/12X17 DORADO.webp"
+        ]
+    },
+    {
+        "id": 92,
+        "name": "Bolsas en rollo 14 x 20 ",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa en Rollo",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS EN ROLLO",
+        "shortDesc": "Bolsa desglosable en rollo medida 14 x 20, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 14 x 20 (355 mm x 508 mm) ofrece practicidad y alto rendimiento gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo línea verde, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
+        "image": "assets/productos/bolsas/bolsas-rollos/14X20 VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-rollos/fotos-und/14X20 VERDE.webp"
         ]
     }
 ]
