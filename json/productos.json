@@ -376,5 +376,421 @@
         "thumbnails": [
             "assets/productos/preformas/100gr.webp"
         ]
+    },
+    {
+        "id": 22,
+        "name": "Bandeja B1 - Blanco",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja con tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "TERMOFORMADOS",
+        "shortDesc": "Bandeja termoformada B1 en color blanco, apta para microondas e ideal para el empaque y transporte seguro de alimentos.",
+        "longDesc": "Nuestra Bandeja Termoformada B1 en color blanco está diseñada bajo estrictos estándares de inocuidad alimentaria. Fabricada con material resistente, térmico y apto para microondas, ofrece un cierre seguro para conservar la temperatura y frescura de las comidas. Presentación en paquete de 25 unidades, ideal para restaurantes, servicios de catering y delivery.",
+        "image": "assets/productos/termoformado/BANDEJA-B1-BLANCO.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/BANDEJA-B1-BLANCO.webp",
+            "assets/productos/termoformado/fotos-und/b1-blanco.webp"
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Bandeja B1 - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja con tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "BANDEJAS",
+        "shortDesc": "Bandeja termoformada B1 en color transparente, apta para microondas e ideal para el empaque y transporte seguro de alimentos.",
+        "longDesc": "Nuestra Bandeja Termoformada B1 en color transparente está diseñada bajo estrictos estándares de inocuidad alimentaria. Fabricada con material resistente, térmico y apto para microondas, ofrece un cierre seguro para conservar la temperatura y frescura de las comidas. Presentación en paquete de 25 unidades, ideal para restaurantes, servicios de catering y delivery.",
+        "image": "assets/productos/termoformado/BANDEJA-B1-TRANSPARENTE.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/BANDEJA-B1-TRANSPARENTE.webp",
+            "assets/productos/termoformado/fotos-und/b1-transparente.webp"
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Bandeja B2 - Blanco",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja sin tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "BANDEJAS",
+        "shortDesc": "Bandeja termoformada B2 en color blanco, apta para microondas e ideal para empaque, exhibición y transporte de alimentos.",
+        "longDesc": "Nuestra Bandeja Termoformada B2 en color blanco ofrece alta resistencia térmica y estructura rígida especialmente diseñada para el sector gastronómico. Apta para microondas y elaborada bajo estándares higiénicos de grado alimentario, garantiza la máxima protección y conservación de los productos. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/BANDEJA-B2-BLANCO.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/BANDEJA-B2-BLANCO.webp",
+            "assets/productos/termoformado/fotos-und/b2-blanco.webp"
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Bandeja B2 - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja sin tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "BANDEJAS",
+        "shortDesc": "Bandeja termoformada B2 en color transparente, apta para microondas e ideal para empaque, exhibición y transporte de alimentos.",
+        "longDesc": "Nuestra Bandeja Termoformada B2 en color transparente ofrece alta resistencia térmica y estructura rígida especialmente diseñada para el sector gastronómico. Apta para microondas y elaborada bajo estándares higiénicos de grado alimentario, garantiza la máxima protección y conservación de los productos. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/BANDEJA-B2-TRANSPARENTE.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/BANDEJA-B2-TRANSPARENTE.webp",
+            "assets/productos/termoformado/fotos-und/b2-transparente.webp"
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Bandeja B3 - Blanco",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja con tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "BANDEJAS",
+        "shortDesc": "Bandeja termoformada B3 en color blanco, apta para microondas y diseñada para el envasado seguro de porciones de alimentos.",
+        "longDesc": "Nuestra Bandeja Termoformada B3 en color blanco brinda una estructura sólida de excelente resistencia térmica para el transporte y conservación de alimentos. Fabricada bajo altos estándares de inocuidad y apta para microondas, asegura un cierre seguro para envíos de delivery y servicio de catering. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/BANDEJA-B3-BLANCO.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/BANDEJA-B3-BLANCO.webp",
+            "assets/productos/termoformado/fotos-und/b3-blanco.webp"
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Bandeja B3 - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja con tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "BANDEJAS",
+        "shortDesc": "Bandeja termoformada B3 en color transparente, apta para microondas y diseñada para el envasado seguro de porciones de alimentos.",
+        "longDesc": "Nuestra Bandeja Termoformada B3 en color transparente brinda una estructura sólida de excelente resistencia térmica para el transporte y conservación de alimentos. Fabricada bajo altos estándares de inocuidad y apta para microondas, asegura un cierre seguro para envíos de delivery y servicio de catering. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/BANDEJA-B3-TRANSPARENTE.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/BANDEJA-B3-TRANSPARENTE.webp",
+            "assets/productos/termoformado/fotos-und/b3-transparente.webp"
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Bandeja Termoformada B4 - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja con Tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "BANDEJAS",
+        "shortDesc": "Bandeja termoformada B4 en acabado transparente, apta para microondas e ideal para la exhibición y empaque seguro de alimentos.",
+        "longDesc": "Nuestra Bandeja Termoformada B4 en acabado transparente destaca por su cristalina visibilidad, permitiendo la exhibición atractiva de alimentos y preparaciones gastronómicas. Apta para microondas y fabricada con materiales de alta calidad e inocuidad alimentaria, garantiza un cierre firme y seguro para el transporte y venta en mostrador. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/BANDEJA-B4-TRANSPARENTE.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/BANDEJA-B4-TRANSPARENTE.webp",
+            "assets/productos/termoformado/fotos-und/b4-transparente.webp"
+        ]
+    },
+    {
+        "id": 29,
+        "name": "Bandeja Termoformada B5 - Blanco",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja con Tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "BANDEJAS",
+        "shortDesc": "Bandeja termoformada B5 en color blanco, apta para microondas e ideal para el empaque y transporte seguro de alimentos.",
+        "longDesc": "Nuestra Bandeja Termoformada B5 en color blanco destaca por su gran resistencia estructural y aislamiento térmico. Diseñada para mantener la temperatura y calidad de los alimentos, es apta para microondas y garantiza un cierre seguro durante el envío en servicios de delivery, catering y restaurantes. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/BANDEJA-B5-BLANCO.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/BANDEJA-B5-BLANCO.webp",
+            "assets/productos/termoformado/fotos-und/b5-blanco.webp"
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Bandeja Termoformada B5 - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja con Tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "BANDEJAS",
+        "shortDesc": "Bandeja termoformada B5 en acabado transparente, apta para microondas y diseñada para el transporte seguro de porciones de comida.",
+        "longDesc": "Nuestra Bandeja Termoformada B5 en acabado transparente ofrece gran capacidad y resistencia térmica superior, ideal para porciones familiares, menú del día y catering. Fabricada con materiales de alta calidad e inocuidad alimentaria, garantiza un sellado seguro y es completamente apta para microondas. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/BANDEJA-B5-TRANSPARENTE.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/BANDEJA-B5-TRANSPARENTE.webp",
+            "assets/productos/termoformado/fotos-und/b5-transparente.webp"
+        ]
+    },
+    {
+        "id": 31,
+        "name": "Bandeja Termoformada B6 - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja con Tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "BANDEJAS",
+        "shortDesc": "Bandeja termoformada B6 en acabado transparente, apta para microondas y diseñada para el transporte seguro de porciones de comida.",
+        "longDesc": "Nuestra Bandeja Termoformada B6 en acabado transparente ofrece gran capacidad y resistencia térmica superior, ideal para porciones familiares, menú del día y catering. Fabricada con materiales de alta calidad e inocuidad alimentaria, garantiza un sellado seguro y es completamente apta para microondas. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/BANDEJA-B6-TRANSPARENTE.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/BANDEJA-B6-TRANSPARENTE.webp",
+            "assets/productos/termoformado/fotos-und/b6-transparente.webp"
+        ]
+    },
+    {
+        "id": 32,
+        "name": "Cuchara #6",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Cubierto de Plástico",
+        "diametro": "N/A",
+        "capacidad": "Pqte 50 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "CUBIERTOS",
+        "shortDesc": "Cuchara plástica N°06 de alta resistencia en color blanco, ideal para servicios de catering, postres y comida rápida.",
+        "longDesc": "Nuestra Cuchara Plástica N°06 está fabricada con polímeros de grado alimentario que garantizan rigidez, higiene y una excelente experiencia de uso. Su diseño ergonómico y liviano la convierte en la opción práctica para eventos, restaurantes, heladerías y servicios de delivery. Presentación en paquete de 50 cubiertos.",
+        "image": "assets/productos/termoformado/CUCHARA06.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/CUCHARA06.webp",
+            "assets/productos/termoformado/fotos-und/CUCHARA06.webp"
+        ]
+    },
+    {
+        "id": 33,
+        "name": "Bandeja La Patriota - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja ovalada sin tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "BANDEJAS",
+        "shortDesc": "Bandeja termoformada ovalada 'La Patriota' en acabado transparente, apta para microondas e ideal para la mejor presentación de platillos.",
+        "longDesc": "Nuestra Bandeja Termoformada ovalada modelo 'La Patriota' ofrece un diseño anatómico de alta visibilidad que resalta la presentación visual de tus preparaciones culinarias. Fabricada con materiales de calidad garantizada aptos para microondas, asegura rigidez y protección higiénica para el servicio de delivery y gastronomía peruana. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/LA-PATRIOTA-TRANSPARENTE.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/LA-PATRIOTA-TRANSPARENTE.webp"
+        ]
+    },
+    {
+        "id": 34,
+        "name": "Plato 15 - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato Circular",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato termoformado P15 de 15cm de diámetro, apto para microondas e ideal para postres, entradas y eventos.",
+        "longDesc": "Nuestro Plato Termoformado P15 ofrece la combinación perfecta de rigidez, higiene y funcionalidad para el servicio de postres, piqueos y entradas. Fabricado con polímeros inocuos de alta resistencia aptos para microondas, asegura un manejo firme sin deformaciones ante alimentos fríos o calientes. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-15.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-15.webp",
+            "assets/productos/termoformado/fotos-und/plato-15-transparente.webp"
+        ]
+    },
+    {
+        "id": 35,
+        "name": "Plato 15 - Blanco",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato Circular",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato termoformado P15 apto para microondas e ideal para postres, entradas y eventos.",
+        "longDesc": "Nuestro Plato Termoformado P15 ofrece la combinación perfecta de rigidez, higiene y funcionalidad para el servicio de postres, piqueos y entradas. Fabricado con polímeros inocuos de alta resistencia aptos para microondas, asegura un manejo firme sin deformaciones ante alimentos fríos o calientes. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-15-BLANCO.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-15-BLANCO.webp",
+            "assets/productos/termoformado/fotos-und/plato-15-blanco.webp"
+        ]
+    },
+    {
+        "id": 36,
+        "name": "Plato 17 - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato sin tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato termoformado P17 de 17cm de diámetro, apto para microondas e ideal para porciones medianas, entradas y eventos.",
+        "longDesc": "Nuestro Plato Termoformado P17 ofrece un balance ideal entre tamaño y resistencia para el servicio de entradas, porciones intermedias y postres. Fabricado bajo estándares de inocuidad alimentaria y apto para microondas, cuenta con bordes reforzados para evitar deformaciones con comidas frías o calientes. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-17.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-17.webp",
+            "assets/productos/termoformado/fotos-und/plato-17-transparente.webp"
+        ]
+    },
+    {
+        "id": 37,
+        "name": "Plato 17 - Blanco",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato sin tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato termoformado P17 apto para microondas e ideal para porciones medianas, entradas y eventos.",
+        "longDesc": "Nuestro Plato Termoformado P17 ofrece un balance ideal entre tamaño y resistencia para el servicio de entradas, porciones intermedias y postres. Fabricado bajo estándares de inocuidad alimentaria y apto para microondas, cuenta con bordes reforzados para evitar deformaciones con comidas frías o calientes. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-17-BLANCO.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-17-BLANCO.webp",
+            "assets/productos/termoformado/fotos-und/plato-17-blanco.webp"
+        ]
+    },
+    {
+        "id": 38,
+        "name": "Plato 22 - Blanco",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato Circular",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato termoformado 22 apto para microondas e ideal para platos de fondo y menús.",
+        "longDesc": "Nuestro Plato Termoformado 22 en color blanco está diseñado con una estructura amplia y bordes reforzados para ofrecer la máxima estabilidad al servir platos de fondo completos. Fabricado con material de grado alimentario apto para microondas, garantiza resistencia térmica y firmeza contra deformaciones por calor o peso. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-22-BLANCO.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-22-BLANCO.webp",
+            "assets/productos/termoformado/fotos-und/plato-22-blanco.webp"
+        ]
+    },
+    {
+        "id": 39,
+        "name": "Plato 22 - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato Circular",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato termoformado 22 apto para microondas e ideal para platos de fondo y menús.",
+        "longDesc": "Nuestro Plato Termoformado 22 en color transparente está diseñado con una estructura amplia y bordes reforzados para ofrecer la máxima estabilidad al servir platos de fondo completos. Fabricado con material de grado alimentario apto para microondas, garantiza resistencia térmica y firmeza contra deformaciones por calor o peso. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-22-BLANCO-LINEA-DORADO.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-22-BLANCO-LINEA-DORADO.webp"
+        ]
+    },
+    {
+        "id": 40,
+        "name": "Plato 26 - Blanco",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato Circular",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato termoformado P26 en color blanco, apto para microondas e ideal para buffet, banquetes y platos servidos de gran volumen.",
+        "longDesc": "Nuestro Plato Termoformado P26 en color blanco ofrece el formato más amplio de la línea, perfecto para buffet, banquetes y servicio de comidas de alta abundancia. Diseñado con bordes perimetrales reforzados y elaborado en material inocuo apto para microondas, asegura rigidez estructural superior sin doblarse ante el peso o calor de los alimentos. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-26-BLANCO.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-26-BLANCO.webp",
+            "assets/productos/termoformado/fotos-und/plato26s_d-blanco.webp"
+        ]
+    },
+    {
+        "id": 41,
+        "name": "Plato 26 - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato Circular",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato termoformado P26 en color transparente, apto para microondas e ideal para buffet, banquetes y platos servidos de gran volumen.",
+        "longDesc": "Nuestro Plato Termoformado P26 en color transparente ofrece el formato más amplio de la línea, perfecto para buffet, banquetes y servicio de comidas de alta abundancia. Diseñado con bordes perimetrales reforzados y elaborado en material inocuo apto para microondas, asegura rigidez estructural superior sin doblarse ante el peso o calor de los alimentos. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-26.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-26.webp",
+            "assets/productos/termoformado/fotos-und/plato-26s_d-transparente.webp"
+        ]
+    },
+    {
+        "id": 42,
+        "name": "Plato 26 - Blanco con división",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato Circular con división",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato termoformado 26 con divisiones en color blanco, apto para microondas e ideal para separar guarniciones y platos combinados.",
+        "longDesc": "Nuestro Plato Termoformado 26 con División en color blanco cuenta con compartimentos independientes para servido que evitan la mezcla de sabores y salsas. Fabricado con material de alta resistencia apto para microondas y de calidad inocua alimentaria, ofrece excelente rigidez estructural para menús completos, buffet y eventos. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-26-BLANCO-C_D.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-26-BLANCO-C_D.webp",
+            "assets/productos/termoformado/fotos-und/plato-26c_d-blanco.webp"
+        ]
+    },
+    {
+        "id": 43,
+        "name": "Plato 26 - Transparente con división",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato Circular con división",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato termoformado 26 con divisiones transparente, apto para microondas e ideal para separar guarniciones y platos combinados.",
+        "longDesc": "Nuestro Plato Termoformado 26 con División en color transparente cuenta con compartimentos independientes para servido que evitan la mezcla de sabores y salsas. Fabricado con material de alta resistencia apto para microondas y de calidad inocua alimentaria, ofrece excelente rigidez estructural para menús completos, buffet y eventos. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-26-C_D.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-26-C_D.webp",
+            "assets/productos/termoformado/fotos-und/plato-26c_d-transparente.webp"
+        ]
     }
 ]
