@@ -792,5 +792,212 @@
             "assets/productos/termoformado/PLATO-26-C_D.webp",
             "assets/productos/termoformado/fotos-und/plato-26c_d-transparente.webp"
         ]
+    },
+    {
+        "id": 44,
+        "name": "Plato S20 - Blanco",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato hondo Circular",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato sopero termoformado S20 en color blanco, apto para microondas e ideal para sopas, caldos y comidas de consistencia líquida.",
+        "longDesc": "Nuestro Plato Sopero Termoformado S20 en color blanco está diseñado con una profundidad ideal para contener sopas, caldos, cremas y guisados sin riesgo de derrames. Fabricado en material de alta resistencia térmica y apto para microondas, ofrece rigidez y seguridad en el manejo de alimentos calientes. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-S-2O-BLANCO.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-S-2O-BLANCO.webp",
+            "assets/productos/termoformado/fotos-und/Sopero-hondo-20-blanco.webp"
+        ]
+    },
+    {
+        "id": 45,
+        "name": "Plato S20 - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato hondo Circular",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato sopero termoformado S20 transparente, apto para microondas e ideal para sopas, caldos y comidas de consistencia líquida.",
+        "longDesc": "Nuestro Plato Sopero Termoformado S20 transparente está diseñado con una profundidad ideal para contener sopas, caldos, cremas y guisados sin riesgo de derrames. Fabricado en material de alta resistencia térmica y apto para microondas, ofrece rigidez y seguridad en el manejo de alimentos calientes. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-S-2O.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-S-2O.webp",
+            "assets/productos/termoformado/fotos-und/Sopero-hondo-20-transparente.webp"
+        ]
+    },
+    {
+        "id": 46,
+        "name": "Plato Repostero 7 onz- Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato hondo Circular",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato sopero termoformado S20 transparente, apto para microondas e ideal para sopas, caldos y comidas de consistencia líquida.",
+        "longDesc": "Nuestro Plato Sopero Termoformado S20 transparente está diseñado con una profundidad ideal para contener sopas, caldos, cremas y guisados sin riesgo de derrames. Fabricado en material de alta resistencia térmica y apto para microondas, ofrece rigidez y seguridad en el manejo de alimentos calientes. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-S-2O.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-S-2O.webp",
+            "assets/productos/termoformado/fotos-und/Sopero-hondo-20-transparente.webp"
+        ]
+    },
+    {
+        "id": 47,
+        "name": "Plato Repostero 7 onz - Blanco",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Plato hondo Circular",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "PLATOS",
+        "shortDesc": "Plato sopero termoformado S20 Blanco, apto para microondas e ideal para sopas, caldos y comidas de consistencia líquida.",
+        "longDesc": "Nuestro Plato Sopero Termoformado S20 Blanco está diseñado con una profundidad ideal para contener sopas, caldos, cremas y guisados sin riesgo de derrames. Fabricado en material de alta resistencia térmica y apto para microondas, ofrece rigidez y seguridad en el manejo de alimentos calientes. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/PLATO-S-2O-BLANCO.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/PLATO-S-2O-BLANCO.webp",
+            "assets/productos/termoformado/fotos-und/Sopero-hondo-20-blanco.webp"
+        ]
+    },
+    {
+        "id": 48,
+        "name": "Bandeja Salchifenix - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja sin tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "BANDEJAS",
+        "shortDesc": "Bandeja termoformada Salchifenix transparente, apta para microondas e ideal para servido de salchipapas, frituras y comida rápida.",
+        "longDesc": "Nuestra Bandeja Termoformada Salchifenix transparente está especialmente diseñada para el sector de comida rápida y fast food. Fabricada con material térmico de alta resistencia apto para microondas, conserva el calor de alimentos recién fritos como salchipapas y broaster, evitando deformaciones por grasa o temperatura. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/SALCHIFENIX.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/SALCHIFENIX.webp",
+            "assets/productos/termoformado/fotos-und/salchifenix-transparente.webp"
+        ]
+    },
+    {
+        "id": 49,
+        "name": "Bandeja Salchifenix - Blanco",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Bandeja sin tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "BANDEJAS",
+        "shortDesc": "Bandeja termoformada Salchifenix en color blanco, apta para microondas e ideal para servido de salchipapas, frituras y comida rápida.",
+        "longDesc": "Nuestra Bandeja Termoformada Salchifenix en color blanco está especialmente diseñada para el sector de comida rápida y fast food. Fabricada con material térmico de alta resistencia apto para microondas, conserva el calor de alimentos recién fritos como salchipapas y broaster, evitando deformaciones por grasa o temperatura. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/SALCHIFENIX-BLANCO.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/SALCHIFENIX-BLANCO.webp",
+            "assets/productos/termoformado/fotos-und/salchifenix-blanco.webp"
+        ]
+    },
+    {
+        "id": 50,
+        "name": "Tapa 1Lt / 800 - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Tapas",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "TAPAS",
+        "shortDesc": "Tapa termoformada transparente para envases de 1 Lt y 800 ml, apta para microondas y con ajuste de sellado hermético.",
+        "longDesc": "Nuestra Tapa Termoformada Transparente para envases de 1 Litro y 800 ml proporciona un embona perfecto y seguro para evitar derrames durante el transporte de alimentos. Fabricada con materiales de alta transparencia e inocuidad aptos para microondas, asegura una excelente visibilidad del contenido y máxima protección higiénica. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/TAPA-1Lt.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/TAPA-1Lt.webp"
+        ]
+    },
+    {
+        "id": 51,
+        "name": "Taper 1Lt - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Taper sin tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "TAPERS",
+        "shortDesc": "Taper termoformado de 1 Litro en acabado transparente, apto para microondas e ideal para menús completos y porciones familiares.",
+        "longDesc": "Nuestro Taper Termoformado de 1 Litro en acabado transparente brinda un volumen generoso y alta resistencia para la conservación y transporte de menús, guisados y comidas preparadas. Fabricado en material transparente apto para microondas, permite visualizar el contenido de manera clara y profesional. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/TAPER-1Lt.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/TAPER-1Lt.webp"
+        ]
+    },
+    {
+        "id": 52,
+        "name": "Taper 800ml - Transparente",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Taper sin tapa",
+        "diametro": "N/A",
+        "capacidad": "Pqte 25 und",
+        "colores": "Transparente",
+        "industria": "Alimentos",
+        "badge": "TAPERS",
+        "shortDesc": "Taper termoformado de 800 ml en acabado transparente, apto para microondas e ideal para menús completos y porciones familiares.",
+        "longDesc": "Nuestro Taper Termoformado de 800 ml en acabado transparente brinda un volumen generoso y alta resistencia para la conservación y transporte de menús, guisados y comidas preparadas. Fabricado en material transparente apto para microondas, permite visualizar el contenido de manera clara y profesional. Presentación en paquete de 25 unidades.",
+        "image": "assets/productos/termoformado/TAPER-800.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/TAPER-800.webp",
+            "assets/productos/termoformado/fotos-und/taper-800-transparente.webp"
+        ]
+    },
+    {
+        "id": 53,
+        "name": "Cuchara #5",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Cubierto de Plástico",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "CUBIERTOS",
+        "shortDesc": "Cuchara plástica N°05 de alta resistencia en color blanco, ideal para servicios de catering, postres y comida rápida.",
+        "longDesc": "Nuestra Cuchara Plástica N°05 está fabricada con polímeros de grado alimentario que garantizan rigidez, higiene y una excelente experiencia de uso. Su diseño ergonómico y liviano la convierte en la opción práctica para eventos, restaurantes, heladerías y servicios de delivery. Presentación en paquete de 100 cubiertos.",
+        "image": "assets/productos/termoformado/CUCHARA05.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/CUCHARA05.webp",
+            "assets/productos/termoformado/fotos-und/CUCHARA05.webp"
+        ]
+    },
+    {
+        "id": 54,
+        "name": "Tenedor #6",
+        "category": "Termoformados",
+        "gramaje": "N/A",
+        "acabado": "Cubierto de Plástico",
+        "diametro": "N/A",
+        "capacidad": "Pqte 50 und",
+        "colores": "Blanco",
+        "industria": "Alimentos",
+        "badge": "CUBIERTOS",
+        "shortDesc": "Tenedor plástico N°06 de gran resistencia en color blanco, ideal para servicios de catering, fast food y eventos.",
+        "longDesc": "Nuestro Tenedor Plástico N°06 está elaborado con polímeros inocuos de grado alimentario que garantizan la firmeza y resistencia necesaria al trinchar alimentos. Con un diseño práctico y ergonómico, es el complemento indispensable para restaurantes, servicios de delivery, eventos y comida rápida. Presentación en paquete de 50 cubiertos.",
+        "image": "assets/productos/termoformado/TENEDOR06.webp",
+        "thumbnails": [
+            "assets/productos/termoformado/TENEDOR06.webp",
+            "assets/productos/termoformado/fotos-und/TENEDOR06.webp"
+        ]
     }
 ]
