@@ -999,5 +999,443 @@
             "assets/productos/termoformado/TENEDOR06.webp",
             "assets/productos/termoformado/fotos-und/TENEDOR06.webp"
         ]
+    },
+    {
+        "id": 55,
+        "name": "Bolsa de Asa T-Shirt 12 x 13",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa T-shirt",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Blanco",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS T-SHIRT",
+        "shortDesc": "Bolsa de asa desglosable T-Shirt de 12 x 13, ideal para empaque rápido, despachos en bodegas y comercios.",
+        "longDesc": "Nuestra Bolsa de Asa Desglosable tipo T-Shirt en medida 12 x 13 está diseñada para una extracción ágil y eficiente en puntos de venta. Fabricada con polietileno resistente de alta calidad, cuenta con asas ergonómicas reforzadas para un transporte cómodo y seguro de productos en bodegas, minimarkets y restaurantes. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-asa/12x13.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-asa/12x13.webp",
+            "assets/productos/bolsas/bolsas-de-asa/fotos-und/12x13.webp"
+        ]
+    },
+    {
+        "id": 56,
+        "name": "Bolsa de Asa T-Shirt 12 x 16",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa T-shirt",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Blanco",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS T-SHIRT",
+        "shortDesc": "Bolsa de asa desglosable T-Shirt de 12 x 16, ideal para empaque rápido, despachos en bodegas y comercios.",
+        "longDesc": "Nuestra Bolsa de Asa Desglosable tipo T-Shirt en medida 12 x 16 está diseñada para una extracción ágil y eficiente en puntos de venta. Fabricada con polietileno resistente de alta calidad, cuenta con asas ergonómicas reforzadas para un transporte cómodo y seguro de productos en bodegas, minimarkets y restaurantes. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-asa/12x16.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-asa/12x16.webp",
+            "assets/productos/bolsas/bolsas-de-asa/fotos-und/12x16.webp"
+        ]
+    },
+    {
+        "id": 57,
+        "name": "Bolsa de Asa T-Shirt 16 x 19",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa T-shirt",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Blanco",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS T-SHIRT",
+        "shortDesc": "Bolsa de asa desglosable T-Shirt de 16 x 19, ideal para empaque rápido, despachos en bodegas y comercios.",
+        "longDesc": "Nuestra Bolsa de Asa Desglosable tipo T-Shirt en medida 16 x 19 está diseñada para una extracción ágil y eficiente en puntos de venta. Fabricada con polietileno resistente de alta calidad, cuenta con asas ergonómicas reforzadas para un transporte cómodo y seguro de productos en bodegas, minimarkets y restaurantes. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-asa/16x19.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-asa/16x19.webp",
+            "assets/productos/bolsas/bolsas-de-asa/fotos-und/16x19.webp"
+        ]
+    },
+    {
+        "id": 58,
+        "name": "Bolsa de Asa T-Shirt 19 x 20",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa T-shirt",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Blanco",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS T-SHIRT",
+        "shortDesc": "Bolsa de asa desglosable T-Shirt de 19 x 20, ideal para empaque rápido, despachos en bodegas y comercios.",
+        "longDesc": "Nuestra Bolsa de Asa Desglosable tipo T-Shirt en medida 19 x 20 está diseñada para una extracción ágil y eficiente en puntos de venta. Fabricada con polietileno resistente de alta calidad, cuenta con asas ergonómicas reforzadas para un transporte cómodo y seguro de productos en bodegas, minimarkets y restaurantes. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-asa/19x20.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-asa/19x20.webp",
+            "assets/productos/bolsas/bolsas-de-asa/fotos-und/19x20.webp"
+        ]
+    },
+    {
+        "id": 59,
+        "name": "Bolsa de Asa T-Shirt 21 x 24",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa T-shirt",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Blanco",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS T-SHIRT",
+        "shortDesc": "Bolsa de asa desglosable T-Shirt de 21 x 24, ideal para empaque rápido, despachos en bodegas y comercios.",
+        "longDesc": "Nuestra Bolsa de Asa Desglosable tipo T-Shirt en medida 21 x 24 está diseñada para una extracción ágil y eficiente en puntos de venta. Fabricada con polietileno resistente de alta calidad, cuenta con asas ergonómicas reforzadas para un transporte cómodo y seguro de productos en bodegas, minimarkets y restaurantes. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-asa/21x24.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-asa/21x24.webp",
+            "assets/productos/bolsas/bolsas-de-asa/fotos-und/21x24.webp"
+        ]
+    },
+    {
+        "id": 60,
+        "name": "Bolsa de Asa T-Shirt 27 x 32",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa T-shirt",
+        "diametro": "N/A",
+        "capacidad": "Pqte 50 und",
+        "colores": "Blanco",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS T-SHIRT",
+        "shortDesc": "Bolsa de asa desglosable T-Shirt de 27 x 32, ideal para empaque rápido, despachos en bodegas y comercios.",
+        "longDesc": "Nuestra Bolsa de Asa Desglosable tipo T-Shirt en medida 27 x 32 está diseñada para una extracción ágil y eficiente en puntos de venta. Fabricada con polietileno resistente de alta calidad, cuenta con asas ergonómicas reforzadas para un transporte cómodo y seguro de productos en bodegas, minimarkets y restaurantes. Presentación en paquete de 50 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-asa/27x32.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-asa/27x32.webp",
+            "assets/productos/bolsas/bolsas-de-asa/fotos-und/27x32.webp"
+        ]
+    },
+    {
+        "id": 61,
+        "name": "Bolsas de polietileno 2 x 8",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 50 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno transparente tipo cristal en medida 2 x 8, ideal para el empaque, protección y almacenamiento de diversos productos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cristal en medida 2 x 8 ofrece excelente brillo y transparencia para resaltar la presentación visual de tus productos. Fabricada con material virgen y sellado seguro, es perfecta para el empaque, conservación y distribución eficiente en el sector comercial e industrial. Presentación en paquete de 50 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-cristal/2X8 CRISTAL.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-cristal/fotos-und/2x8 CRISTAL.webp"
+        ]
+    },
+    {
+        "id": 62,
+        "name": "Bolsas de polietileno 3 x 6",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 50 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno transparente tipo cristal en medida 3 x 6, ideal para el envasado, organización y protección de productos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cristal en medida 3 x 6 ofrece excelente claridad y brillo para la presentación e higiene de tus insumos. Fabricada con material de alta resistencia y sellado seguro, resulta ideal para el almacenamiento, empaque y conservación de todo tipo de artículos. Presentación en paquete de 50 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-cristal/3X6 CRISTAL.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-cristal/fotos-und/3x6 CRISTAL.webp"
+        ]
+    },
+    {
+        "id": 63,
+        "name": "Bolsas de polietileno 3 x 8",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 50 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno transparente tipo cristal en medida 3 x 8, ideal para el empaque, conservación y despacho de mercancía.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cristal en medida 3 x 8 ofrece máxima claridad y brillo para una óptima exhibición de producto. Fabricada con material virgen de alta resistencia y sellado seguro, es excelente para la conservación, almacenamiento e higiene de artículos diversos. Presentación en paquete de 50 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-cristal/3X8 CRISTAL.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-cristal/fotos-und/3x8 CRISTAL.webp"
+        ]
+    },
+    {
+        "id": 64,
+        "name": "Bolsas de polietileno 3 x 10",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 50 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno transparente tipo cristal en medida 3 x 10, ideal para empaque, protección e higienización de contenidos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cristal en medida 3 x 10 destaca por su alta transparencia y brillo, ofreciendo una presentación limpia e higiénica para tus productos. Fabricada con material resistente y sellado reforzado, es perfecta para el almacenamiento, envasado y transporte seguro de mercadería. Presentación en paquete de 50 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-cristal/3X10 CRISTAL.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-cristal/fotos-und/3x10 CRISTAL.webp"
+        ]
+    },
+    {
+        "id": 65,
+        "name": "Bolsas de polietileno 4 x 8",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 50 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE CRISTAL",
+        "shortDesc": "Bolsa de polietileno transparente tipo cristal en medida 4 x 8, ideal para el empaque y conservación higiénica de variedad de insumos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cristal en medida 4 x 8 ofrece excelente brillo y nitidez para la exhibición y resguardo de tus productos. Fabricada con material de alta resistencia y sellado inferior reforzado, es idónea para organizar, almacenar y despachar mercadería de manera segura. Presentación en paquete de 50 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-cristal/4X8 CRISTAL.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-cristal/fotos-und/4x8 CRISTAL.webp"
+        ]
+    },
+    {
+        "id": 66,
+        "name": "Bolsas de polietileno 4 x 10",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 50 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE CRISTAL",
+        "shortDesc": "Bolsa de polietileno transparente tipo cristal en medida 4 x 10, ideal para el empaque, protección y presentación de productos diversos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cristal en medida 4 x 10 brinda una claridad superior y excelente presentación visual para todo tipo de contenidos. Elaborada con material virgen de alta resistencia y sellado seguro en la base, es idónea para el almacenamiento, protección e higiene de mercadería. Presentación en paquete de 50 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-cristal/4X10 CRISTAL.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-cristal/fotos-und/4x10 CRISTAL.webp"
+        ]
+    },
+    {
+        "id": 67,
+        "name": "Bolsas de polietileno 2 1/2 x 8",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 50 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE CRISTAL",
+        "shortDesc": "Bolsa de polietileno transparente tipo cristal en medida 2 1/2 x 8, ideal para el empaque, orden y conservación de productos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cristal en medida 2 1/2 x 8 ofrece alta transparencia y brillo para una presentación impecable de tus artículos. Fabricada con polietileno virgen de alta densidad y sellado reforzado en la base, es perfecta para almacenar, proteger y despachar mercancía diversa. Presentación en paquete de 50 unidades.",
+        "image": "assets/productos/bolsas/bolsas-de-cristal/21_2X8 CRISTAL.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-de-cristal/fotos-und/21_2X8 CRISTAL.webp"
+        ]
+    },
+    {
+        "id": 68,
+        "name": "Bolsas de polipropileno 7 x 10",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polipropileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIPROPILENO",
+        "shortDesc": "Bolsa de polipropileno transparente en medida 7 x 10, ideal para el empaque, exhibición y conservación de diversos productos.",
+        "longDesc": "Nuestra Bolsa de Polipropileno en medida 7 x 10 ofrece alta transparencia y excelente brillo para resaltar la presentación de tus artículos. Fabricada con material resistente y sellado de alta calidad, es idónea para proteger, almacenar y despachar mercancía manteniendo las condiciones de higiene. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-polipropileno/7X10.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-polipropileno/fotos-und/7x10.webp"
+        ]
+    },
+    {
+        "id": 69,
+        "name": "Bolsas de polipropileno 8 x 12",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polipropileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIPROPILENO",
+        "shortDesc": "Bolsa de polipropileno transparente en medida 8 x 12, ideal para el empaque, exhibición y conservación de diversos productos.",
+        "longDesc": "Nuestra Bolsa de Polipropileno en medida 8 x 12 ofrece alta transparencia y brillantez para una presentación clara e higiénica de tus productos. Fabricada con material resistente de excelente calidad y sellado reforzado, es perfecta para resguardar, almacenar y despachar mercancía comercial e industrial. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-polipropileno/8X12.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-polipropileno/fotos-und/8x12.webp"
+        ]
+    },
+    {
+        "id": 70,
+        "name": "Bolsas de polipropileno 9 x 14",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polipropileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIPROPILENO",
+        "shortDesc": "Bolsa de polipropileno transparente en medida 9 x 14, ideal para el empaque, almacenamiento y exhibición de productos.",
+        "longDesc": "Nuestra Bolsa de Polipropileno en medida 9 x 14 ofrece alta transparencia y excelente brillo para resaltar la presentación visual de tus artículos. Fabricada con material resistente y sellado de alta calidad, es idónea para proteger, conservar y despachar mercancía manteniendo óptimas condiciones de higiene. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-polipropileno/9X14.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-polipropileno/fotos-und/9x14.webp"
+        ]
+    },
+    {
+        "id": 71,
+        "name": "Bolsas de polipropileno 10 x 15",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polipropileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIPROPILENO",
+        "shortDesc": "Bolsa de polipropileno transparente en medida 10 x 15, ideal para el empaque, almacenamiento y exhibición de productos.",
+        "longDesc": "Nuestra Bolsa de Polipropileno en medida 10 x 15 ofrece gran claridad y excelente brillo para resaltar la presentación visual de tus mercancías. Fabricada con material resistente y sellado de alta resistencia, es idónea para proteger, conservar y despachar productos garantizando óptimas condiciones de higiene. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-polipropileno/10X15.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-polipropileno/fotos-und/10x15.webp"
+        ]
+    },
+    {
+        "id": 72,
+        "name": "Bolsas de polipropileno 11 x 16",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polipropileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIPROPILENO",
+        "shortDesc": "Bolsa de polipropileno transparente en medida 11 x 16, ideal para el empaque, almacenamiento y exhibición de productos.",
+        "longDesc": "Nuestra Bolsa de Polipropileno en medida 11 x 16 ofrece alta transparencia y un acabado brillante para resaltar la presentación de tus artículos. Fabricada con material resistente de excelente calidad y sellado reforzado, es perfecta para proteger, conservar y despachar mercancía garantizando óptimas condiciones de higiene. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-polipropileno/11X16.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-polipropileno/fotos-und/11x16.webp"
+        ]
+    },
+    {
+        "id": 73,
+        "name": "Bolsas de polipropileno 12 x 18",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polipropileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIPROPILENO",
+        "shortDesc": "Bolsa de polipropileno transparente en medida 12 x 18, ideal para el empaque, almacenamiento y exhibición de productos.",
+        "longDesc": "Nuestra Bolsa de Polipropileno en medida 12 x 18 ofrece excelente transparencia y acabado brillante para una óptima exhibición visual. Fabricada con material resistente de alta calidad y sellado reforzado, es idónea para proteger, conservar y despachar mercancía garantizando óptimas condiciones de higiene. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-polipropileno/12X18.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-polipropileno/fotos-und/12x18.webp"
+        ]
+    },
+    {
+        "id": 74,
+        "name": "Bolsas de polipropileno 13 x 19",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polipropileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIPROPILENO",
+        "shortDesc": "Bolsa de polipropileno transparente en medida 13 x 19, ideal para el empaque, almacenamiento y exhibición de productos.",
+        "longDesc": "Nuestra Bolsa de Polipropileno en medida 13 x 19 destaca por su excelente nivel de transparencia y acabado brillante para resaltar la presentación visual de tus artículos. Fabricada con material resistente de alta calidad y sellado reforzado, es perfecta para proteger, conservar y despachar mercancía garantizando óptimas condiciones de higiene. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-polipropileno/13X19.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-polipropileno/fotos-und/13x19.webp"
+        ]
+    },
+    {
+        "id": 75,
+        "name": "Bolsas de polipropileno 14 x 20",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polipropileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIPROPILENO",
+        "shortDesc": "Bolsa de polipropileno transparente en medida 14 x 20, ideal para el empaque, almacenamiento y exhibición de productos.",
+        "longDesc": "Nuestra Bolsa de Polipropileno en medida 14 x 20 brinda una excelente claridad y acabado brillante para destacar la presentación de tus mercancías. Elaborada con material resistente de alta calidad y sellado reforzado, es idónea para resguardar, conservar y despachar mercancía garantizando óptimas condiciones de higiene. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-polipropileno/14X20.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-polipropileno/fotos-und/14x20.webp"
+        ]
+    },
+    {
+        "id": 76,
+        "name": "Bolsas de polipropileno 15 x 23",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polipropileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIPROPILENO",
+        "shortDesc": "Bolsa de polipropileno transparente en medida 15 x 23, ideal para el empaque, almacenamiento y exhibición de productos.",
+        "longDesc": "Nuestra Bolsa de Polipropileno en medida 15 x 23 destaca por su excelente transparencia y brillo para una óptima exhibición visual de tus productos. Fabricada con material resistente de alta calidad y sellado reforzado, es perfecta para resguardar, conservar y despachar mercancía garantizando condiciones impecables de higiene. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-polipropileno/15X23.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-polipropileno/fotos-und/15x23.webp"
+        ]
+    },
+    {
+        "id": 77,
+        "name": "Bolsas de polipropileno 16 x 24",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polipropileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIPROPILENO",
+        "shortDesc": "Bolsa de polipropileno transparente en medida 16 x 24, ideal para el empaque, almacenamiento y exhibición de productos.",
+        "longDesc": "Nuestra Bolsa de Polipropileno en medida 16 x 24 brinda una excelente claridad y acabado brillante para destacar la presentación de tus mercancías. Elaborada con material resistente de alta calidad y sellado reforzado, es idónea para resguardar, conservar y despachar mercancía garantizando óptimas condiciones de higiene. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-polipropileno/16X24.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-polipropileno/fotos-und/16x24.webp"
+        ]
+    },
+    {
+        "id": 78,
+        "name": "Bolsas de polipropileno 20 x 30",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polipropileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio / Supermercados",
+        "badge": "BOLSAS DE POLIPROPILENO",
+        "shortDesc": "Bolsa de polipropileno transparente en medida 20 x 30, ideal para el empaque, almacenamiento y exhibición de productos.",
+        "longDesc": "Nuestra Bolsa de Polipropileno en medida 20 x 30 ofrece alta transparencia y excelente brillo para resaltar la presentación visual de tus mercancías. Fabricada con material resistente de alta calidad y sellado reforzado, es idónea para proteger, conservar y despachar mercancía garantizando óptimas condiciones de higiene. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/bolsas-polipropileno/20X30.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-polipropileno/fotos-und/20x30.webp"
+        ]
     }
 ]
