@@ -1439,24 +1439,6 @@
         ]
     },
     {
-        "id": 79,
-        "name": "Bolsas en rollo 4 x 6",
-        "category": "Bolsas",
-        "gramaje": "N/A",
-        "acabado": "Bolsa en Rollo",
-        "diametro": "N/A",
-        "capacidad": "N/A",
-        "colores": "Transparente",
-        "industria": "Comercio / Supermercados",
-        "badge": "BOLSAS EN ROLLO",
-        "shortDesc": "Bolsa desglosable en rollo medida 4 x 6, ideal para el empaque, almacenamiento y despacho rápido de productos.",
-        "longDesc": "Nuestra Bolsa Desglosable en Rollo en medida 4 x 6 ofrece practicidad y rapidez de uso gracias a su precorte de fácil desprendimiento. Fabricada con material resistente y presentación en rollo de aproximadamente 1/2 kilo, es perfecta para organizar, almacenar y despachar mercancía manteniendo óptimas condiciones de higiene.",
-        "image": "assets/productos/bolsas/bolsas-rollos/4X6 VERDE.webp",
-        "thumbnails": [
-            "assets/productos/bolsas/bolsas-rollos/fotos-und/4X6 VERDE.webp"
-        ]
-    },
-    {
         "id": 80,
         "name": "Bolsas en rollo 4 x 8",
         "category": "Bolsas",
@@ -1475,7 +1457,7 @@
         ]
     },
     {
-        "id": 81,
+        "id": 80,
         "name": "Bolsas en rollo 5 x 10",
         "category": "Bolsas",
         "gramaje": "N/A",
@@ -1493,7 +1475,7 @@
         ]
     },
     {
-        "id": 82,
+        "id": 81,
         "name": "Bolsas en rollo 5 x 10 Dorado",
         "category": "Bolsas",
         "gramaje": "N/A",
@@ -1511,7 +1493,7 @@
         ]
     },
     {
-        "id": 83,
+        "id": 82,
         "name": "Bolsas en rollo 6 x 12",
         "category": "Bolsas",
         "gramaje": "N/A",
@@ -1529,7 +1511,7 @@
         ]
     },
     {
-        "id": 84,
+        "id": 83,
         "name": "Bolsas en rollo 7 x 10",
         "category": "Bolsas",
         "gramaje": "N/A",
@@ -1547,7 +1529,7 @@
         ]
     },
     {
-        "id": 85,
+        "id": 84,
         "name": "Bolsas en rollo 7 x 10 - DORADO",
         "category": "Bolsas",
         "gramaje": "N/A",
@@ -1565,7 +1547,7 @@
         ]
     },
     {
-        "id": 86,
+        "id": 85,
         "name": "Bolsas en rollo 8 x 12",
         "category": "Bolsas",
         "gramaje": "N/A",
@@ -1583,7 +1565,7 @@
         ]
     },
     {
-        "id": 87,
+        "id": 86,
         "name": "Bolsas en rollo 8 x 12 - DORADO",
         "category": "Bolsas",
         "gramaje": "N/A",
@@ -1601,7 +1583,7 @@
         ]
     },
     {
-        "id": 88,
+        "id": 87,
         "name": "Bolsas en rollo 10 x 15",
         "category": "Bolsas",
         "gramaje": "N/A",
@@ -1619,7 +1601,7 @@
         ]
     },
     {
-        "id": 89,
+        "id": 88,
         "name": "Bolsas en rollo 10 x 15 - DORADO",
         "category": "Bolsas",
         "gramaje": "N/A",
@@ -1637,7 +1619,7 @@
         ]
     },
     {
-        "id": 90,
+        "id": 89,
         "name": "Bolsas en rollo 12 x 17",
         "category": "Bolsas",
         "gramaje": "N/A",
@@ -1655,7 +1637,7 @@
         ]
     },
     {
-        "id": 91,
+        "id": 90,
         "name": "Bolsas en rollo 12 x 17 - DORADO",
         "category": "Bolsas",
         "gramaje": "N/A",
@@ -1673,7 +1655,7 @@
         ]
     },
     {
-        "id": 92,
+        "id": 91,
         "name": "Bolsas en rollo 14 x 20 ",
         "category": "Bolsas",
         "gramaje": "N/A",
