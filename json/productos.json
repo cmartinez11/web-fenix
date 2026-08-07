@@ -286,5 +286,95 @@
         "thumbnails": [
             "assets/productos/preformas/46gr.webp"
         ]
+    },
+    {
+        "id": 17,
+        "name": "Preforma PET 52g",
+        "category": "Preformas PET",
+        "gramaje": "52g",
+        "acabado": "Cuello Botella",
+        "diametro": "28mm",
+        "capacidad": "3L",
+        "colores": "Cristal",
+        "industria": "Bebidas",
+        "badge": "PREFORMAS",
+        "shortDesc": "Preforma PET de 52.0g con cuello de 28mm, diseñada para el soplado de botellas de gran capacidad de 3 litros.",
+        "longDesc": "Nuestra Preforma PET de 52.0 gramos está orientada al soplado de envases de formato familiar pesado de 3 litros. Su elevado peso y robusta estructura permiten obtener una excelente resistencia mecánica y estabilidad en el fondo, previniendo deformaciones por peso de llenado o apilamiento y garantizando máxima claridad óptica en tono cristal.",
+        "image": "assets/productos/preformas/52gr.webp",
+        "thumbnails": [
+            "assets/productos/preformas/52gr.webp"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Preforma PET 57g",
+        "category": "Preformas PET",
+        "gramaje": "57g",
+        "acabado": "Cuello Botella",
+        "diametro": "28mm",
+        "capacidad": "3L",
+        "colores": "Cristal",
+        "industria": "Bebidas",
+        "badge": "PREFORMAS",
+        "shortDesc": "Preforma PET de 57g con cuello de 28mm, diseñada para el soplado de botellas de alto volumen (3L).",
+        "longDesc": "Nuestra Preforma PET de 57g ofrece un cuerpo sumamente robusto con elevado grosor de pared, optimizada para el soplado de envases de gran capacidad (3L). Su diseño con cuello de 28mm garantiza máxima resistencia al apilamiento, caídas y presión interna, manteniendo una rigidez excepcional y transparencia cristalina.",
+        "image": "assets/productos/preformas/57gr.webp",
+        "thumbnails": [
+            "assets/productos/preformas/57gr.webp"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Preforma PET 60g - Botellón",
+        "category": "Preformas PET",
+        "gramaje": "60g",
+        "acabado": "Cuello Botella 48mm",
+        "diametro": "48mm",
+        "capacidad": "2L - 3L",
+        "colores": "Cristal",
+        "industria": "Bebidas / Aceite",
+        "badge": "PREFORMAS",
+        "shortDesc": "Preforma PET de 60.0g con boca ancha de 48mm, diseñada para el soplado de botellones de 2L a 3 litros.",
+        "longDesc": "Nuestra Preforma PET de 60.0 gramos con cuello especial de 48mm está desarrollada para la fabricación de botellones y bidones de agua de 2 a 3 litros. Su diseño de boca ancha facilita el vertido rápido y soporta el uso de asas plásticas de transporte, garantizando una alta resistencia estructural y máxima durabilidad ante el apilamiento.",
+        "image": "assets/productos/preformas/60gr.webp",
+        "thumbnails": [
+            "assets/productos/preformas/60gr.webp"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Preforma PET 90g - Botellón",
+        "category": "Preformas PET",
+        "gramaje": "90g",
+        "acabado": "Cuello Botellón 48mm",
+        "diametro": "48mm",
+        "capacidad": "4L - 7L",
+        "colores": "Cristal",
+        "industria": "Agua / Bebidas",
+        "badge": "PREFORMAS",
+        "shortDesc": "Preforma PET de 90g con boca ancha de 48mm, concebida para el soplado de bidones y botellones de 4L a 7L.",
+        "longDesc": "Nuestra Preforma PET de 90 gramos representa una solución pesada de máxima resistencia para el soplado de bidones y botellones de agua de gran volumen (4L a 7L). Su estructura de pared reforzada y cuello de 48mm aseguran un desempeño impecable ante cargas elevadas, caídas e impactos durante la manipulación y transporte logístico.",
+        "image": "assets/productos/preformas/90gr.webp",
+        "thumbnails": [
+            "assets/productos/preformas/90gr.webp"
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Preforma PET 100g - Botellón",
+        "category": "Preformas PET",
+        "gramaje": "100g",
+        "acabado": "Cuello Botellón 48mm",
+        "diametro": "48mm",
+        "capacidad": "7L - 10L",
+        "colores": "Cristal",
+        "industria": "Agua / Bebidas",
+        "badge": "PREFORMAS",
+        "shortDesc": "Preforma PET de 100g con boca ancha de 48mm, diseñada para el soplado de bidones de gran capacidad (7L a 10L).",
+        "longDesc": "Nuestra Preforma PET de 100g es una opción de máxima densidad y grosor estructural para el soplado de bidones y botellones de 7L a 10L. Su cuello especial de 48mm y composición en resina virgen cristal garantizan una transparencia óptica impecable y una resistencia mecánica superior frente al llenado a presión, apilamiento y transporte exigente.",
+        "image": "assets/productos/preformas/100gr.webp",
+        "thumbnails": [
+            "assets/productos/preformas/100gr.webp"
+        ]
     }
 ]
