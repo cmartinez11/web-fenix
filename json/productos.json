@@ -1945,5 +1945,195 @@
         "thumbnails": [
             "assets/productos/bolsas/cuadraditas/foto-und/12x17VERDE.webp"
         ]
+    },
+    {
+        "id": 107,
+        "name": "Tapa Aceite Flip Top ",
+        "category": "Tapas y Asas",
+        "gramaje": "N/A",
+        "acabado": "Tapa Aceite Flip Top",
+        "diametro": "26mm",
+        "capacidad": "N/A",
+        "colores": "Dorado",
+        "industria": "Alimentos",
+        "badge": "TAPAS",
+        "shortDesc": "Tapa plástica tipo flip-top para envases de aceite, con cierre hermético y práctico.",
+        "longDesc": "Nuestra Tapa para Aceite tipo Flip-Top en acabado dorado está diseñada para brindar un sellado seguro y un vertido controlado en envases alimentarios. Fabricada con materiales de alta calidad, garantiza la conservación del contenido y evita derrames en botellas de aceite.",
+        "image": "assets/productos/TAPAS-ASAS/aceite-flip-top1.webp",
+        "thumbnails": [
+            "assets/productos/TAPAS-ASAS/aceite-flip-top2.webp",
+            "assets/productos/TAPAS-ASAS/aceite-flip-top3.webp"
+        ]
+    },
+    {
+        "id": 108,
+        "name": "Tapa Aceite Rosca",
+        "category": "Tapas y Asas",
+        "gramaje": "N/A",
+        "acabado": "Tapa de Aceite tipo rosca",
+        "diametro": "26mm",
+        "capacidad": "N/A",
+        "colores": "Verde y Blanco",
+        "industria": "Alimentos",
+        "badge": "TAPAS",
+        "shortDesc": "Tapa plástica a rosca para envases de aceite, con excelente sellado hermético e inviolabilidad.",
+        "longDesc": "Nuestra Tapa a Rosca para Aceite en combinación verde y blanco está diseñada para garantizar un hermetismo óptimo y proteger la integridad de los productos líquidos alimentarios. Fabricada con polímeros de alta resistencia, es ideal para botellas de aceite, aderezos y otros envases plásticos.",
+        "image": "assets/productos/TAPAS-ASAS/aceite-tapa-rosca1.webp",
+        "thumbnails": [
+            "assets/productos/TAPAS-ASAS/aceite-tapa-rosca2.webp",
+            "assets/productos/TAPAS-ASAS/aceite-tapa-rosca3.webp"
+        ]
+    },
+    {
+        "id": 109,
+        "name": "Tapa Rosca 48mm",
+        "category": "Tapas y Asas",
+        "gramaje": "N/A",
+        "acabado": "Tapa plástica",
+        "diametro": "48mm",
+        "capacidad": "N/A",
+        "colores": "N/A",
+        "industria": "Alimentos | Bebidas",
+        "badge": "TAPAS",
+        "shortDesc": "Tapa plástica a rosca de 48 mm con precinto de seguridad, ideal para bidones y envases de mayor boca.",
+        "longDesc": "Nuestra Tapa a Rosca de 48 mm en color azul ofrece un cierre hermético y seguro para bidones, galones y botellones de agua o bebidas. Fabricada con polímeros de alta densidad y acabado estriado para un agarre firme, garantiza la protección total del contenido contra fugas y contaminación externa.",
+        "image": "assets/productos/TAPAS-ASAS/tapa-48mm.webp",
+        "thumbnails": [
+            "assets/productos/TAPAS-ASAS/tapa-48mm2.webp",
+            "assets/productos/TAPAS-ASAS/tapa-48mm3.webp"
+        ]
+    },
+    {
+        "id": 110,
+        "name": "Tapa 2622",
+        "category": "Tapas y Asas",
+        "gramaje": "N/A",
+        "acabado": "Tapa plástica",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "N/A",
+        "industria": "Alimentos | Bebidas",
+        "badge": "TAPAS",
+        "shortDesc": "Tapa plástica a rosca formato 2622 con precinto de seguridad, ideal para botellas de agua y bebidas no carbonatadas.",
+        "longDesc": "Nuestra Tapa a Rosca en formato 2622 de color celeste ofrece un sellado hermético e inviolable para botellas plásticas PET de agua de mesa, jugos y bebidas. Cuenta con anillo de seguridad con corte y acabado estriado para facilitar su apertura y cierre eficiente.",
+        "image": "assets/productos/TAPAS-ASAS/tapa-2622-1.webp",
+        "thumbnails": [
+            "assets/productos/TAPAS-ASAS/tapa-2622-2.webp",
+            "assets/productos/TAPAS-ASAS/tapa-2622-3.webp"
+        ]
+    },
+    {
+        "id": 111,
+        "name": "Tapa Rosca con Precinto",
+        "category": "Tapas y Asas",
+        "gramaje": "N/A",
+        "acabado": "Tapa plástica con precinto",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "N/A",
+        "industria": "Alimentos | Bebidas",
+        "badge": "TAPAS",
+        "shortDesc": "Tapa plástica a rosca con precinto de seguridad, ideal para el sellado hermético de botellas y envases líquidos.",
+        "longDesc": "Nuestra Tapa a Rosca con Precinto de Seguridad en color verde está diseñada para asegurar la inviolabilidad y protección de refrescos, jugos, aguas y bebidas en general. Cuenta con acabado estriado para facilitar un mejor agarre y un anillo precinto que garantiza la frescura e higiene del producto hasta su apertura.",
+        "image": "assets/productos/TAPAS-ASAS/tapa-con-precinto1.webp",
+        "thumbnails": [
+            "assets/productos/TAPAS-ASAS/tapa-con-precinto2.webp",
+            "assets/productos/TAPAS-ASAS/tapa-con-precinto3.webp"
+        ]
+    },
+    {
+        "id": 112,
+        "name": "Tapa Rosca sin Precinto",
+        "category": "Tapas y Asas",
+        "gramaje": "N/A",
+        "acabado": "Tapa plástica sin precinto",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "N/A",
+        "industria": "Alimentos | Bebidas",
+        "badge": "TAPAS",
+        "shortDesc": "Tapa plástica a rosca sin precinto de seguridad, ideal para envases de reuso, productos químicos o de limpieza.",
+        "longDesc": "Nuestra Tapa a Rosca Sin Precinto en color rojo ofrece un enroscado rápido, práctico y eficiente para botellas y envases de diversos usos. Diseñada con un cuerpo estriado para facilitar el agarre, es ideal para la industria de limpieza, cosmética o aplicaciones donde no se requiere precinto de seguridad desprendible.",
+        "image": "assets/productos/TAPAS-ASAS/tapa-sin-precinto1.webp",
+        "thumbnails": [
+            "assets/productos/TAPAS-ASAS/tapa-sin-precinto2.webp",
+            "assets/productos/TAPAS-ASAS/tapa-sin-precinto3.webp"
+        ]
+    },
+    {
+        "id": 113,
+        "name": "Tapa Tethered 38 mm",
+        "category": "Tapas y Asas",
+        "gramaje": "N/A",
+        "acabado": "Tapa Plástica Tethered (Adherida al Envase)",
+        "diametro": "38mm",
+        "capacidad": "N/A",
+        "colores": "N/A",
+        "industria": "Bebidas",
+        "badge": "TAPAS",
+        "shortDesc": "Tapa plástica tethered de 38 mm permaneciéndose unida al envase tras la apertura, ideal para bebidas y lacteos.",
+        "longDesc": "Nuestra Tapa Tethered de 38 mm está diseñada bajo normativas de sostenibilidad, manteniéndose unida a la botella tras abrirse para facilitar el reciclaje completo del envase. Cuenta con excelente sellado hermético, banda de seguridad e idónea para jugos, productos lácteos, bebidas y agua.",
+        "image": "assets/productos/TAPAS-ASAS/tethered-38mm-1.webp",
+        "thumbnails": [
+            "assets/productos/TAPAS-ASAS/tethered-38mm-2.webp",
+            "assets/productos/TAPAS-ASAS/tethered-38mm-3.webp",
+            "assets/productos/TAPAS-ASAS/tethered-38mm-4.webp"
+        ]
+    },
+    {
+        "id": 114,
+        "name": "Tapa Tethered 48 mm",
+        "category": "Tapas y Asas",
+        "gramaje": "N/A",
+        "acabado": "Tapa Plástica Tethered (Adherida al Envase)",
+        "diametro": "48mm",
+        "capacidad": "N/A",
+        "colores": "N/A",
+        "industria": "Bebidas",
+        "badge": "TAPAS",
+        "shortDesc": "Tapa plástica tethered de 48 mm que permanece unida al envase tras la apertura, ideal para botellas, bidones, galones y jugos.",
+        "longDesc": "Nuestra Tapa Tethered de 48 mm en color amarillo está diseñada bajo criterios de sostenibilidad y economía circular, permaneciendo adherida al cuello del envase tras abrirse para facilitar su reciclaje integral. Ofrece un sellado hermético e inviolable para botellas, botellones, galones y bebidas de boca ancha.",
+        "image": "assets/productos/TAPAS-ASAS/tethered-48mm-1.webp",
+        "thumbnails": [
+            "assets/productos/TAPAS-ASAS/tethered-48mm-2.webp",
+            "assets/productos/TAPAS-ASAS/tethered-48mm-3.webp",
+            "assets/productos/TAPAS-ASAS/tethered-48mm-4.webp"
+        ]
+    },
+    {
+        "id": 115,
+        "name": "Asa Plástica de 28mm",
+        "category": "Tapas y Asas",
+        "gramaje": "N/A",
+        "acabado": "Asa plástica",
+        "diametro": "28mm",
+        "capacidad": "N/A",
+        "colores": "N/A",
+        "industria": "Bebidas",
+        "badge": "ASAS",
+        "shortDesc": "Asa plástica ergonómica de 28 mm, diseñada para facilitar el transporte cómodo y seguro de botellas PET.",
+        "longDesc": "Nuestra Asa Plástica de 28 mm en color azul ofrece una excelente resistencia y un ajuste firme al cuello de botellas PET. Diseñada ergonómicamente para facilitar el agarre y transporte de envases de agua, jugos, aceites y bebidas en general, mejorando la experiencia del consumidor final.",
+        "image": "assets/productos/TAPAS-ASAS/ASA28MM.webp",
+        "thumbnails": [
+            "assets/productos/TAPAS-ASAS/ASA28MM.webp"
+        ]
+    },
+    {
+        "id": 116,
+        "name": "Asa Plástica de 48mm",
+        "category": "Tapas y Asas",
+        "gramaje": "N/A",
+        "acabado": "Asa plástica",
+        "diametro": "48mm",
+        "capacidad": "N/A",
+        "colores": "N/A",
+        "industria": "Bebidas",
+        "badge": "ASAS",
+        "shortDesc": "Asa plástica ergonómica de 48 mm de alta resistencia, ideal para el transporte cómodo de bidones y galones.",
+        "longDesc": "Nuestra Asa Plástica de 48 mm en color verde ofrece una estructura reforzada para el soporte y fácil manipulación de bidones, galones y botellones de agua o bebidas. Diseñada con un encaje firme al cuello del envase y empuñadura ergonómica que distribuye el peso de manera óptima.",
+        "image": "assets/productos/TAPAS-ASAS/ASA48MM.webp",
+        "thumbnails": [
+            "assets/productos/TAPAS-ASAS/ASA48MM.webp"
+        ]
     }
 ]
