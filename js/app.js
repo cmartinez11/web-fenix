@@ -1,12 +1,15 @@
 // js/app.js
 
-// 1. Configuración de Rutas Asíncronas
+// 1. Configuración de Rutas y Estado de Paginación
 const JSON_LOCAL_URL = "./json/productos.json";
 let products = [];
-let activeProduct = null;
+let filteredProductsList = [];
+let currentPage = 1;
+const itemsPerPage = 12; // 4 filas x 3 columnas
 
 // 2. Selección de Elementos del DOM
 const productsGrid = document.getElementById("products-grid");
+const paginationContainer = document.getElementById("pagination-container");
 const searchInput = document.getElementById("search-input");
 const productModal = document.getElementById("product-modal");
 const modalOverlay = document.getElementById("modal-overlay");
@@ -14,7 +17,7 @@ const sidebarFilter = document.getElementById("sidebar-filter");
 const resultsCount = document.getElementById("results-count");
 const mobileResultsText = document.getElementById("mobile-results-text");
 
-// Campos de detalle del Modal
+// Campos del Modal Ficha Técnica
 const mImage = document.getElementById("modal-main-image");
 const mThumbnails = document.getElementById("modal-thumbnails");
 const mTitle = document.getElementById("modal-title");
@@ -31,19 +34,14 @@ const btnModalWhatsapp = document.getElementById("btn-modal-whatsapp");
 // 3. Orquestador de Arranque de la Aplicación
 async function inicializarCatalogo() {
   try {
-    // A. Descarga los datos desde el JSON
     const response = await fetch(JSON_LOCAL_URL);
     products = await response.json();
 
-    // B. Expande los acordeones B2B por defecto
     document.querySelectorAll('.accordion-header').forEach(header => {
       header.parentElement.classList.add('accordion-active');
     });
 
-    // C. Levanta todos los listeners de eventos
     setupEvents();
-
-    // D. Renderiza la lista inicial con los datos ya cargados
     filterProducts();
 
   } catch (error) {
@@ -51,22 +49,24 @@ async function inicializarCatalogo() {
   }
 }
 
-// Escucha única para arrancar el flujo de forma segura
 document.addEventListener("DOMContentLoaded", inicializarCatalogo);
 
-// 4. Configuración de Escuchadores de Eventos
+// 4. Configuración de Listeners
 function setupEvents() {
-  // Búsqueda por texto en tiempo real
   if (searchInput) {
-    searchInput.addEventListener("input", filterProducts);
+    searchInput.addEventListener("input", () => {
+      currentPage = 1;
+      filterProducts();
+    });
   }
 
-  // Filtros laterales (Checkboxes)
   document.querySelectorAll(".filter-checkbox").forEach(cb => {
-    cb.addEventListener("change", filterProducts);
+    cb.addEventListener("change", () => {
+      currentPage = 1;
+      filterProducts();
+    });
   });
 
-  // Disparadores para cerrar el modal
   document.querySelectorAll(".close-modal-trigger").forEach(el => {
     el.addEventListener("click", closeModal);
   });
@@ -74,14 +74,10 @@ function setupEvents() {
     modalOverlay.addEventListener("click", closeModal);
   }
 
-  // Cerrar modal usando la tecla Escape
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      closeModal();
-    }
+    if (e.key === "Escape") closeModal();
   });
 
-  // Transición de fondo de la barra de navegación al hacer scroll
   window.addEventListener("scroll", () => {
     const nav = document.getElementById("main-nav");
     if (nav) {
@@ -96,60 +92,58 @@ function setupEvents() {
 
 // 5. Lógica de Filtrado Dinámico
 function filterProducts() {
-  if (!Array.isArray(products) || products.length === 0) {
-    return;
-  }
+  if (!Array.isArray(products) || products.length === 0) return;
 
-  // Búsqueda por texto
   const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : "";
 
-  // Obtener categorías seleccionadas
   const selectedCategories = Array.from(
     document.querySelectorAll('.filter-checkbox[data-filter="category"]:checked')
   ).map((cb) => cb.value.toLowerCase().trim());
 
-  // Obtener badges seleccionados
   const selectedBadges = Array.from(
     document.querySelectorAll('.filter-checkbox[data-filter="badge"]:checked')
   ).map((cb) => cb.value.toLowerCase().trim());
 
-  // Filtrado de productos sobre la variable global 'products'
-  const filtered = products.filter((product) => {
-    // A) Filtro de Búsqueda por Nombre / Descripción
+  filteredProductsList = products.filter((product) => {
     const nameMatch = product.name ? product.name.toLowerCase() : "";
     const descMatch = product.shortDesc ? product.shortDesc.toLowerCase() : "";
-    const matchesSearch =
-      !searchTerm || nameMatch.includes(searchTerm) || descMatch.includes(searchTerm);
+    const matchesSearch = !searchTerm || nameMatch.includes(searchTerm) || descMatch.includes(searchTerm);
 
-    // B) Filtro por Categoría
     const prodCategory = product.category ? product.category.toLowerCase().trim() : "";
-    const matchesCategory =
-      selectedCategories.length === 0 || selectedCategories.includes(prodCategory);
+    const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(prodCategory);
 
-    // C) Filtro por Badge
     const prodBadge = product.badge ? product.badge.toLowerCase().trim() : "";
-    const matchesBadge =
-      selectedBadges.length === 0 || selectedBadges.includes(prodBadge);
+    const matchesBadge = selectedBadges.length === 0 || selectedBadges.includes(prodBadge);
 
     return matchesSearch && matchesCategory && matchesBadge;
   });
 
-  // Renderizar tarjetas con los datos filtrados
-  renderProductsList(filtered);
+  renderPaginatedView();
 }
 
-// 6. Renderizado de Tarjetas de Productos en la Grilla
-function renderProductsList(filteredList) {
-  if (!productsGrid) return;
-  productsGrid.innerHTML = "";
-
-  // Actualización cuantitativa de los indicadores de control
-  const countText = `${filteredList.length} ${filteredList.length === 1 ? 'producto' : 'productos'}`;
+// 6. Manejador de Paginación y Renderizado
+function renderPaginatedView() {
+  const countText = `${filteredProductsList.length} ${filteredProductsList.length === 1 ? 'producto' : 'productos'}`;
   if (resultsCount) resultsCount.textContent = countText;
   if (mobileResultsText) mobileResultsText.textContent = `Mostrando ${countText}`;
 
-  // Estado vacío: Cuando ningún elemento coincide con la búsqueda
-  if (filteredList.length === 0) {
+  const totalPages = Math.ceil(filteredProductsList.length / itemsPerPage);
+  if (currentPage > totalPages) currentPage = totalPages || 1;
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentProducts = filteredProductsList.slice(startIndex, endIndex);
+
+  renderProductsList(currentProducts);
+  renderPaginationControls(totalPages);
+}
+
+// 7. Renderizado de Tarjetas (12 Ítems)
+function renderProductsList(productsSlice) {
+  if (!productsGrid) return;
+  productsGrid.innerHTML = "";
+
+  if (filteredProductsList.length === 0) {
     productsGrid.innerHTML = `
       <div class="col-span-full py-16 text-center bg-[#131316] rounded border border-white/5 p-8">
         <svg class="w-12 h-12 mx-auto text-zinc-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -165,8 +159,7 @@ function renderProductsList(filteredList) {
     return;
   }
 
-  // Bucle de renderizado para las tarjetas activas
-  filteredList.forEach(product => {
+  productsSlice.forEach(product => {
     const waText = `Hola Grupo Fénix, deseo solicitar una cotización del siguiente producto industrial:\n- Producto: *${product.name}*\n- Línea: ${product.category}\n- Gramaje: ${product.gramaje !== 'N/A' ? product.gramaje : 'N/A'}\n- Acabado: ${product.acabado !== 'N/A' ? product.acabado : 'N/A'}\n- Capacidad: ${product.capacidad !== 'N/A' ? product.capacidad : 'N/A'}\n- Industria: ${product.industria}\n\nPor favor, envíenme costos de fabricación y plazos de entrega mínimos.`;
     const waUrl = `https://wa.me/51970572564?text=${encodeURIComponent(waText)}`;
 
@@ -204,9 +197,9 @@ function renderProductsList(filteredList) {
           <a href="${waUrl}" target="_blank" class="w-full flex items-center justify-center gap-1.5 bg-[#10B981] hover:bg-[#10B981]/90 text-black text-xs font-bold py-3 rounded-full transition-all duration-300 uppercase tracking-wider text-[10px]">
             <span>Cotizar por WhatsApp</span>
           </a>
-          <button onclick="openDetailsModal(${product.id})" class="w-full flex items-center justify-center gap-1.5 border border-white/10 hover:border-[#D4AF37] text-white text-xs font-medium py-2.5 rounded-full transition-all text-[10px] uppercase tracking-wider bg-white/[0.01] hover:bg-white/[0.03]">
+          <a href="producto-detalle.html?id=${product.id}" class="w-full flex items-center justify-center gap-1.5 border border-white/10 hover:border-[#D4AF37] text-white text-xs font-medium py-2.5 rounded-full transition-all text-[10px] uppercase tracking-wider bg-white/[0.01] hover:bg-white/[0.03]">
             <span>Ver Producto</span>
-          </button>
+          </a>
         </div>
       </div>
     `;
@@ -214,12 +207,62 @@ function renderProductsList(filteredList) {
   });
 }
 
-// 7. Control de Modales de Ficha Técnica Expandida
+// 8. Paginación Dinámica
+function renderPaginationControls(totalPages) {
+  if (!paginationContainer) return;
+  paginationContainer.innerHTML = "";
+
+  if (totalPages <= 1) return;
+
+  // Botón Anterior
+  const prevBtn = document.createElement("button");
+  prevBtn.disabled = currentPage === 1;
+  prevBtn.className = `px-3 py-2 rounded-sm border text-xs font-medium transition-all ${currentPage === 1
+    ? 'border-white/5 text-zinc-600 cursor-not-allowed'
+    : 'border-white/10 text-zinc-300 hover:border-[#D4AF37] hover:text-[#D4AF37]'
+    }`;
+  prevBtn.innerHTML = `&laquo; Ant`;
+  prevBtn.addEventListener("click", () => changePage(currentPage - 1));
+  paginationContainer.appendChild(prevBtn);
+
+  // Botones Números
+  for (let i = 1; i <= totalPages; i++) {
+    const pageBtn = document.createElement("button");
+    pageBtn.className = `w-9 h-9 flex items-center justify-center rounded-sm border text-xs font-semibold transition-all ${i === currentPage
+      ? 'bg-[#D4AF37] border-[#D4AF37] text-black shadow-lg'
+      : 'border-white/10 text-zinc-400 hover:border-[#D4AF37] hover:text-white'
+      }`;
+    pageBtn.textContent = i;
+    pageBtn.addEventListener("click", () => changePage(i));
+    paginationContainer.appendChild(pageBtn);
+  }
+
+  // Botón Siguiente
+  const nextBtn = document.createElement("button");
+  nextBtn.disabled = currentPage === totalPages;
+  nextBtn.className = `px-3 py-2 rounded-sm border text-xs font-medium transition-all ${currentPage === totalPages
+    ? 'border-white/5 text-zinc-600 cursor-not-allowed'
+    : 'border-white/10 text-zinc-300 hover:border-[#D4AF37] hover:text-[#D4AF37]'
+    }`;
+  nextBtn.innerHTML = `Sig &raquo;`;
+  nextBtn.addEventListener("click", () => changePage(currentPage + 1));
+  paginationContainer.appendChild(nextBtn);
+}
+
+function changePage(newPage) {
+  currentPage = newPage;
+  renderPaginatedView();
+
+  const catalogSec = document.getElementById("catalogo");
+  if (catalogSec) {
+    catalogSec.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+// 9. Modales de Ficha Técnica
 function openDetailsModal(id) {
   const product = products.find(p => p.id === id);
   if (!product || !productModal) return;
-
-  activeProduct = product;
 
   if (mTitle) mTitle.textContent = product.name;
   if (mDesc) mDesc.textContent = product.longDesc;
@@ -274,23 +317,20 @@ function closeModal() {
   }, 300);
 }
 
-// 8. Control del Sidebar Móvil
+// 10. Sidebar Móvil y Limpieza
 function toggleMobileSidebar() {
-  if (sidebarFilter) {
-    sidebarFilter.classList.toggle("active");
-  }
+  if (sidebarFilter) sidebarFilter.classList.toggle("active");
 }
 
-// 9. Restablecimiento Total de Filtros
 function resetAllFilters() {
   document.querySelectorAll(".filter-checkbox").forEach(cb => {
     cb.checked = false;
   });
   if (searchInput) searchInput.value = "";
+  currentPage = 1;
   filterProducts();
 }
 
-// Enrutador de clics desde las categorías de la Página de Inicio
 function filterByCategory(catName) {
   resetAllFilters();
 
@@ -300,6 +340,7 @@ function filterByCategory(catName) {
     checkbox.closest('.border-b, .pb-2')?.classList.add('accordion-active');
   }
 
+  currentPage = 1;
   filterProducts();
 
   const catalogSec = document.getElementById("catalogo");
