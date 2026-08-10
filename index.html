@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -40,20 +40,19 @@
 </head>
 
 <body class="bg-[#0F0F11] text-white overflow-x-hidden">
-  <!--<img src="./assets/logo2.png" alt="Logo Plásticos Fénix" class="h-12 w-auto object-contain">-->
+
   <header id="main-nav" class="absolute top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center justify-between h-20 md:h-28">
-        <!-- Incrementé un poco el alto a h-24 para darle más aire -->
 
-        <!-- Logo corporativo (Tu logo real se acoplará perfecto aquí) -->
+        <!-- Logo corporativo -->
         <div class="flex-shrink-0 flex items-center">
-          <a href="#" class="flex items-center">
+          <a href="index.html" class="flex items-center">
             <img src="./assets/brand/logo.png" alt="Logo Plásticos Fénix" class="h-12 md:h-16 w-auto object-contain">
           </a>
         </div>
 
-        <!-- Menú Central (Tipografía delgada, limpia y estilizada) -->
+        <!-- Menú Central -->
         <nav class="hidden md:flex items-center gap-8 text-xs font-light tracking-widest uppercase text-gray-300">
           <a href="index.html" class="text-[#D4AF37] transition-colors">Inicio</a>
           <a href="./nosotros.html" class="hover:text-[#D4AF37] transition-colors">Nosotros</a>
@@ -61,8 +60,16 @@
           <a href="./contacto.html" class="hover:text-[#D4AF37] transition-colors">Contacto</a>
         </nav>
 
-        <!-- Botón CTA Derecha (Fino, en Dorado) -->
-        <div class="hidden md:flex items-center">
+        <!-- Botones CTA Derecha -->
+        <div class="hidden md:flex items-center gap-3">
+          <!-- Botón Producto Novedoso (Redirige a la sección Tethered Cap) -->
+          <a href="#tethered-cap"
+            class="px-4 py-2.5 text-[11px] font-medium tracking-widest uppercase bg-[#10B981]/10 border border-[#10B981] text-[#10B981] hover:bg-[#10B981] hover:text-black transition-all duration-300 rounded-sm flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 bg-[#10B981] rounded-full animate-pulse"></span>
+            <span>Producto Novedoso</span>
+          </a>
+
+          <!-- Botón Contactar a un Asesor -->
           <a href="https://wa.me/51970572564" target="_blank"
             class="px-5 py-2.5 text-[11px] font-medium tracking-widest uppercase border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-sm">
             Contactar a un Asesor
@@ -85,21 +92,16 @@
     </div>
   </header>
 
-
-  <!--<source src="./download.mp4" type="video/mp4">-->
-  <!-- 2. BANNER PRINCIPAL (Ahora ocupa el 100% de la altura de la pantalla tras el Nav) -->
+  <!-- 2. BANNER PRINCIPAL -->
   <section class="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
 
-    <!-- Contenedor del Video de Fondo (Ahora sube hasta el borde superior real) -->
     <div class="absolute inset-0 w-full h-full z-0">
       <video class="w-full h-full object-cover opacity-40" autoplay loop muted playsinline>
         <source src="./assets/content/download.mp4" type="video/mp4">
       </video>
-      <!-- Overlay degradado para asegurar el contraste de las letras del menú y del centro -->
       <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F11] via-black/30 to-black/60"></div>
     </div>
 
-    <!-- Contenido Central Estilizado -->
     <div class="relative z-10 max-w-5xl mx-auto px-6 text-center mt-12">
       <p class="text-[10px] font-medium tracking-[0.4em] uppercase text-[#10B981] mb-5">TECNOLOGÍA EN INYECCIÓN Y
         SOPLADO</p>
@@ -124,7 +126,7 @@
 
   </section>
 
-  <!---->
+  <!-- CLIENTES -->
   <section class="py-12 bg-[#0A0A0C] border-y border-white/5 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 mb-8">
       <p class="text-[10px] font-medium tracking-[0.2em] uppercase text-gray-400 text-center">
@@ -134,8 +136,6 @@
     <div
       class="logos-wrapper relative w-full overflow-hidden flex [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
       <div class="logos-slide gap-12 md:gap-20 items-center">
-
-        <!-- BLOQUE 1 -->
         <img src="assets/content/logos-clientes/1.png" alt="Cliente 1"
           class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
         <img src="assets/content/logos-clientes/2.png" alt="Cliente 2"
@@ -159,7 +159,6 @@
         <img src="assets/content/logos-clientes/11.png" alt="Cliente 11"
           class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
 
-        <!-- BLOQUE 2 (DUPLICADO PARA LOOP INFINITO) -->
         <img src="assets/content/logos-clientes/1.png" alt="Cliente 1"
           class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
         <img src="assets/content/logos-clientes/2.png" alt="Cliente 2"
@@ -186,9 +185,9 @@
     </div>
   </section>
 
+  <!-- SECCIÓN LÍNEAS DE PRODUCCIÓN -->
   <section id="productos" class="py-24 bg-[#0F0F11] relative">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-
       <div class="text-center mb-16">
         <h2 class="text-2xl md:text-4xl font-semibold tracking-wide text-white uppercase">
           Conoce Nuestras <span class="text-[#D4AF37] font-light">Líneas de Producción</span>
@@ -196,14 +195,10 @@
         <div class="w-12 h-[2px] bg-[#10B981] mx-auto mt-4 rounded-full"></div>
       </div>
 
-
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-
-        <!--PREFORMAS-->
+        <!-- PREFORMAS -->
         <div
           class="group relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_10px_30px_-15px_rgba(212,175,55,0.15)] overflow-hidden min-h-[320px]">
-
           <div
             class="p-8 h-full flex flex-col justify-between transition-all duration-500 group-hover:opacity-10 group-hover:blur-sm">
             <div>
@@ -215,7 +210,6 @@
               </p>
             </div>
           </div>
-
           <div
             class="absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 pointer-events-none z-10 p-3">
             <img src="assets/productos/lineas/preformas.jpg" alt="Preformas PET"
@@ -223,10 +217,9 @@
           </div>
         </div>
 
-        <!--PP / BOLSAS-->
+        <!-- BOLSAS -->
         <div
           class="group relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_10px_30px_-15px_rgba(212,175,55,0.15)] overflow-hidden min-h-[320px]">
-
           <div
             class="p-8 h-full flex flex-col justify-between transition-all duration-500 group-hover:opacity-10 group-hover:blur-sm">
             <div>
@@ -234,11 +227,10 @@
               <h3 class="text-lg font-medium text-white mb-3 tracking-wide uppercase">Bolsas</h3>
               <p class="text-xs text-gray-400 font-light leading-relaxed tracking-wide">
                 Soluciones de empaque de alta claridad y excelente rigidez. Ideales para exhibición comercial,
-                protección contra humedad y envasado seguro en los sectores textil, alimentario e industrial.
+                protección contra humedad y envasado seguro.
               </p>
             </div>
           </div>
-
           <div
             class="absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 pointer-events-none z-10 p-3">
             <img src="assets/productos/lineas/bolsas.jpg" alt="Bolsas de Polipropileno"
@@ -246,10 +238,9 @@
           </div>
         </div>
 
-        <!--TERMOFORMADOS-->
+        <!-- TERMOFORMADOS -->
         <div
           class="group relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_10px_30px_-15px_rgba(212,175,55,0.15)] overflow-hidden min-h-[320px]">
-
           <div
             class="p-8 h-full flex flex-col justify-between transition-all duration-500 group-hover:opacity-10 group-hover:blur-sm">
             <div>
@@ -261,7 +252,6 @@
               </p>
             </div>
           </div>
-
           <div
             class="absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 pointer-events-none z-10 p-3">
             <img src="assets/productos/lineas/termoformado.jpg" alt="Termoformados"
@@ -269,10 +259,9 @@
           </div>
         </div>
 
-        <!--TAPAS Y ASAS-->
+        <!-- TAPAS Y ASAS -->
         <div
           class="group relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_10px_30px_-15px_rgba(212,175,55,0.15)] overflow-hidden min-h-[320px]">
-
           <div
             class="p-8 h-full flex flex-col justify-between transition-all duration-500 group-hover:opacity-10 group-hover:blur-sm">
             <div>
@@ -284,21 +273,19 @@
               </p>
             </div>
           </div>
-
           <div
             class="absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 pointer-events-none z-10 p-3">
             <img src="assets/productos/lineas/tapas-asas.jpg" alt="Tapas y Asas"
               class="w-full h-auto object-contain rounded-sm drop-shadow-lg">
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
+  <!-- NOSOTROS -->
   <section id="nosotros" class="bg-[#0A0A0C] py-24 border-y border-white/5">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
       <div class="space-y-6">
         <div>
           <p class="text-[10px] font-semibold tracking-[0.25em] text-[#10B981] uppercase mb-2">Más de 17 años de
@@ -311,8 +298,7 @@
 
         <p class="text-xs md:text-sm text-gray-400 font-light leading-relaxed tracking-wide">
           En Plásticos Fénix entendemos que detrás de cada envase hay una marca que busca destacar. Con más de 17 años
-          de trayectoria en el mercado nacional, combinamos calidad técnica con una atención cercana y personalizada,
-          asegurando soluciones a la medida que impulsan y protegen el valor de tus productos.
+          de trayectoria en el mercado nacional, combinamos calidad técnica con una atención cercana y personalizada.
         </p>
 
         <ul class="space-y-3.5 text-xs font-light text-gray-300 tracking-wide">
@@ -330,7 +316,6 @@
           <a href="./nosotros.html"
             class="inline-flex items-center gap-2 text-[11px] font-medium tracking-widest uppercase text-[#D4AF37] hover:text-white transition-colors duration-300 group/btn">
             <span>Conocenos</span>
-            <!-- Icono de flecha minimalista que se mueve ligeramente al hacer hover -->
             <svg class="w-4 h-4 transform transition-transform duration-300 group-hover/btn:translate-x-1" fill="none"
               stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -342,34 +327,24 @@
       <div
         class="group relative w-full aspect-video bg-[#131316] border border-white/[0.05] rounded-sm overflow-hidden transition-all duration-500 hover:border-[#D4AF37]/30 hover:shadow-[0_15px_40px_-20px_rgba(212,175,55,0.15)]">
         <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-
         <img src="./assets/content/fenix-nosotros-inicio.jpg" alt="Planta Industrial Plásticos Fénix"
           class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-102">
       </div>
-
     </div>
   </section>
 
-  <!-- SECCIÓN BANNER FULL WIDTH -->
-  <section class="w-full relative overflow-hidden bg-[#0F0F11]">
-    <!-- Contenedor del fondo que ocupa el 100% del ancho de la pantalla -->
+  <!-- SECCIÓN BANNER PRODUCTO NOVEDOSO (TETHERED CAP CON ID ANCLA) -->
+  <section id="tethered-cap" class="w-full relative overflow-hidden bg-[#0F0F11]">
     <div class="relative w-full min-h-[450px] md:min-h-[550px] lg:min-h-[650px] flex items-center justify-center">
-
-      <!-- Imagen de fondo verde full-width -->
-      <!-- <img src="assets/content/jpg-fondo-product-new.jpg.jpeg" alt="Fondo"
-        class="absolute inset-0 w-full h-full object-cover opacity-80">-->
       <div class="absolute inset-0 bg-[#0F0F11]"></div>
-
-
-      <!-- Imagen del anuncio/producto superpuesta en el centro -->
       <div class="relative z-10 max-w-6xl mx-auto px-4 py-8 md:py-12 flex justify-center items-center">
         <img src="assets/content/product-new.png" alt="Tethered Cap"
           class="w-full h-auto max-h-[85vh] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]">
       </div>
-
     </div>
   </section>
 
+  <!-- SECCIÓN CONTACTO CTA -->
   <section id="contacto" class="py-28 relative overflow-hidden bg-[#0F0F11]">
     <div
       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#10B981]/[0.02] blur-[120px] rounded-full pointer-events-none">
@@ -378,7 +353,6 @@
     <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
       <div
         class="bg-[#131316] border border-white/[0.03] p-12 md:p-16 rounded-sm shadow-[0_20px_50px_-20px_rgba(0,0,0,0.7)]">
-
         <h2 class="text-2xl md:text-4xl font-semibold tracking-wide text-white uppercase leading-[1.25] mb-4">
           ¿Listo para optimizar tu <br class="sm:hidden">
           <span class="text-[#D4AF37]">Cadena de Suministro</span>?
@@ -401,14 +375,10 @@
     </div>
   </section>
 
-  <!-- 7. FOOTER CORPORATIVO PREMIUM -->
+  <!-- FOOTER CORPORATIVO -->
   <footer class="bg-[#0A0A0C] border-t border-white/5 pt-16 pb-8 text-zinc-400">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-
-      <!-- Bloque Principal: 4 Columnas -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/5">
-
-        <!-- Columna 1: Identidad Corporativa -->
         <div class="space-y-4">
           <img src="./assets/brand/logo.png" alt="Logo Plásticos Fénix"
             class="h-12 w-auto object-contain brightness-95">
@@ -418,7 +388,6 @@
           </p>
         </div>
 
-        <!-- Columna 2: Navegación Interna -->
         <div class="space-y-4">
           <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Secciones</h4>
           <ul class="space-y-2.5 text-xs font-light">
@@ -429,7 +398,6 @@
           </ul>
         </div>
 
-        <!-- Columna 3: Soporte y Legal -->
         <div class="space-y-4">
           <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Legal y Soporte</h4>
           <ul class="space-y-2.5 text-xs font-light">
@@ -443,17 +411,14 @@
           </ul>
         </div>
 
-        <!-- Columna 4: Libro de Reclamaciones Virtual -->
         <div class="space-y-4">
           <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Atención al Usuario</h4>
           <p class="text-[11px] font-light text-zinc-500 leading-relaxed">
             Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, contamos con un libro virtual
             a su disposición.
           </p>
-          <!-- Botón Libro de Reclamaciones Estilizado -->
           <a href="libro-reclamaciones.html"
             class="inline-flex items-center gap-3 px-4 py-2.5 border border-white/10 hover:border-[#D4AF37]/50 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 rounded-sm group">
-            <!-- Icono de Libro Minimalista -->
             <svg class="w-5 h-5 text-zinc-400 group-hover:text-[#D4AF37] transition-colors" fill="none"
               stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -466,10 +431,8 @@
             </div>
           </a>
         </div>
-
       </div>
 
-      <!-- Barra Inferior: Derechos de Autor y Créditos -->
       <div
         class="flex flex-col sm:flex-row items-center justify-between pt-8 text-[11px] font-light text-zinc-600 tracking-wide gap-4">
         <div class="text-center sm:text-left">
@@ -479,30 +442,25 @@
           <span>Fabricación de Soluciones Industriales de Empaque</span>
         </div>
       </div>
-
     </div>
   </footer>
 
-  <!-- Overlay del Menú Móvil Desplegable -->
+  <!-- PANEL MÓVIL DESPLEGABLE -->
   <div id="mobile-drawer-overlay"
     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[90] hidden opacity-0 transition-opacity duration-300"></div>
 
-  <!-- Panel Lateral Desplegable (Mobile Drawer Menu) -->
   <div id="mobile-drawer"
     class="fixed top-0 right-0 h-screen w-80 max-w-[85vw] bg-[#0F0F11]/95 backdrop-blur-lg border-l border-white/10 z-[100] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 shadow-2xl">
-    <!-- Botón de Cierre (X) -->
     <div class="flex justify-end mb-8">
       <button id="mobile-drawer-close"
         class="text-white hover:text-[#D4AF37] focus:outline-none p-2 transition-colors duration-200"
         aria-label="Cerrar menú">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
     </div>
 
-    <!-- Enlaces del Menú (Inicio, Nosotros, Productos, Contacto) -->
     <nav class="flex flex-col gap-6 text-sm font-light tracking-[0.2em] uppercase text-gray-300 mb-8">
       <a href="index.html" class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Inicio</a>
       <a href="./nosotros.html" class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Nosotros</a>
@@ -511,8 +469,11 @@
       <a href="./contacto.html" class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Contacto</a>
     </nav>
 
-    <!-- Botón de llamada a la acción (CTA) adaptado -->
-    <div class="mt-auto pb-8">
+    <div class="mt-auto space-y-3 pb-8">
+      <a href="#tethered-cap"
+        class="w-full block text-center px-5 py-3 text-[11px] font-medium tracking-widest uppercase bg-[#10B981]/10 border border-[#10B981] text-[#10B981] rounded-sm">
+        Producto Novedoso
+      </a>
       <a href="https://wa.me/51970572564" target="_blank"
         class="w-full block text-center px-5 py-3.5 text-[11px] font-medium tracking-widest uppercase border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-sm">
         Contactar a un Asesor
@@ -520,18 +481,16 @@
     </div>
   </div>
 
-  <!-- Interactividad Básica (JavaScript) para el menú móvil -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const mobileMenuBtn = document.getElementById("mobile-menu-btn");
       const mobileDrawer = document.getElementById("mobile-drawer");
       const mobileDrawerClose = document.getElementById("mobile-drawer-close");
       const mobileDrawerOverlay = document.getElementById("mobile-drawer-overlay");
-      const mobileLinks = mobileDrawer.querySelectorAll("nav a");
+      const mobileLinks = mobileDrawer.querySelectorAll("nav a, div a");
 
       function openMenu() {
         mobileDrawerOverlay.classList.remove("hidden");
-        // Force reflow to allow transition
         void mobileDrawerOverlay.offsetWidth;
         mobileDrawerOverlay.classList.add("opacity-100");
         mobileDrawer.classList.remove("translate-x-full");
@@ -542,7 +501,6 @@
         mobileDrawerOverlay.classList.remove("opacity-100");
         mobileDrawer.classList.add("translate-x-full");
         document.body.classList.remove("overflow-hidden");
-        // Hide overlay after animation completes
         setTimeout(() => {
           if (mobileDrawer.classList.contains("translate-x-full")) {
             mobileDrawerOverlay.classList.add("hidden");
@@ -550,19 +508,10 @@
         }, 300);
       }
 
-      if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener("click", openMenu);
-      }
+      if (mobileMenuBtn) mobileMenuBtn.addEventListener("click", openMenu);
+      if (mobileDrawerClose) mobileDrawerClose.addEventListener("click", closeMenu);
+      if (mobileDrawerOverlay) mobileDrawerOverlay.addEventListener("click", closeMenu);
 
-      if (mobileDrawerClose) {
-        mobileDrawerClose.addEventListener("click", closeMenu);
-      }
-
-      if (mobileDrawerOverlay) {
-        mobileDrawerOverlay.addEventListener("click", closeMenu);
-      }
-
-      // Close menu when clicking on any link
       mobileLinks.forEach(link => {
         link.addEventListener("click", closeMenu);
       });
