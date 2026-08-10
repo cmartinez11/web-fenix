@@ -1671,5 +1671,113 @@
         "thumbnails": [
             "assets/productos/bolsas/bolsas-rollos/fotos-und/14x20 VERDE.webp"
         ]
+    },
+    {
+        "id": 92,
+        "name": "Bolsa Tratada 7 x 10",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa Tratada",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Blanco",
+        "industria": "Comercio",
+        "badge": "BOLSAS TRATADAS",
+        "shortDesc": "Bolsa tratada con asa troquelada en medida 7 x 10, ideal para serigrafía, impresión y empaque de productos comerciales.",
+        "longDesc": "Nuestra Bolsa Tratada con Asa Troquelada en medida 7 x 10 cuenta con una superficie apta para impresión (trata corona/serigrafía), lo que facilita la personalización de marca o logotipo. Fabricada con material resistente, excelente acabado y asa troquelada de fácil agarre, es perfecta para boutique, retail y presentación elegante de productos.",
+        "image": "assets/productos/bolsas/bolsas-tratadas/7x10.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-tratadas/fotos-und/7x10.webp"
+        ]
+    },
+    {
+        "id": 93,
+        "name": "Bolsa Tratada 8 x 12",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa Tratada",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Rojo",
+        "industria": "Comercio",
+        "badge": "BOLSAS TRATADAS",
+        "shortDesc": "Bolsa tratada con asa troquelada en medida 8 x 12, ideal para serigrafía, impresión y empaque de productos comerciales.",
+        "longDesc": "Nuestra Bolsa Tratada con Asa Troquelada en medida 8 x 12 cuenta con una superficie apta para impresión (trata corona/serigrafía), lo que facilita la personalización de marca o logotipo. Fabricada con material resistente, excelente acabado y asa troquelada de cómodo agarre, es idónea para boutiques, tiendas y presentación destacada de mercancías.",
+        "image": "assets/productos/bolsas/bolsas-tratadas/8x12.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-tratadas/fotos-und/8x12.webp"
+        ]
+    },
+    {
+        "id": 94,
+        "name": "Bolsa Tratada 10 x 15",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa Tratada",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Rosado",
+        "industria": "Comercio",
+        "badge": "BOLSAS TRATADAS",
+        "shortDesc": "Bolsa tratada con asa troquelada en medida 10 x 15, ideal para serigrafía, impresión y empaque de productos comerciales.",
+        "longDesc": "Nuestra Bolsa Tratada con Asa Troquelada en medida 10 x 15 cuenta con una superficie apta para impresión (trata corona/serigrafía), lo que facilita la personalización de marca o logotipo. Fabricada con material resistente, excelente acabado y asa troquelada de cómodo agarre, es idónea para boutiques, tiendas y presentación destacada de mercancías.",
+        "image": "assets/productos/bolsas/bolsas-tratadas/10x15.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-tratadas/fotos-und/10x15.webp"
+        ]
+    },
+    {
+        "id": 95,
+        "name": "Bolsa Tratada 12 x 17",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa Tratada",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Rojo",
+        "industria": "Comercio",
+        "badge": "BOLSAS TRATADAS",
+        "shortDesc": "Bolsa tratada con asa troquelada en medida 12 x 17, ideal para serigrafía, impresión y empaque de productos comerciales.",
+        "longDesc": "Nuestra Bolsa Tratada con Asa Troquelada en medida 12 x 17 cuenta con una superficie apta para impresión (trata corona/serigrafía), lo que facilita la personalización de marca o logotipo. Fabricada con material resistente, excelente acabado y asa troquelada de cómodo agarre, es idónea para boutiques, tiendas y presentación destacada de mercancías.",
+        "image": "assets/productos/bolsas/bolsas-tratadas/12x17.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-tratadas/fotos-und/12x17.webp"
+        ]
+    },
+    {
+        "id": 96,
+        "name": "Bolsa Tratada 14 x 19",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa Tratada",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Negro",
+        "industria": "Comercio",
+        "badge": "BOLSAS TRATADAS",
+        "shortDesc": "Bolsa tratada con asa troquelada en medida 14 x 19, ideal para serigrafía, impresión y empaque de productos comerciales.",
+        "longDesc": "Nuestra Bolsa Tratada con Asa Troquelada en medida 14 x 19 cuenta con una superficie apta para impresión (trata corona/serigrafía), lo que facilita la personalización de marca o logotipo. Fabricada con material resistente, excelente acabado y asa troquelada de cómodo agarre, es idónea para boutiques, tiendas y presentación destacada de mercancías.",
+        "image": "assets/productos/bolsas/bolsas-tratadas/14x19.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-tratadas/fotos-und/14x19.webp"
+        ]
+    },
+    {
+        "id": 97,
+        "name": "Bolsa Tratada 16 x 19",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa Tratada",
+        "diametro": "N/A",
+        "capacidad": "N/A",
+        "colores": "Turquesa",
+        "industria": "Comercio",
+        "badge": "BOLSAS TRATADAS",
+        "shortDesc": "Bolsa tratada con asa troquelada en medida 16 x 19, ideal para serigrafía, impresión y empaque de productos comerciales.",
+        "longDesc": "Nuestra Bolsa Tratada con Asa Troquelada en medida 16 x 19 cuenta con una superficie apta para impresión (trata corona/serigrafía), lo que facilita la personalización de marca o logotipo. Fabricada con material resistente, excelente acabado y asa troquelada de cómodo agarre, es idónea para boutiques, tiendas y presentación destacada de mercancías.",
+        "image": "assets/productos/bolsas/bolsas-tratadas/16x19.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/bolsas-tratadas/fotos-und/16x19.webp"
+        ]
     }
 ]
