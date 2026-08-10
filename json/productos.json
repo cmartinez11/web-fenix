@@ -1779,5 +1779,171 @@
         "thumbnails": [
             "assets/productos/bolsas/bolsas-tratadas/fotos-und/16x19.webp"
         ]
+    },
+    {
+        "id": 98,
+        "name": "Bolsas de Polietileno 5x10",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 90 und",
+        "colores": "Transparente",
+        "industria": "Comercio",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno tipo cuadradita en medida 5 x 10, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cuadradita en medida 5 x 10 ofrece practicidad, resistencia y transparencia para la organización y empaque de diversos artículos. Diseñada para un uso diario y conveniente en establecimientos comerciales. Presentación en paquete de 90 unidades.",
+        "image": "assets/productos/bolsas/cuadraditas/5x10VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/cuadraditas/foto-und/5x10VERDE.webp"
+        ]
+    },
+    {
+        "id": 99,
+        "name": "Bolsa de Polietileno 7 x 10 Dorado",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno tipo cuadradita en medida 7 x 10, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cuadradita en medida 7 x 10 (203 mm x 292 mm) de la línea Dorado ofrece excelente resistencia, practicidad y transparencia para la organización y despacho de diversos artículos. Diseñada para un uso diario eficiente en comercios y tiendas. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/cuadraditas/7x10DORADO.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/cuadraditas/foto-und/7x10DORADO.webp"
+        ]
+    },
+    {
+        "id": 100,
+        "name": "Bolsa de Polietileno 7 x 10",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 90 und",
+        "colores": "Transparente",
+        "industria": "Comercio",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno tipo cuadradita en medida 7 x 10, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cuadradita en medida 7 x 10 (203 mm x 292 mm) de la línea Verde ofrece excelente resistencia, practicidad y transparencia para la organización y despacho de diversos artículos. Diseñada para un uso diario eficiente en comercios y tiendas. Presentación en paquete de 90 unidades.",
+        "image": "assets/productos/bolsas/cuadraditas/7x10VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/cuadraditas/foto-und/7x10VERDE.webp"
+        ]
+    },
+    {
+        "id": 101,
+        "name": "Bolsa de Polietileno 8 x 12 Dorado",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno tipo cuadradita en medida 8 x 12, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cuadradita en medida 8 x 12 (203 mm x 292 mm) de la línea Dorado ofrece excelente resistencia, practicidad y transparencia para la organización y despacho de diversos artículos. Diseñada para un uso diario eficiente en comercios y tiendas. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/cuadraditas/8x12DORADO.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/cuadraditas/foto-und/8x12DORADO.webp"
+        ]
+    },
+    {
+        "id": 102,
+        "name": "Bolsa de Polietileno 8 x 12",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 90 und",
+        "colores": "Transparente",
+        "industria": "Comercio",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno tipo cuadradita en medida 8 x 12, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cuadradita en medida 8 x 12 (203 mm x 292 mm) de la línea Verde ofrece excelente resistencia, practicidad y transparencia para la organización y despacho de diversos artículos. Diseñada para un uso diario eficiente en comercios y tiendas. Presentación en paquete de 90 unidades.",
+        "image": "assets/productos/bolsas/cuadraditas/8x12VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/cuadraditas/foto-und/8x12VERDE.webp"
+        ]
+    },
+    {
+        "id": 103,
+        "name": "Bolsa de Polietileno 8 x 12 COLORES",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 90 und",
+        "colores": "Amarillo | Coral | Verde",
+        "industria": "Comercio",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno tipo cuadradita en medida 8 x 12, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cuadradita en medida 8 x 12 (203 mm x 292 mm) en colores ofrece excelente resistencia, practicidad y transparencia para la organización y despacho de diversos artículos. Diseñada para un uso diario eficiente en comercios y tiendas. Presentación en paquete de 90 unidades.",
+        "image": "assets/productos/bolsas/cuadraditas/AMARILLO.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/cuadraditas/foto-und/AMARILLO.webp",
+            "assets/productos/bolsas/cuadraditas/CORAL.webp",
+            "assets/productos/bolsas/cuadraditas/foto-und/CORAL.webp",
+            "assets/productos/bolsas/cuadraditas/VERDE.webp",
+            "assets/productos/bolsas/cuadraditas/foto-und/VERDE.webp"
+        ]
+    },
+    {
+        "id": 104,
+        "name": "Bolsa de Polietileno 10 x 15 Dorado",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 100 und",
+        "colores": "Transparente",
+        "industria": "Comercio",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno tipo cuadradita en medida 10 x 15, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cuadradita en medida 10 x 15 (203 mm x 292 mm) de la línea Dorado ofrece excelente resistencia, practicidad y transparencia para la organización y despacho de diversos artículos. Diseñada para un uso diario eficiente en comercios y tiendas. Presentación en paquete de 100 unidades.",
+        "image": "assets/productos/bolsas/cuadraditas/10x15dorado.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/cuadraditas/foto-und/10x15DORADO.webp"
+        ]
+    },
+    {
+        "id": 105,
+        "name": "Bolsa de Polietileno 10 x 15",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 90 und",
+        "colores": "Transparente",
+        "industria": "Comercio",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno tipo cuadradita en medida 10 x 15, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cuadradita en medida 10 x 15 (203 mm x 292 mm) de la línea Verde ofrece excelente resistencia, practicidad y transparencia para la organización y despacho de diversos artículos. Diseñada para un uso diario eficiente en comercios y tiendas. Presentación en paquete de 90 unidades.",
+        "image": "assets/productos/bolsas/cuadraditas/10x15VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/cuadraditas/foto-und/10x15VERDE.webp"
+        ]
+    },
+    {
+        "id": 106,
+        "name": "Bolsa de Polietileno 12 x 17",
+        "category": "Bolsas",
+        "gramaje": "N/A",
+        "acabado": "Bolsa de Polietileno",
+        "diametro": "N/A",
+        "capacidad": "Pqte 90 und",
+        "colores": "Transparente",
+        "industria": "Comercio",
+        "badge": "BOLSAS DE POLIETILENO",
+        "shortDesc": "Bolsa de polietileno tipo cuadradita en medida 12 x 17, ideal para el empaque, almacenamiento y despacho rápido de productos.",
+        "longDesc": "Nuestra Bolsa de Polietileno Cuadradita en medida 12 x 17 (203 mm x 292 mm) de la línea Verde ofrece excelente resistencia, practicidad y transparencia para la organización y despacho de diversos artículos. Diseñada para un uso diario eficiente en comercios y tiendas. Presentación en paquete de 90 unidades.",
+        "image": "assets/productos/bolsas/cuadraditas/12x17VERDE.webp",
+        "thumbnails": [
+            "assets/productos/bolsas/cuadraditas/foto-und/12x17VERDE.webp"
+        ]
     }
 ]
