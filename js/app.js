@@ -1,6 +1,6 @@
 // js/app.js
 
-// 1. Configuración de Rutas Asíncronas (Fácil cambio a Hosting en el futuro)
+// 1. Configuración de Rutas Asíncronas
 const JSON_LOCAL_URL = "./json/productos.json";
 let products = [];
 let activeProduct = null;
@@ -28,19 +28,19 @@ const mSpecIndustria = document.getElementById("spec-industria");
 const mSpecColores = document.getElementById("spec-colores");
 const btnModalWhatsapp = document.getElementById("btn-modal-whatsapp");
 
-// 3. Orquestador de Arranque de la Aplicación (Ciclo de vida corregido)
+// 3. Orquestador de Arranque de la Aplicación
 async function inicializarCatalogo() {
   try {
-    // A. Descarga los datos desde el JSON en Vercel
+    // A. Descarga los datos desde el JSON
     const response = await fetch(JSON_LOCAL_URL);
     products = await response.json();
 
-    // B. Expande los acordeones B2B por defecto en la interfaz
+    // B. Expande los acordeones B2B por defecto
     document.querySelectorAll('.accordion-header').forEach(header => {
       header.parentElement.classList.add('accordion-active');
     });
 
-    // C. Levanta todos los listeners de eventos (Inputs, Scroll, Keydown)
+    // C. Levanta todos los listeners de eventos
     setupEvents();
 
     // D. Renderiza la lista inicial con los datos ya cargados
@@ -94,55 +94,47 @@ function setupEvents() {
   });
 }
 
-// 5. Lógica de Filtrado Dinámico (AND Inter-categoría, OR Intra-categoría)
+// 5. Lógica de Filtrado Dinámico
 function filterProducts() {
-  if (!searchInput) return;
-  const query = searchInput.value.toLowerCase().trim();
+  if (!Array.isArray(products) || products.length === 0) {
+    return;
+  }
 
-  // Agrupar los filtros activos según su tipología de atributo
-  const activeFilters = {
-    category: [],
-    gramaje: [],
-    acabado: [],
-    diametro: [],
-    capacidad: [],
-    industria: []
-  };
+  // Búsqueda por texto
+  const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : "";
 
-  document.querySelectorAll(".filter-checkbox:checked").forEach(cb => {
-    const filterType = cb.getAttribute("data-filter");
-    const val = cb.value;
-    if (activeFilters[filterType]) {
-      activeFilters[filterType].push(val);
-    }
+  // Obtener categorías seleccionadas
+  const selectedCategories = Array.from(
+    document.querySelectorAll('.filter-checkbox[data-filter="category"]:checked')
+  ).map((cb) => cb.value.toLowerCase().trim());
+
+  // Obtener badges seleccionados
+  const selectedBadges = Array.from(
+    document.querySelectorAll('.filter-checkbox[data-filter="badge"]:checked')
+  ).map((cb) => cb.value.toLowerCase().trim());
+
+  // Filtrado de productos sobre la variable global 'products'
+  const filtered = products.filter((product) => {
+    // A) Filtro de Búsqueda por Nombre / Descripción
+    const nameMatch = product.name ? product.name.toLowerCase() : "";
+    const descMatch = product.shortDesc ? product.shortDesc.toLowerCase() : "";
+    const matchesSearch =
+      !searchTerm || nameMatch.includes(searchTerm) || descMatch.includes(searchTerm);
+
+    // B) Filtro por Categoría
+    const prodCategory = product.category ? product.category.toLowerCase().trim() : "";
+    const matchesCategory =
+      selectedCategories.length === 0 || selectedCategories.includes(prodCategory);
+
+    // C) Filtro por Badge
+    const prodBadge = product.badge ? product.badge.toLowerCase().trim() : "";
+    const matchesBadge =
+      selectedBadges.length === 0 || selectedBadges.includes(prodBadge);
+
+    return matchesSearch && matchesCategory && matchesBadge;
   });
 
-  // Ejecución de la matriz de filtrado sobre el array en memoria
-  const filtered = products.filter(p => {
-    // Filtro A: Consulta por texto de búsqueda
-    const matchesSearch = !query ||
-      p.name.toLowerCase().includes(query) ||
-      p.shortDesc.toLowerCase().includes(query) ||
-      p.category.toLowerCase().includes(query) ||
-      p.acabado.toLowerCase().includes(query) ||
-      p.gramaje.toLowerCase().includes(query) ||
-      p.industria.toLowerCase().includes(query);
-
-    if (!matchesSearch) return false;
-
-    // Filtro B: Validación de Checkboxes multiselección
-    for (const [key, selectedVals] of Object.entries(activeFilters)) {
-      if (selectedVals.length > 0) {
-        if (!selectedVals.includes(p[key])) {
-          return false;
-        }
-      }
-    }
-
-    return true;
-  });
-
-  // Actualiza la grilla con los resultados procesados
+  // Renderizar tarjetas con los datos filtrados
   renderProductsList(filtered);
 }
 
@@ -175,11 +167,9 @@ function renderProductsList(filteredList) {
 
   // Bucle de renderizado para las tarjetas activas
   filteredList.forEach(product => {
-    // Generación de payload de texto para link directo de WhatsApp comercial
     const waText = `Hola Grupo Fénix, deseo solicitar una cotización del siguiente producto industrial:\n- Producto: *${product.name}*\n- Línea: ${product.category}\n- Gramaje: ${product.gramaje !== 'N/A' ? product.gramaje : 'N/A'}\n- Acabado: ${product.acabado !== 'N/A' ? product.acabado : 'N/A'}\n- Capacidad: ${product.capacidad !== 'N/A' ? product.capacidad : 'N/A'}\n- Industria: ${product.industria}\n\nPor favor, envíenme costos de fabricación y plazos de entrega mínimos.`;
     const waUrl = `https://wa.me/51970572564?text=${encodeURIComponent(waText)}`;
 
-    // Renderizado condicional de tags de marca
     let badgeHtml = "";
     if (product.badge === "Eco-Fénix") {
       badgeHtml = `<span class="absolute top-4 left-4 bg-[#10B981] text-white text-[9px] font-black uppercase tracking-wider px-2.5 py-1 rounded-sm shadow-md z-10">Eco-Sostenible</span>`;
@@ -214,9 +204,9 @@ function renderProductsList(filteredList) {
           <a href="${waUrl}" target="_blank" class="w-full flex items-center justify-center gap-1.5 bg-[#10B981] hover:bg-[#10B981]/90 text-black text-xs font-bold py-3 rounded-full transition-all duration-300 uppercase tracking-wider text-[10px]">
             <span>Cotizar por WhatsApp</span>
           </a>
-          <a href="producto-detalle.html?id=${product.id}" class="w-full flex items-center justify-center gap-1.5 border border-white/10 hover:border-[#D4AF37] text-white text-xs font-medium py-2.5 rounded-full transition-all text-[10px] uppercase tracking-wider bg-white/[0.01] hover:bg-white/[0.03]">
+          <button onclick="openDetailsModal(${product.id})" class="w-full flex items-center justify-center gap-1.5 border border-white/10 hover:border-[#D4AF37] text-white text-xs font-medium py-2.5 rounded-full transition-all text-[10px] uppercase tracking-wider bg-white/[0.01] hover:bg-white/[0.03]">
             <span>Ver Producto</span>
-          </a>
+          </button>
         </div>
       </div>
     `;
@@ -224,7 +214,7 @@ function renderProductsList(filteredList) {
   });
 }
 
-// 7. Control de Modales de Ficha Técnica Expandida (Mantenido por compatibilidad)
+// 7. Control de Modales de Ficha Técnica Expandida
 function openDetailsModal(id) {
   const product = products.find(p => p.id === id);
   if (!product || !productModal) return;
@@ -247,7 +237,6 @@ function openDetailsModal(id) {
     mImage.alt = product.name;
   }
 
-  // Construir miniaturas combinando de forma segura la imagen principal y el array de thumbnails sin duplicar
   if (mThumbnails) {
     mThumbnails.innerHTML = "";
     const todasLasFotos = [product.image, ...(product.thumbnails || [])];
@@ -308,7 +297,7 @@ function filterByCategory(catName) {
   const checkbox = document.querySelector(`.filter-checkbox[value="${catName}"]`);
   if (checkbox) {
     checkbox.checked = true;
-    checkbox.closest('.border-b, .pb-2').classList.add('accordion-active');
+    checkbox.closest('.border-b, .pb-2')?.classList.add('accordion-active');
   }
 
   filterProducts();
