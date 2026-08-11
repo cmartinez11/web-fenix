@@ -37,17 +37,16 @@
       animation-play-state: paused;
     }
 
-    /* Activa la vista de la imagen al hacer scroll en celulares (<1024px) */
-    @media (max-width: 1023px) {
-      .linea-card.active-scroll .linea-text {
-        opacity: 0.1 !important;
-        filter: blur(4px) !important;
-      }
+    /* Lógica de volteo por botón (Toggle manual) */
+    .linea-card.show-image .linea-text {
+      opacity: 0 !important;
+      pointer-events: none;
+    }
 
-      .linea-card.active-scroll .linea-img {
-        opacity: 1 !important;
-        transform: scale(1) !important;
-      }
+    .linea-card.show-image .linea-img {
+      opacity: 1 !important;
+      scale: 1 !important;
+      pointer-events: auto;
     }
   </style>
 </head>
@@ -76,14 +75,12 @@
 
         <!-- Botones CTA Derecha -->
         <div class="hidden md:flex items-center gap-3">
-          <!-- Botón Producto Novedoso -->
           <a href="#tethered-cap"
             class="px-4 py-2.5 text-[11px] font-medium tracking-widest uppercase bg-[#10B981]/10 border border-[#10B981] text-[#10B981] hover:bg-[#10B981] hover:text-black transition-all duration-300 rounded-sm flex items-center gap-1.5">
             <span class="w-1.5 h-1.5 bg-[#10B981] rounded-full animate-pulse"></span>
             <span>Producto Novedoso</span>
           </a>
 
-          <!-- Botón Contactar a un Asesor -->
           <a href="https://wa.me/51970572564" target="_blank"
             class="px-5 py-2.5 text-[11px] font-medium tracking-widest uppercase border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-sm">
             Contactar a un Asesor
@@ -108,7 +105,6 @@
 
   <!-- 2. BANNER PRINCIPAL -->
   <section class="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
-
     <div class="absolute inset-0 w-full h-full z-0">
       <video class="w-full h-full object-cover opacity-40" autoplay loop muted playsinline>
         <source src="./assets/content/download.mp4" type="video/mp4">
@@ -137,7 +133,6 @@
         </a>
       </div>
     </div>
-
   </section>
 
   <!-- 3. SLIDER CLIENTES -->
@@ -212,9 +207,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- 01. PREFORMAS -->
         <div
-          class="linea-card group relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_10px_30px_-15px_rgba(212,175,55,0.15)] overflow-hidden min-h-[320px]">
-          <div
-            class="linea-text p-8 h-full flex flex-col justify-between transition-all duration-500 group-hover:opacity-10 group-hover:blur-sm">
+          class="linea-card relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-300 hover:border-[#D4AF37]/40 overflow-hidden min-h-[360px] flex flex-col justify-between">
+          <div class="linea-text p-8 flex-grow flex flex-col justify-between transition-all duration-500">
             <div>
               <div class="text-[#10B981] text-4xl font-light mb-6 font-mono">01</div>
               <h3 class="text-lg font-medium text-white mb-3 tracking-wide uppercase">Preformas PET</h3>
@@ -224,18 +218,32 @@
               </p>
             </div>
           </div>
+
+          <!-- Imagen oculta por defecto -->
           <div
-            class="linea-img absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 pointer-events-none z-10 p-3">
+            class="linea-img absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-10 p-6 pb-14">
             <img src="assets/productos/lineas/preformas.jpg" alt="Preformas PET"
-              class="w-full h-auto object-contain rounded-sm drop-shadow-lg">
+              class="w-full h-auto max-h-[220px] object-contain rounded-sm drop-shadow-lg">
+          </div>
+
+          <!-- Botón de Alternancia de Vista -->
+          <div class="px-8 pb-6 pt-2 z-20 relative">
+            <button onclick="toggleCardView(this)"
+              class="toggle-btn w-full text-center text-[10px] font-semibold tracking-widest text-[#D4AF37] hover:text-white uppercase transition-colors py-2 border-t border-white/5 flex items-center justify-center gap-2">
+              <span>Ver Imagen de Línea</span>
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+            </button>
           </div>
         </div>
 
         <!-- 02. BOLSAS -->
         <div
-          class="linea-card group relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_10px_30px_-15px_rgba(212,175,55,0.15)] overflow-hidden min-h-[320px]">
-          <div
-            class="linea-text p-8 h-full flex flex-col justify-between transition-all duration-500 group-hover:opacity-10 group-hover:blur-sm">
+          class="linea-card relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-300 hover:border-[#D4AF37]/40 overflow-hidden min-h-[360px] flex flex-col justify-between">
+          <div class="linea-text p-8 flex-grow flex flex-col justify-between transition-all duration-500">
             <div>
               <div class="text-[#10B981] text-4xl font-light mb-6 font-mono">02</div>
               <h3 class="text-lg font-medium text-white mb-3 tracking-wide uppercase">Bolsas</h3>
@@ -245,18 +253,30 @@
               </p>
             </div>
           </div>
+
           <div
-            class="linea-img absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 pointer-events-none z-10 p-3">
+            class="linea-img absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-10 p-6 pb-14">
             <img src="assets/productos/lineas/bolsas.jpg" alt="Bolsas de Polipropileno"
-              class="w-full h-auto object-contain rounded-sm drop-shadow-lg">
+              class="w-full h-auto max-h-[220px] object-contain rounded-sm drop-shadow-lg">
+          </div>
+
+          <div class="px-8 pb-6 pt-2 z-20 relative">
+            <button onclick="toggleCardView(this)"
+              class="toggle-btn w-full text-center text-[10px] font-semibold tracking-widest text-[#D4AF37] hover:text-white uppercase transition-colors py-2 border-t border-white/5 flex items-center justify-center gap-2">
+              <span>Ver Imagen de Línea</span>
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+            </button>
           </div>
         </div>
 
         <!-- 03. TERMOFORMADOS -->
         <div
-          class="linea-card group relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_10px_30px_-15px_rgba(212,175,55,0.15)] overflow-hidden min-h-[320px]">
-          <div
-            class="linea-text p-8 h-full flex flex-col justify-between transition-all duration-500 group-hover:opacity-10 group-hover:blur-sm">
+          class="linea-card relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-300 hover:border-[#D4AF37]/40 overflow-hidden min-h-[360px] flex flex-col justify-between">
+          <div class="linea-text p-8 flex-grow flex flex-col justify-between transition-all duration-500">
             <div>
               <div class="text-[#10B981] text-4xl font-light mb-6 font-mono">03</div>
               <h3 class="text-lg font-medium text-white mb-3 tracking-wide uppercase">Termoformados</h3>
@@ -266,18 +286,30 @@
               </p>
             </div>
           </div>
+
           <div
-            class="linea-img absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 pointer-events-none z-10 p-3">
+            class="linea-img absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-10 p-6 pb-14">
             <img src="assets/productos/lineas/termoformado.jpg" alt="Termoformados"
-              class="w-full h-auto object-contain rounded-sm drop-shadow-lg">
+              class="w-full h-auto max-h-[220px] object-contain rounded-sm drop-shadow-lg">
+          </div>
+
+          <div class="px-8 pb-6 pt-2 z-20 relative">
+            <button onclick="toggleCardView(this)"
+              class="toggle-btn w-full text-center text-[10px] font-semibold tracking-widest text-[#D4AF37] hover:text-white uppercase transition-colors py-2 border-t border-white/5 flex items-center justify-center gap-2">
+              <span>Ver Imagen de Línea</span>
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+            </button>
           </div>
         </div>
 
         <!-- 04. TAPAS Y ASAS -->
         <div
-          class="linea-card group relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_10px_30px_-15px_rgba(212,175,55,0.15)] overflow-hidden min-h-[320px]">
-          <div
-            class="linea-text p-8 h-full flex flex-col justify-between transition-all duration-500 group-hover:opacity-10 group-hover:blur-sm">
+          class="linea-card relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-300 hover:border-[#D4AF37]/40 overflow-hidden min-h-[360px] flex flex-col justify-between">
+          <div class="linea-text p-8 flex-grow flex flex-col justify-between transition-all duration-500">
             <div>
               <div class="text-[#10B981] text-4xl font-light mb-6 font-mono">04</div>
               <h3 class="text-lg font-medium text-white mb-3 tracking-wide uppercase">Tapas y Asas</h3>
@@ -287,10 +319,23 @@
               </p>
             </div>
           </div>
+
           <div
-            class="linea-img absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 pointer-events-none z-10 p-3">
+            class="linea-img absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-10 p-6 pb-14">
             <img src="assets/productos/lineas/tapas-asas.jpg" alt="Tapas y Asas"
-              class="w-full h-auto object-contain rounded-sm drop-shadow-lg">
+              class="w-full h-auto max-h-[220px] object-contain rounded-sm drop-shadow-lg">
+          </div>
+
+          <div class="px-8 pb-6 pt-2 z-20 relative">
+            <button onclick="toggleCardView(this)"
+              class="toggle-btn w-full text-center text-[10px] font-semibold tracking-widest text-[#D4AF37] hover:text-white uppercase transition-colors py-2 border-t border-white/5 flex items-center justify-center gap-2">
+              <span>Ver Imagen de Línea</span>
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -347,7 +392,7 @@
     </div>
   </section>
 
-  <!-- 6. SECCIÓN BANNER PRODUCTO NOVEDOSO (TETHERED CAP) -->
+  <!-- 6. SECCIÓN BANNER PRODUCTO NOVEDOSO -->
   <section id="tethered-cap" class="w-full relative overflow-hidden bg-[#0F0F11]">
     <div class="relative w-full min-h-[450px] md:min-h-[550px] lg:min-h-[650px] flex items-center justify-center">
       <div class="absolute inset-0 bg-[#0F0F11]"></div>
@@ -495,8 +540,21 @@
     </div>
   </div>
 
-  <!-- CONTROL DE INTERACTIVIDAD Y DETECCIÓN DE SCROLL MÓVIL -->
+  <!-- INTERACTIVIDAD JS -->
   <script>
+    // Lógica para alternar la vista entre Descripción e Imagen de la tarjeta
+    function toggleCardView(btn) {
+      const card = btn.closest('.linea-card');
+      const isShowingImage = card.classList.toggle('show-image');
+      const label = btn.querySelector('span');
+
+      if (isShowingImage) {
+        label.textContent = 'Ver Descripción';
+      } else {
+        label.textContent = 'Ver Imagen de Línea';
+      }
+    }
+
     document.addEventListener("DOMContentLoaded", () => {
       // Menú Móvil
       const mobileMenuBtn = document.getElementById("mobile-menu-btn");
@@ -531,29 +589,6 @@
       mobileLinks.forEach(link => {
         link.addEventListener("click", closeMenu);
       });
-
-      // Animación de tarjetas al hacer scroll en celular (<1024px)
-      if (window.innerWidth < 1024) {
-        const cards = document.querySelectorAll('.linea-card');
-
-        const observerOptions = {
-          root: null,
-          rootMargin: '-20% 0px -20% 0px', // Detecta cuando la tarjeta cruza la franja central del móvil
-          threshold: 0.5
-        };
-
-        const cardObserver = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('active-scroll');
-            } else {
-              entry.target.classList.remove('active-scroll');
-            }
-          });
-        }, observerOptions);
-
-        cards.forEach(card => cardObserver.observe(card));
-      }
     });
   </script>
 
