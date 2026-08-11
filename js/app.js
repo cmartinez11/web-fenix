@@ -186,7 +186,6 @@ function renderProductsList(productsSlice) {
           
           <div class="grid grid-cols-2 gap-x-2 gap-y-1 mt-3 pt-3 border-t border-white/[0.03] text-[10px] text-zinc-400 font-mono">
             <div>Gramaje: <span class="text-white font-medium">${product.gramaje}</span></div>
-            <div>Acabado: <span class="text-white font-medium">${product.acabado}</span></div>
             <div>Boca: <span class="text-white font-medium">${product.diametro}</span></div>
             <div>Capac.: <span class="text-white font-medium">${product.capacidad}</span></div>
             <div class="col-span-2 mt-1 pt-1 border-t border-white/[0.01]">Colores: <span class="text-[#D4AF37] font-semibold">${product.colores || "N/A"}</span></div>
