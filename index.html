@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plásticos Fénix | Soluciones Industriales</title>
+  <title>Plásticos Fénix</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +37,7 @@
       animation-play-state: paused;
     }
 
-    /* Lógica de volteo por botón (Toggle manual) */
+    /* Lógica de alternancia de vista */
     .linea-card.show-image .linea-text {
       opacity: 0 !important;
       pointer-events: none;
@@ -48,10 +48,18 @@
       scale: 1 !important;
       pointer-events: auto;
     }
+
+    /* Estilo para navbar claro al hacer scroll */
+    .glass-nav-scrolled-light {
+      background-color: rgba(255, 255, 255, 0.95) !important;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
   </style>
 </head>
 
-<body class="bg-[#0F0F11] text-white overflow-x-hidden">
+<body class="bg-[#F8F9FA] text-zinc-800 overflow-x-hidden">
 
   <!-- 1. HEADER (NAVBAR) -->
   <header id="main-nav" class="absolute top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
@@ -61,28 +69,28 @@
         <!-- Logo corporativo -->
         <div class="flex-shrink-0 flex items-center">
           <a href="index.html" class="flex items-center">
-            <img src="./assets/brand/logo.png" alt="Logo Plásticos Fénix" class="h-12 md:h-16 w-auto object-contain">
+            <img src="./assets/brand/logo.png" alt="Logo Plásticos Fénix" class="h-18 md:h-20 w-auto object-contain">
           </a>
         </div>
 
         <!-- Menú Central -->
-        <nav class="hidden md:flex items-center gap-8 text-xs font-light tracking-widest uppercase text-gray-300">
-          <a href="index.html" class="text-[#D4AF37] transition-colors">Inicio</a>
-          <a href="./nosotros.html" class="hover:text-[#D4AF37] transition-colors">Nosotros</a>
-          <a href="./productos.html" class="hover:text-[#D4AF37] transition-colors">Productos</a>
-          <a href="./contacto.html" class="hover:text-[#D4AF37] transition-colors">Contacto</a>
+        <nav class="hidden md:flex items-center gap-8 text-xs font-medium tracking-widest uppercase text-white">
+          <a href="index.html" class="text-[#CBAE4C] font-bold transition-colors">Inicio</a>
+          <a href="./nosotros.html" class="hover:text-[#CBAE4C] transition-colors">Nosotros</a>
+          <a href="./productos.html" class="hover:text-[#CBAE4C] transition-colors">Productos</a>
+          <a href="./contacto.html" class="hover:text-[#CBAE4C] transition-colors">Contacto</a>
         </nav>
 
         <!-- Botones CTA Derecha -->
         <div class="hidden md:flex items-center gap-3">
           <a href="#tethered-cap"
-            class="px-4 py-2.5 text-[11px] font-medium tracking-widest uppercase bg-[#10B981]/10 border border-[#10B981] text-[#10B981] hover:bg-[#10B981] hover:text-black transition-all duration-300 rounded-sm flex items-center gap-1.5">
-            <span class="w-1.5 h-1.5 bg-[#10B981] rounded-full animate-pulse"></span>
+            class="px-4 py-2.5 text-[11px] font-semibold tracking-widest uppercase bg-[#30732B] text-white hover:bg-white hover:text-[#30732B] transition-all duration-300 rounded-sm flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 bg-white rounded-full animate-pulse hover:bg-[#30732B]"></span>
             <span>Producto Novedoso</span>
           </a>
 
           <a href="https://wa.me/51970572564" target="_blank"
-            class="px-5 py-2.5 text-[11px] font-medium tracking-widest uppercase border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-sm">
+            class="px-5 py-2.5 text-[11px] font-semibold tracking-widest uppercase border border-[#CBAE4C] text-[#CBAE4C] hover:bg-[#CBAE4C] hover:text-white transition-all duration-300 rounded-sm shadow-sm">
             Contactar a un Asesor
           </a>
         </div>
@@ -90,10 +98,9 @@
         <!-- Botón Hamburguesa (Móvil) -->
         <div class="flex md:hidden items-center">
           <button id="mobile-menu-btn"
-            class="text-white hover:text-[#D4AF37] focus:outline-none p-2 transition-colors duration-200"
+            class="text-zinc-800 hover:text-[#B8860B] focus:outline-none p-2 transition-colors duration-200"
             aria-label="Abrir menú">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
@@ -103,32 +110,32 @@
     </div>
   </header>
 
-  <!-- 2. BANNER PRINCIPAL -->
-  <section class="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
+  <!-- 2. BANNER PRINCIPAL (HERO) -->
+  <section class="relative w-full h-screen flex items-center justify-center overflow-hidden bg-zinc-900">
     <div class="absolute inset-0 w-full h-full z-0">
-      <video class="w-full h-full object-cover opacity-40" autoplay loop muted playsinline>
+      <video class="w-full h-full object-cover opacity-50" autoplay loop muted playsinline>
         <source src="./assets/content/download.mp4" type="video/mp4">
       </video>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F11] via-black/30 to-black/60"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#F8F9FA] via-black/40 to-black/70"></div>
     </div>
 
     <div class="relative z-10 max-w-5xl mx-auto px-6 text-center mt-12">
-      <p class="text-[10px] font-medium tracking-[0.4em] uppercase text-[#10B981] mb-5">TECNOLOGÍA EN INYECCIÓN Y
+      <p class="text-[10px] font-semibold tracking-[0.4em] uppercase text-[#CBAE4C] mb-5">TECNOLOGÍA EN INYECCIÓN Y
         SOPLADO</p>
       <h1
         class="text-3xl md:text-5xl lg:text-6xl font-semibold tracking-wide text-white mb-6 leading-[1.2] md:leading-[1.25] lg:leading-[1.3] max-w-5xl mx-auto uppercase">
-        FABRICACION DE <br class="hidden md:block">
-        <span class="text-[#D4AF37]">PREFORMAS PET</span> <br>
+        FABRICACIÓN DE <br class="hidden md:block">
+        <span class="text-[#CBAE4C]">PREFORMAS PET</span> <br>
         Y ENVASES PARA TODO <br>
         TIPO DE INDUSTRIAS
       </h1>
-      <p class="text-xs md:text-sm font-light tracking-widest text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+      <p class="text-xs md:text-sm font-light tracking-widest text-[#FCFCF6] mb-10 max-w-2xl mx-auto leading-relaxed">
         Abastecemos a los sectores de bebidas, alimentos, limpieza y cosmética con los más altos estándares de
-        resistencia y durabilidad
+        resistencia y durabilidad.
       </p>
       <div>
         <a href="./productos.html"
-          class="inline-flex items-center justify-center px-10 py-3.5 bg-white text-black text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-[#D4AF37] hover:scale-105 transition-all duration-300 shadow-lg">
+          class="inline-flex items-center justify-center px-10 py-3.5 bg-[#30732B] text-white text-[11px] font-semibold tracking-widest uppercase rounded-full transition-all duration-300 shadow-xl hover:scale-105">
           EXPLORAR PRODUCTOS
         </a>
       </div>
@@ -136,100 +143,101 @@
   </section>
 
   <!-- 3. SLIDER CLIENTES -->
-  <section class="py-12 bg-[#0A0A0C] border-y border-white/5 overflow-hidden">
+  <!-- 3. SLIDER CLIENTES -->
+  <section class="py-12 bg-white border-y border-zinc-200 overflow-hidden shadow-sm">
     <div class="max-w-7xl mx-auto px-6 mb-8">
-      <p class="text-[10px] font-medium tracking-[0.2em] uppercase text-gray-400 text-center">
+      <p class="text-[10px] font-semibold tracking-[0.2em] uppercase text-zinc-400 text-center">
         Empresas que confían en nuestra capacidad de producción
       </p>
     </div>
     <div
       class="logos-wrapper relative w-full overflow-hidden flex [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
       <div class="logos-slide gap-12 md:gap-20 items-center">
+        <!-- BLOQUE 1 -->
         <img src="assets/content/logos-clientes/1.png" alt="Cliente 1"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/2.png" alt="Cliente 2"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/3.png" alt="Cliente 3"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/4.png" alt="Cliente 4"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/5.png" alt="Cliente 5"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/6.png" alt="Cliente 6"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/7.png" alt="Cliente 7"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/8.png" alt="Cliente 8"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/9.png" alt="Cliente 9"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/10.png" alt="Cliente 10"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/11.png" alt="Cliente 11"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
 
+        <!-- BLOQUE 2 (DUPLICADO PARA LOOP INFINITO) -->
         <img src="assets/content/logos-clientes/1.png" alt="Cliente 1"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/2.png" alt="Cliente 2"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/3.png" alt="Cliente 3"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/4.png" alt="Cliente 4"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/5.png" alt="Cliente 5"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/6.png" alt="Cliente 6"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/7.png" alt="Cliente 7"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/8.png" alt="Cliente 8"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/9.png" alt="Cliente 9"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/10.png" alt="Cliente 10"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
         <img src="assets/content/logos-clientes/11.png" alt="Cliente 11"
-          class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-60 hover:brightness-100 hover:invert-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer">
+          class="h-20 md:h-28 w-auto object-contain transition-transform duration-300 hover:scale-110 cursor-pointer">
       </div>
     </div>
   </section>
 
   <!-- 4. SECCIÓN LÍNEAS DE PRODUCCIÓN -->
-  <section id="productos" class="py-24 bg-[#0F0F11] relative">
+  <section id="productos" class="py-24 bg-[#F8F9FA] relative">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-2xl md:text-4xl font-semibold tracking-wide text-white uppercase">
-          Conoce Nuestras <span class="text-[#D4AF37] font-light">Líneas de Producción</span>
+        <h2 class="text-2xl md:text-4xl font-semibold tracking-wide text-black uppercase">
+          Conoce Nuestras <span class="text-[#AD921A] font-semibold">Líneas de Producción</span>
         </h2>
-        <div class="w-12 h-[2px] bg-[#10B981] mx-auto mt-4 rounded-full"></div>
+        <div class="w-12 h-[2px] bg-[#30732B] mx-auto mt-4 rounded-full"></div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- 01. PREFORMAS -->
         <div
-          class="linea-card relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-300 hover:border-[#D4AF37]/40 overflow-hidden min-h-[360px] flex flex-col justify-between">
+          class="linea-card relative bg-white border border-zinc-200/80 rounded-sm transition-all duration-300 hover:border-[#B8860B] hover:shadow-lg overflow-hidden min-h-[360px] flex flex-col justify-between">
           <div class="linea-text p-8 flex-grow flex flex-col justify-between transition-all duration-500">
             <div>
-              <div class="text-[#10B981] text-4xl font-light mb-6 font-mono">01</div>
-              <h3 class="text-lg font-medium text-white mb-3 tracking-wide uppercase">Preformas PET</h3>
-              <p class="text-xs text-gray-400 font-light leading-relaxed tracking-wide">
+              <div class="text-[#30732B] text-4xl font-light mb-6 font-mono">01</div>
+              <h3 class="text-lg font-semibold text-[#30732B] mb-3 tracking-wide uppercase">Preformas PET</h3>
+              <p class="text-xs text-black leading-relaxed tracking-wide">
                 Diseñadas con resina de primera calidad para garantizar un soplado uniforme, máxima transparencia y alta
                 resistencia mecánica en el envasado industrial.
               </p>
             </div>
           </div>
 
-          <!-- Imagen oculta por defecto -->
           <div
-            class="linea-img absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-10 p-6 pb-14">
+            class="linea-img absolute inset-0 w-full h-full bg-white flex items-center justify-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-10 p-6 pb-14">
             <img src="assets/productos/lineas/preformas.jpg" alt="Preformas PET"
-              class="w-full h-auto max-h-[220px] object-contain rounded-sm drop-shadow-lg">
+              class="w-full h-auto max-h-[220px] object-contain rounded-sm">
           </div>
 
-          <!-- Botón de Alternancia de Vista -->
           <div class="px-8 pb-6 pt-2 z-20 relative">
             <button onclick="toggleCardView(this)"
-              class="toggle-btn w-full text-center text-[10px] font-semibold tracking-widest text-[#D4AF37] hover:text-white uppercase transition-colors py-2 border-t border-white/5 flex items-center justify-center gap-2">
+              class="toggle-btn w-full text-center text-[10px] font-semibold tracking-widest text-[#AD921A] hover:text-zinc-900 uppercase transition-colors py-2 border-t border-[#AD921A] flex items-center justify-center gap-2">
               <span>Ver Imagen de Línea</span>
               <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -242,12 +250,12 @@
 
         <!-- 02. BOLSAS -->
         <div
-          class="linea-card relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-300 hover:border-[#D4AF37]/40 overflow-hidden min-h-[360px] flex flex-col justify-between">
+          class="linea-card relative bg-white border border-zinc-200/80 rounded-sm transition-all duration-300 hover:border-[#B8860B] hover:shadow-lg overflow-hidden min-h-[360px] flex flex-col justify-between">
           <div class="linea-text p-8 flex-grow flex flex-col justify-between transition-all duration-500">
             <div>
-              <div class="text-[#10B981] text-4xl font-light mb-6 font-mono">02</div>
-              <h3 class="text-lg font-medium text-white mb-3 tracking-wide uppercase">Bolsas</h3>
-              <p class="text-xs text-gray-400 font-light leading-relaxed tracking-wide">
+              <div class="text-[#30732B] text-4xl font-light mb-6 font-mono">02</div>
+              <h3 class="text-lg font-semibold text-[#30732B] mb-3 tracking-wide uppercase">Bolsas</h3>
+              <p class="text-xs text-black leading-relaxed tracking-wide">
                 Soluciones de empaque de alta claridad y excelente rigidez. Ideales para exhibición comercial,
                 protección contra humedad y envasado seguro.
               </p>
@@ -255,14 +263,14 @@
           </div>
 
           <div
-            class="linea-img absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-10 p-6 pb-14">
+            class="linea-img absolute inset-0 w-full h-full bg-white flex items-center justify-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-10 p-6 pb-14">
             <img src="assets/productos/lineas/bolsas.jpg" alt="Bolsas de Polipropileno"
-              class="w-full h-auto max-h-[220px] object-contain rounded-sm drop-shadow-lg">
+              class="w-full h-auto max-h-[220px] object-contain rounded-sm">
           </div>
 
           <div class="px-8 pb-6 pt-2 z-20 relative">
             <button onclick="toggleCardView(this)"
-              class="toggle-btn w-full text-center text-[10px] font-semibold tracking-widest text-[#D4AF37] hover:text-white uppercase transition-colors py-2 border-t border-white/5 flex items-center justify-center gap-2">
+              class="toggle-btn w-full text-center text-[10px] font-semibold tracking-widest text-[#AD921A] hover:text-zinc-900 uppercase transition-colors py-2 border-t border-[#AD921A] flex items-center justify-center gap-2">
               <span>Ver Imagen de Línea</span>
               <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -275,12 +283,12 @@
 
         <!-- 03. TERMOFORMADOS -->
         <div
-          class="linea-card relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-300 hover:border-[#D4AF37]/40 overflow-hidden min-h-[360px] flex flex-col justify-between">
+          class="linea-card relative bg-white border border-zinc-200/80 rounded-sm transition-all duration-300 hover:border-[#B8860B] hover:shadow-lg overflow-hidden min-h-[360px] flex flex-col justify-between">
           <div class="linea-text p-8 flex-grow flex flex-col justify-between transition-all duration-500">
             <div>
-              <div class="text-[#10B981] text-4xl font-light mb-6 font-mono">03</div>
-              <h3 class="text-lg font-medium text-white mb-3 tracking-wide uppercase">Termoformados</h3>
-              <p class="text-xs text-gray-400 font-light leading-relaxed tracking-wide">
+              <div class="text-[#30732B] text-4xl font-light mb-6 font-mono">03</div>
+              <h3 class="text-lg font-semibold text-[#30732B] mb-3 tracking-wide uppercase">Termoformados</h3>
+              <p class="text-xs text-black leading-relaxed tracking-wide">
                 Bandejas y empaques rígidos de alta precisión aptos para microondas o conservación, alineados a
                 estrictos estándares de inocuidad.
               </p>
@@ -288,14 +296,14 @@
           </div>
 
           <div
-            class="linea-img absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-10 p-6 pb-14">
+            class="linea-img absolute inset-0 w-full h-full bg-white flex items-center justify-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-10 p-6 pb-14">
             <img src="assets/productos/lineas/termoformado.jpg" alt="Termoformados"
-              class="w-full h-auto max-h-[220px] object-contain rounded-sm drop-shadow-lg">
+              class="w-full h-auto max-h-[220px] object-contain rounded-sm">
           </div>
 
           <div class="px-8 pb-6 pt-2 z-20 relative">
             <button onclick="toggleCardView(this)"
-              class="toggle-btn w-full text-center text-[10px] font-semibold tracking-widest text-[#D4AF37] hover:text-white uppercase transition-colors py-2 border-t border-white/5 flex items-center justify-center gap-2">
+              class="toggle-btn w-full text-center text-[10px] font-semibold tracking-widest text-[#AD921A] hover:text-zinc-900 uppercase transition-colors py-2 border-t border-[#AD921A] flex items-center justify-center gap-2">
               <span>Ver Imagen de Línea</span>
               <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -308,12 +316,12 @@
 
         <!-- 04. TAPAS Y ASAS -->
         <div
-          class="linea-card relative bg-[#131316] border border-white/[0.03] rounded-sm transition-all duration-300 hover:border-[#D4AF37]/40 overflow-hidden min-h-[360px] flex flex-col justify-between">
+          class="linea-card relative bg-white border border-zinc-200/80 rounded-sm transition-all duration-300 hover:border-[#B8860B] hover:shadow-lg overflow-hidden min-h-[360px] flex flex-col justify-between">
           <div class="linea-text p-8 flex-grow flex flex-col justify-between transition-all duration-500">
             <div>
-              <div class="text-[#10B981] text-4xl font-light mb-6 font-mono">04</div>
-              <h3 class="text-lg font-medium text-white mb-3 tracking-wide uppercase">Tapas y Asas</h3>
-              <p class="text-xs text-gray-400 font-light leading-relaxed tracking-wide">
+              <div class="text-[#30732B] text-4xl font-light mb-6 font-mono">04</div>
+              <h3 class="text-lg font-semibold text-[#30732B] mb-3 tracking-wide uppercase">Tapas y Asas</h3>
+              <p class="text-xs text-black leading-relaxed tracking-wide">
                 Complementos plásticos de alta hermeticidad con precinto de seguridad. Compatibilidad universal para
                 cuellos estándar y de alta presión.
               </p>
@@ -321,14 +329,14 @@
           </div>
 
           <div
-            class="linea-img absolute inset-0 w-full h-full bg-[#131316] flex items-center justify-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-10 p-6 pb-14">
+            class="linea-img absolute inset-0 w-full h-full bg-white flex items-center justify-center opacity-0 scale-95 transition-all duration-500 pointer-events-none z-10 p-6 pb-14">
             <img src="assets/productos/lineas/tapas-asas.jpg" alt="Tapas y Asas"
-              class="w-full h-auto max-h-[220px] object-contain rounded-sm drop-shadow-lg">
+              class="w-full h-auto max-h-[220px] object-contain rounded-sm">
           </div>
 
           <div class="px-8 pb-6 pt-2 z-20 relative">
             <button onclick="toggleCardView(this)"
-              class="toggle-btn w-full text-center text-[10px] font-semibold tracking-widest text-[#D4AF37] hover:text-white uppercase transition-colors py-2 border-t border-white/5 flex items-center justify-center gap-2">
+              class="toggle-btn w-full text-center text-[10px] font-semibold tracking-widest text-[#AD921A] hover:text-zinc-900 uppercase transition-colors py-2 border-t border-[#AD921A] flex items-center justify-center gap-2">
               <span>Ver Imagen de Línea</span>
               <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -343,38 +351,38 @@
   </section>
 
   <!-- 5. SECCIÓN NOSOTROS -->
-  <section id="nosotros" class="bg-[#0A0A0C] py-24 border-y border-white/5">
+  <section id="nosotros" class="bg-white py-24 border-y border-zinc-200">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       <div class="space-y-6">
         <div>
-          <p class="text-[10px] font-semibold tracking-[0.25em] text-[#10B981] uppercase mb-2">Más de 17 años de
+          <p class="text-[10px] font-bold tracking-[0.25em] text-[#30732B] uppercase mb-2">Más de 17 años de
             experiencia</p>
-          <h2 class="text-2xl md:text-4xl font-semibold tracking-wide text-white uppercase leading-tight">
-            MAS QUE UN PROVEEDOR<br>UN SOCIO <span class="text-[#D4AF37] font-light">ESTRATEGICO</span>
+          <h2 class="text-2xl md:text-4xl font-bold tracking-wide text-black uppercase leading-tight">
+            MÁS QUE UN PROVEEDOR<br><span class="text-[#AD921A] font-semibold">UN SOCIO ESTRATÉGICO</span>
           </h2>
-          <div class="w-12 h-[2px] bg-[#10B981] mt-4 rounded-full"></div>
+          <div class="w-12 h-[2px] bg-[#AD921A] mt-4 rounded-full"></div>
         </div>
 
-        <p class="text-xs md:text-sm text-gray-400 font-light leading-relaxed tracking-wide">
+        <p class="text-xs md:text-sm text-black leading-relaxed tracking-wide">
           En Plásticos Fénix entendemos que detrás de cada envase hay una marca que busca destacar. Con más de 17 años
           de trayectoria en el mercado nacional, combinamos calidad técnica con una atención cercana y personalizada.
         </p>
 
-        <ul class="space-y-3.5 text-xs font-light text-gray-300 tracking-wide">
+        <ul class="space-y-3.5 text-xs font-medium text-black tracking-wide">
           <li class="flex items-center gap-3">
-            <span class="w-1.5 h-1.5 bg-[#10B981] rounded-full shadow-[0_0_8px_#10B981]"></span>
+            <span class="w-1.5 h-1.5 bg-[#AD921A] rounded-full"></span>
             3 plantas operativas de alta eficiencia a nivel nacional.
           </li>
           <li class="flex items-center gap-3">
-            <span class="w-1.5 h-1.5 bg-[#10B981] rounded-full shadow-[0_0_8px_#10B981]"></span>
+            <span class="w-1.5 h-1.5 bg-[#AD921A] rounded-full"></span>
             Asistencia técnica personalizada directamente en planta cliente.
           </li>
         </ul>
 
         <div class="pt-2">
           <a href="./nosotros.html"
-            class="inline-flex items-center gap-2 text-[11px] font-medium tracking-widest uppercase text-[#D4AF37] hover:text-white transition-colors duration-300 group/btn">
-            <span>Conocenos</span>
+            class="inline-flex items-center gap-2 text-[11px] font-semibold tracking-widest uppercase text-[#AD921A] hover:text-zinc-900 transition-colors duration-300 group/btn">
+            <span>Conócenos</span>
             <svg class="w-4 h-4 transform transition-transform duration-300 group-hover/btn:translate-x-1" fill="none"
               stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -384,49 +392,42 @@
       </div>
 
       <div
-        class="group relative w-full aspect-video bg-[#131316] border border-white/[0.05] rounded-sm overflow-hidden transition-all duration-500 hover:border-[#D4AF37]/30 hover:shadow-[0_15px_40px_-20px_rgba(212,175,55,0.15)]">
-        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+        class="group relative w-full aspect-video bg-zinc-100 border border-zinc-200 rounded-sm overflow-hidden shadow-md">
         <img src="./assets/content/fenix-nosotros-inicio.jpg" alt="Planta Industrial Plásticos Fénix"
-          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-102">
+          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
       </div>
     </div>
   </section>
 
   <!-- 6. SECCIÓN BANNER PRODUCTO NOVEDOSO -->
-  <section id="tethered-cap" class="w-full relative overflow-hidden bg-[#0F0F11]">
+  <section id="tethered-cap" class="w-full relative overflow-hidden bg-[#30732B] border-b border-zinc-200">
     <div class="relative w-full min-h-[450px] md:min-h-[550px] lg:min-h-[650px] flex items-center justify-center">
-      <div class="absolute inset-0 bg-[#0F0F11]"></div>
       <div class="relative z-10 max-w-6xl mx-auto px-4 py-8 md:py-12 flex justify-center items-center">
-        <img src="assets/content/product-new.png" alt="Tethered Cap"
-          class="w-full h-auto max-h-[85vh] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]">
+        <img src="assets/content/tapa.png" alt="Tethered Cap"
+          class="w-full h-auto max-h-[85vh] object-contain drop-shadow-lg">
       </div>
     </div>
   </section>
 
   <!-- 7. SECCIÓN CONTACTO CTA -->
-  <section id="contacto" class="py-28 relative overflow-hidden bg-[#0F0F11]">
-    <div
-      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#10B981]/[0.02] blur-[120px] rounded-full pointer-events-none">
-    </div>
-
+  <section id="contacto" class="py-28 relative overflow-hidden bg-[#F8F9FA]">
     <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-      <div
-        class="bg-[#131316] border border-white/[0.03] p-12 md:p-16 rounded-sm shadow-[0_20px_50px_-20px_rgba(0,0,0,0.7)]">
-        <h2 class="text-2xl md:text-4xl font-semibold tracking-wide text-white uppercase leading-[1.25] mb-4">
+      <div class="bg-white border border-zinc-200 p-12 md:p-16 rounded-sm shadow-xl">
+        <h2 class="text-2xl md:text-4xl font-semibold tracking-wide text-black uppercase leading-[1.25] mb-4">
           ¿Listo para optimizar tu <br class="sm:hidden">
-          <span class="text-[#D4AF37]">Cadena de Suministro</span>?
+          <span class="text-[#AD921A]">Cadena de Suministro</span>?
         </h2>
 
-        <div class="w-10 h-[2px] bg-[#10B981] mx-auto mb-8 rounded-full"></div>
+        <div class="w-10 h-[2px] bg-[#30732B] mx-auto mb-8 rounded-full"></div>
 
-        <p class="text-xs md:text-sm text-gray-400 font-light max-w-2xl mx-auto leading-relaxed tracking-wide mb-10">
+        <p class="text-xs md:text-sm text-black max-w-2xl mx-auto leading-relaxed tracking-wide mb-10">
           Ponte en contacto directo con nuestros ingenieros de empaque para solicitar cotizaciones a medida, muestras
           técnicas o desarrollo de moldes personalizados.
         </p>
 
         <div class="inline-block">
           <a href="https://wa.me/51970572564" target="_blank"
-            class="inline-flex items-center gap-3 px-10 py-4 bg-[#10B981] text-black font-bold text-[11px] tracking-[0.2em] uppercase rounded-full hover:bg-[#D4AF37] hover:scale-105 transition-all duration-300 shadow-[0_10px_30px_-10px_rgba(16,185,129,0.3)] hover:shadow-[0_10px_30px_-10px_rgba(212,175,55,0.3)] group">
+            class="inline-flex items-center gap-3 px-10 py-4 bg-[#30732B] text-white font-semibold text-[11px] tracking-[0.2em] uppercase rounded-full hover:bg-zinc-900 hover:scale-105 transition-all duration-300 shadow-lg group">
             <span>Cotizar por WhatsApp</span>
           </a>
         </div>
@@ -435,13 +436,13 @@
   </section>
 
   <!-- 8. FOOTER CORPORATIVO -->
-  <footer class="bg-[#0A0A0C] border-t border-white/5 pt-16 pb-8 text-zinc-400">
+  <footer class="bg-zinc-900 border-t border-zinc-800 pt-16 pb-8 text-zinc-400">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/5">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-zinc-800">
         <div class="space-y-4">
           <img src="./assets/brand/logo.png" alt="Logo Plásticos Fénix"
-            class="h-12 w-auto object-contain brightness-95">
-          <p class="text-xs font-light leading-relaxed tracking-wide text-zinc-500 pt-2">
+            class="h-12 w-auto object-contain brightness-0 invert opacity-90">
+          <p class="text-xs font-light leading-relaxed tracking-wide text-zinc-400 pt-2">
             Líderes en el suministro industrial de preformas PET, tapas, asas y empaques termoformados a gran escala a
             nivel nacional.
           </p>
@@ -472,19 +473,19 @@
 
         <div class="space-y-4">
           <h4 class="text-xs font-semibold tracking-widest text-white uppercase">Atención al Usuario</h4>
-          <p class="text-[11px] font-light text-zinc-500 leading-relaxed">
+          <p class="text-[11px] font-light text-zinc-400 leading-relaxed">
             Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, contamos con un libro virtual
             a su disposición.
           </p>
           <a href="libro-reclamaciones.html"
-            class="inline-flex items-center gap-3 px-4 py-2.5 border border-white/10 hover:border-[#D4AF37]/50 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 rounded-sm group">
+            class="inline-flex items-center gap-3 px-4 py-2.5 border border-zinc-700 hover:border-[#D4AF37] bg-zinc-800/50 transition-all duration-300 rounded-sm group">
             <svg class="w-5 h-5 text-zinc-400 group-hover:text-[#D4AF37] transition-colors" fill="none"
               stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
             </svg>
             <div class="text-left">
-              <span class="block text-[8px] tracking-widest text-zinc-500 uppercase">Libro de</span>
+              <span class="block text-[8px] tracking-widest text-zinc-400 uppercase">Libro de</span>
               <span
                 class="block text-[10px] font-medium tracking-wide text-white uppercase group-hover:text-[#D4AF37] transition-colors">Reclamaciones</span>
             </div>
@@ -493,11 +494,11 @@
       </div>
 
       <div
-        class="flex flex-col sm:flex-row items-center justify-between pt-8 text-[11px] font-light text-zinc-600 tracking-wide gap-4">
+        class="flex flex-col sm:flex-row items-center justify-between pt-8 text-[11px] font-light text-zinc-500 tracking-wide gap-4">
         <div class="text-center sm:text-left">
           <span>© 2026 PLÁSTICOS FÉNIX • GRUPO FÉNIX. Todos los derechos reservados.</span>
         </div>
-        <div class="flex items-center gap-2 text-zinc-700">
+        <div class="flex items-center gap-2 text-zinc-500">
           <span>Fabricación de Soluciones Industriales de Empaque</span>
         </div>
       </div>
@@ -506,13 +507,13 @@
 
   <!-- PANEL MÓVIL DESPLEGABLE -->
   <div id="mobile-drawer-overlay"
-    class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[90] hidden opacity-0 transition-opacity duration-300"></div>
+    class="fixed inset-0 bg-black/40 backdrop-blur-sm z-[90] hidden opacity-0 transition-opacity duration-300"></div>
 
   <div id="mobile-drawer"
-    class="fixed top-0 right-0 h-screen w-80 max-w-[85vw] bg-[#0F0F11]/95 backdrop-blur-lg border-l border-white/10 z-[100] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 shadow-2xl">
+    class="fixed top-0 right-0 h-screen w-80 max-w-[85vw] bg-white border-l border-zinc-200 z-[100] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 shadow-2xl">
     <div class="flex justify-end mb-8">
       <button id="mobile-drawer-close"
-        class="text-white hover:text-[#D4AF37] focus:outline-none p-2 transition-colors duration-200"
+        class="text-zinc-800 hover:text-[#B8860B] focus:outline-none p-2 transition-colors duration-200"
         aria-label="Cerrar menú">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
@@ -520,21 +521,23 @@
       </button>
     </div>
 
-    <nav class="flex flex-col gap-6 text-sm font-light tracking-[0.2em] uppercase text-gray-300 mb-8">
-      <a href="index.html" class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Inicio</a>
-      <a href="./nosotros.html" class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Nosotros</a>
+    <nav class="flex flex-col gap-6 text-sm font-medium tracking-[0.2em] uppercase text-zinc-700 mb-8">
+      <a href="index.html" class="hover:text-[#B8860B] transition-colors py-2 border-b border-zinc-100">Inicio</a>
+      <a href="./nosotros.html"
+        class="hover:text-[#B8860B] transition-colors py-2 border-b border-zinc-100">Nosotros</a>
       <a href="./productos.html"
-        class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Productos</a>
-      <a href="./contacto.html" class="hover:text-[#D4AF37] transition-colors py-2 border-b border-white/5">Contacto</a>
+        class="hover:text-[#B8860B] transition-colors py-2 border-b border-zinc-100">Productos</a>
+      <a href="./contacto.html"
+        class="hover:text-[#B8860B] transition-colors py-2 border-b border-zinc-100">Contacto</a>
     </nav>
 
     <div class="mt-auto space-y-3 pb-8">
       <a href="#tethered-cap"
-        class="w-full block text-center px-5 py-3 text-[11px] font-medium tracking-widest uppercase bg-[#10B981]/10 border border-[#10B981] text-[#10B981] rounded-sm">
+        class="w-full block text-center px-5 py-3 text-[11px] font-semibold tracking-widest uppercase bg-[#059669]/10 border border-[#059669] text-[#059669] rounded-sm">
         Producto Novedoso
       </a>
       <a href="https://wa.me/51970572564" target="_blank"
-        class="w-full block text-center px-5 py-3.5 text-[11px] font-medium tracking-widest uppercase border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 rounded-sm">
+        class="w-full block text-center px-5 py-3.5 text-[11px] font-semibold tracking-widest uppercase border border-[#B8860B] text-[#B8860B] hover:bg-[#B8860B] hover:text-white transition-all duration-300 rounded-sm">
         Contactar a un Asesor
       </a>
     </div>
@@ -542,7 +545,6 @@
 
   <!-- INTERACTIVIDAD JS -->
   <script>
-    // Lógica para alternar la vista entre Descripción e Imagen de la tarjeta
     function toggleCardView(btn) {
       const card = btn.closest('.linea-card');
       const isShowingImage = card.classList.toggle('show-image');
@@ -556,6 +558,16 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => {
+      // Navbar al hacer scroll
+      window.addEventListener("scroll", () => {
+        const nav = document.getElementById("main-nav");
+        if (window.scrollY > 40) {
+          nav.classList.add("glass-nav-scrolled-light");
+        } else {
+          nav.classList.remove("glass-nav-scrolled-light");
+        }
+      });
+
       // Menú Móvil
       const mobileMenuBtn = document.getElementById("mobile-menu-btn");
       const mobileDrawer = document.getElementById("mobile-drawer");
